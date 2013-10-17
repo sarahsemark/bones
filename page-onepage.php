@@ -12,28 +12,22 @@ Template Name: One-page site
 								
 								// Let's show all the static pages! Whoo-hoo!
 								$pages = get_pages(array('child_of' => $post->ID, 'sort_column' => 'menu_order', 'sort_order' => 'asc')); 
-								foreach ($pages as $page_data) {
+								$count = 1;
+								foreach ($pages as $page_data) :
 									$content = apply_filters('the_content', $page_data->post_content); 
 									$title = $page_data->post_title; 
 									$slug = $page_data->post_name;
-									echo '<div id="'.$slug.'" class="page-panel">';
-										echo '<div class="inner-content wrap clearfix">';
-											echo '<div class="twelvecol first last clearfix entry-content" role="main">';
-												echo "<h2>" . $title . "</h2>";
-												echo $content; 
-											echo '</div>';
-										echo '</div>';
-									echo '</div>';
-								}
-								?>
+									?>
+									<div id="<?php echo $slug; ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.5">
+										<div class="inner-content wrap clearfix">
+											<div class="twelvecol first last clearfix entry-content" role="main">
+												<a class="button" data-slide="<?php echo ++$count; ?>" title=""></a>
+												<h2><?php echo $title; ?></h2>
+												<?php echo $content; ?>
+											</div>
+										</div>
+									</div>
+								<?php endforeach; ?>
 							
-							
-
-						</div> <!-- end #main -->
-
-
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
 
 <?php get_footer(); ?>

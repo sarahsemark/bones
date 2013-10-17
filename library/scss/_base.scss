@@ -253,13 +253,58 @@ and more scalable.
 } /* end .nav */
 
 
+
+
+/*********************
+PARALLAX PANEL STYLES
+*********************/
+.page-panel {
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    position: relative;
+    border: 1px solid black;
+}
+.inner-content {
+    height: 600px;
+    margin: 0 auto;
+    padding: 100px;
+    position: relative;
+    background: #ebdadc;
+}
+.slideno {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    font-size:100px;
+    font-weight:bold;
+    color:rgba(255,255,255,0.3);
+}
+.button{
+    display:block;
+    width:50px;
+    height:50px;
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    background-color:#333333;
+    background-image:url(../images/arrow.png);
+    background-repeat:no-repeat;
+}
+.button:hover{
+    background-color:#494949;
+    cursor:pointer;
+}
+
+
+
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 
-.page-panel {
-	margin-top: 2.2em;
-	background: #ac9478;
+.entry-content {
+	
 }
 
 		.hentry {
