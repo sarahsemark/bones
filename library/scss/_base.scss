@@ -258,20 +258,34 @@ and more scalable.
 /*********************
 PARALLAX PANEL STYLES
 *********************/
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
 .page-panel {
     background-attachment: fixed;
     width:100%;
     height:100%;
     position: relative;
-    border: 1px solid black;
+    background: #ebdadc;
 }
 .inner-content {
-    height: 600px;
+    height: 100%;
     margin: 0 auto;
     padding: 100px;
     position: relative;
-    background: #ebdadc;
+    border: 1px solid black;
 }
+
+/* individual page panels */
+#home {
+	background: url('../images/salon.jpg') no-repeat;
+	background-size: cover;
+}
+
+
+
 .slideno {
     position:absolute;
     bottom:0px;
