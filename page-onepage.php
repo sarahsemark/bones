@@ -24,6 +24,30 @@ Template Name: One-page site
 												<a class="button" data-slide="<?php echo ++$count; ?>" title=""></a>
 												<h2><?php echo $title; ?></h2>
 												<?php echo $content; ?>
+												
+												<?php if ($title = "News"): ?>
+													<?php
+													$args = array( 'posts_per_page' => 3);
+													$posts = get_posts( $args );
+													$count = 1;
+													foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+														<?php
+															if ($count == 1) {
+																$class = "first";
+															} elseif ($count == 3) {
+																$class="last";
+															}
+														?>
+														<div class="fourcol <?php echo $class; ?>clearfix">
+															<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+														</div>
+													<?php 
+														$count++;
+														endforeach; 
+														wp_reset_postdata();
+													?>
+											<?php endif; ?>	
+											
 											</div>
 										</div>
 									</div>
