@@ -18,23 +18,23 @@ Template Name: One-page site
 									$title = $page_data->post_title; 
 									$slug = $page_data->post_name;
 									?>
-									<div id="<?php echo $slug; ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.5">
+									<div id="<?php echo $slug; ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="1">
 										<div class="inner-content wrap clearfix">
 											<div class="twelvecol first last clearfix entry-content" role="main">
 												<a class="button" data-slide="<?php echo ++$count; ?>" title=""></a>
 												<h2><?php echo $title; ?></h2>
 												<?php echo $content; ?>
 												
-												<?php if ($title = "News"): ?>
+												<?php if ($title == "News"): ?>
 													<?php
 													$args = array( 'posts_per_page' => 3);
 													$posts = get_posts( $args );
-													$count = 1;
+													$news_count = 1;
 													foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 														<?php
-															if ($count == 1) {
+															if ($news_count == 1) {
 																$class = "first";
-															} elseif ($count == 3) {
+															} elseif ($news_count == 3) {
 																$class="last";
 															}
 														?>
@@ -42,7 +42,7 @@ Template Name: One-page site
 															<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 														</div>
 													<?php 
-														$count++;
+														$news_count++;
 														endforeach; 
 														wp_reset_postdata();
 													?>
