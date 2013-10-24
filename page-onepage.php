@@ -18,7 +18,7 @@ Template Name: One-page site
 									$title = $page_data->post_title; 
 									$slug = $page_data->post_name;
 									?>
-									<div id="<?php echo $slug; ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="1">
+									<div id="<?php echo $slug; ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.5">
 										<div class="inner-content wrap clearfix">
 											<div class="twelvecol first last clearfix entry-content" role="main">
 												<a class="button" data-slide="<?php echo ++$count; ?>" title=""></a>

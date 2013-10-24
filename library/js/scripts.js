@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
     it, so be sure to research and find the one
     that works for you best.
     */
-    
+        
     /* getting viewport width */
     var responsive_viewport = $(window).width();
     
@@ -124,10 +124,6 @@ jQuery(document).ready(function($) {
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
     });
-		
-	
-	
- 
 }); /* end of as page load scripts */
 
 
