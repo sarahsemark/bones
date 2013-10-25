@@ -21,8 +21,9 @@ Template Name: One-page site
 									<div id="<?php echo $slug; ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.5">
 										<div class="inner-content wrap clearfix">
 											<div class="twelvecol first last clearfix entry-content" role="main">
+											
 												<a class="button" data-slide="<?php echo ++$count; ?>" title=""></a>
-												<h2><?php echo $title; ?></h2>
+												<h2><?php if ($title != "Home"):  echo $title;  endif; ?></h2>
 												<?php echo $content; ?>
 												
 												<?php if ($title == "News"): ?>
