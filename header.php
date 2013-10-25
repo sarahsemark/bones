@@ -57,7 +57,11 @@
 					<nav role="navigation">
 						<?php bones_main_nav(); ?>
 					</nav>
-
+					
+					<div id="social">
+						<?php wp_nav_menu(array('menu' => 'Social Media Links')); ?>
+					</div>
+					
 				</div> <!-- end #inner-header -->
 
 			</header> <!-- end header -->

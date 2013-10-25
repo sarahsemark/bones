@@ -162,8 +162,13 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 
+// Custom menu for social media links
+register_nav_menus( array(
+	'social_menu' => 'Social Media Links'
+) );
 
-/* hide admin bar! */
+
+// hide admin bar! 
 add_filter('show_admin_bar', '__return_false');
 
 ?>

@@ -251,6 +251,25 @@ and more scalable.
 
 } /* end .nav */
 
+#social {
+	margin-top: -83px;
+	float: right;
+	
+	li {
+		float: left;
+		
+		a { 
+			display: block;
+			height: 63px;
+			width: 63px;
+			background: url('../images/social.png');
+			margin: 0 20px 0 0;
+			background-size: cover;
+			font: 0/0 a;
+		}
+	}
+}
+
 
 
 
