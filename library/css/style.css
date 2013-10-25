@@ -1053,14 +1053,14 @@ PARALLAX PANEL STYLES
 html, body {
   width: 100%;
   height: 100%;
-  min-height: 825px;
 }
 
-/* line 266, ../scss/_base.scss */
+/* line 265, ../scss/_base.scss */
 .page-panel {
   background-attachment: fixed;
   width: 100%;
   height: 100%;
+  min-height: 825px;
   position: relative;
   background: #ebdadc;
 }
