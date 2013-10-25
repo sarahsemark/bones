@@ -192,7 +192,6 @@ and more scalable.
 			text-decoration: none;
 			padding: 10px 10px;
 			
-
 			/*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -241,12 +240,11 @@ and more scalable.
 	} /* end .menu li */
 
 	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current-page-ancestor {
-
-		a {}
-
+	li.active {
+		background: green;
+	}
+	a.active {
+		background: purple;
 	}  /* end current highlighters */
 
 } /* end .nav */

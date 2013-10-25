@@ -79,25 +79,26 @@ jQuery(document).ready(function($) {
     $(window).stellar();
     
     //Cache some variables
-    var links = $('.navigation').find('li');
+    var links = $('nav').find('li a');
     slide = $('.page-panel');
     button = $('.down-button');
     mywindow = $(window);
     htmlbody = $('html,body');
     
     // Set up waypoints plugin
+    // This should only be active if we're actually on that main page! Also, direction appears not to work, so I've overwritten it. Needs cleaning up. 
     slide.waypoint(function (event, direction) {
         //cache the variable of the data-slide attribute associated with each slide
         dataslide = $(this).attr('data-slide');
         //If the user scrolls up change the navigation link that has the same data-slide attribute as the slide to active and
         //remove the active class from the previous navigation link
         if (direction === 'down') {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+          // $('nav li a[data-slide="' + dataslide + '"]').parent().addClass('active').next().removeClass('active');
         }
-        // else If the user scrolls down change the navigation link that has the same data-slide attribute as the slide to active and
+        // if the user scrolls down change the navigation link that has the same data-slide attribute as the slide to active and
         //remove the active class from the next navigation link
         else {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+        	$('nav li a[data-slide="' + dataslide + '"]').parent().addClass('active').siblings().removeClass('active');
         }
     });
     
@@ -105,8 +106,8 @@ jQuery(document).ready(function($) {
     //from navigation link slide 2 and adds it to navigation link slide 1.
     mywindow.scroll(function () {
         if (mywindow.scrollTop() == 0) {
-            $('.navigation li[data-slide="1"]').addClass('active');
-            $('.navigation li[data-slide="2"]').removeClass('active');
+          $('nav li a[data-slide="1"]').parent().addClass('active');
+          $('nav li a[data-slide="2"]').parent().removeClass('active');
         }
     });
     

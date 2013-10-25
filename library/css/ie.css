@@ -491,10 +491,6 @@ NAVIGATION STYLES
   has the possibility of being a mobile device.
   */
 }
-/* line 56, ../scss/_768up.scss */
-.nav li a:hover, .nav li a:focus {
-  background-color: #dedede;
-}
 /* line 69, ../scss/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
