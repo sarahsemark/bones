@@ -171,15 +171,11 @@ register_nav_menus( array(
 // Filter the main menu so as to add custom attributes for parallax-ness
 add_filter( 'nav_menu_link_attributes', 'add_data_slides', 10, 3 );
 
-function add_data_slides( $atts, $item, $args ) {
-	$menu_name = (array)$args;	
-	$menu = $menu_name['menu'];
-	//echo $menu;
-	//if ($menu == 'The Main Menu') {
-		$slide = (array)$item;
-		$atts['data-slide'] = $slide['menu_order'];
-		return $atts;		
-	//}
+function add_data_slides($atts, $item, $args) {
+	if ($args->menu == 'The Main Menu') {
+		$atts['data-slide'] = $item->menu_order;
+	}
+	return $atts;
 }
 
 

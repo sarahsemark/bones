@@ -65,7 +65,6 @@ jQuery(document).ready(function($) {
         
     }
     
-	
 	// Fade in homepage elements
 	$('#home, header, #home blockquote, #home .down-button').css('opacity', '0');
     $('#home').delay(0).fadeTo(1000, '1', 'linear');	
@@ -125,7 +124,8 @@ jQuery(document).ready(function($) {
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
         $(this).blur();
-        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('nav li.active').removeClass('active');
+        $(this).parent().addClass('active');
     });
     
     //When the user clicks on the button, get the get the data-slide attribute value of the button and pass that variable to the goToByScroll function
