@@ -831,7 +831,7 @@ GENERAL STYLES
 *********************/
 /* line 18, ../scss/_base.scss */
 body {
-  font-family: "Old Standard", "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #565656;
@@ -914,7 +914,7 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 /* line 107, ../scss/_base.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Old Standard", "Georgia", Cambria, Times New Roman, Times, serif;
   text-rendering: optimizelegibility;
   font-weight: 500;
   /*

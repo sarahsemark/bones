@@ -81,7 +81,7 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 
-$sans-serif:        "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$slab-serif:        "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Old Standard", "Georgia", Cambria, Times New Roman, Times, serif;
 
 
@@ -207,7 +207,7 @@ BUTTONS
 *********************/
 
 .button, .button:visited {
-	font-family: $sans-serif;
+	font-family: $slab-serif;
 	border: 1px solid darken($link-color, 13%);
 	border-top-color: darken($link-color, 7%);
 	border-left-color: darken($link-color, 7%);
