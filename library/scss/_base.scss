@@ -108,27 +108,20 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $serif;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
-	/*
-	if you're going to use webfonts, be sure to check your weights
-	http://css-tricks.com/watch-your-font-weight/
-	*/
+	font-weight: normal;
 
-	/* removing text decoration from all headline links */
 	a {
 		text-decoration: none;
 	}
 }
 
-h1, .h1 {
+
+h1, .h1, h2, .h2 {
 	font-size: 2.5em;
 	line-height: 1.333em;
-}
-
-h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
+	color: $beige;
+	text-align: center;
+	font-family: "Confection Caps";
 }
 
 h3, .h3 {
@@ -294,7 +287,7 @@ html, body {
     position: relative;
 }
 .inner-content .entry-content {
-	padding-top: 160px;
+	padding-top: 260px;
 }
 
 /* individual page panels */
@@ -304,7 +297,7 @@ html, body {
 	
 	blockquote {
 		text-align: center;
-		margin-top: 30%;
+		margin-top: 20%;
 	}
 }
 #books {
@@ -321,7 +314,7 @@ html, body {
     width: 100%;
     height: 101px;
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
     background: url('../images/down-button.png') center 10px no-repeat; 
     background-size: 81px 81px;
 }
