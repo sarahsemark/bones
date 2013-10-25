@@ -407,6 +407,10 @@ POSTS & CONTENT STYLES
 			}
 
 			blockquote {
+				font-family: $serif;
+				font-style: italic;
+				font-size: 2em; 
+				color: $beige;
 
 				&:before {}
 
