@@ -102,8 +102,8 @@ jQuery(document).ready(function($) {
         }
     });
     
-    //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
-    //from navigation link slide 2 and adds it to navigation link slide 1.
+    // waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
+    // from navigation link slide 2 and adds it to navigation link slide 1.
     mywindow.scroll(function () {
         if (mywindow.scrollTop() == 0) {
           $('nav li a[data-slide="1"]').parent().addClass('active');
@@ -119,11 +119,13 @@ jQuery(document).ready(function($) {
         }, 2000, 'easeInOutQuint');
     }
     
-    //When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
+    // When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
     links.click(function (e) {
         e.preventDefault();
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
+        $(this).blur();
+        $(this).parent().addClass('active').siblings().removeClass('active');
     });
     
     //When the user clicks on the button, get the get the data-slide attribute value of the button and pass that variable to the goToByScroll function
@@ -131,6 +133,7 @@ jQuery(document).ready(function($) {
         e.preventDefault();
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
+        $('nav li a[data-slide="' + dataslide + '"]').parent().addClass('active').siblings().removeClass('active');
     });
 }); /* end of as page load scripts */
 
