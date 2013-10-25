@@ -1121,7 +1121,7 @@ html, body {
   width: 100%;
   height: 101px;
   position: absolute;
-  bottom: 40px;
+  bottom: 80px;
   background: url("../images/down-button.png") center 10px no-repeat;
   background-size: 81px 81px;
 }
