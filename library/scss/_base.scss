@@ -201,7 +201,8 @@ and more scalable.
 */
 
 .nav {
-	margin-top: -170px;
+	margin-top: -167px;
+	font-size: .9em;
 
 	li {
 
@@ -259,11 +260,15 @@ and more scalable.
 
 	/* highlight current page */
 	li.active {
-		background: green;
+		background: lighten($green, 20%);
+		padding: 2px;
+		margin-top: -2px;
+		 a {
+			 color: darken($green, 20%);
+			 border: 1px solid darken($green, 20%);
+		 }
 	}
-	a.active {
-		background: purple;
-	}  /* end current highlighters */
+  /* end current highlighters */
 
 } /* end .nav */
 
