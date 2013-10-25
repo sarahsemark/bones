@@ -66,6 +66,13 @@ jQuery(document).ready(function($) {
     }
     
 	
+	// Fade in homepage elements
+	$('#home, #home blockquote, header').css('opacity', '0');
+    $('#home').delay(0).fadeTo(1000, '1', 'linear');	
+    $('header').delay(1500).fadeTo(1000, '1', 'linear');
+    $('#home blockquote').delay(2500).fadeTo(1000, '1', 'linear');	
+    
+	
 	// Parallax effects via the Stellar library
 	
     //initialise Stellar.js

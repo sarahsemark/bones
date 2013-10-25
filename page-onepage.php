@@ -23,7 +23,7 @@ Template Name: One-page site
 											<div class="twelvecol first last clearfix entry-content" role="main">
 											
 												<a class="button" data-slide="<?php echo ++$count; ?>" title=""></a>
-												<h2><?php if ($title != "Home"):  echo $title;  endif; ?></h2>
+												<?php if ($title != "Home"):  echo '<h2>' . $title . '</h2>';  endif; ?>
 												<?php echo $content; ?>
 												
 												<?php if ($title == "News"): ?>

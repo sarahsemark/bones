@@ -302,6 +302,11 @@ html, body {
 #home {
 	background: url('../images/salon.jpg') no-repeat;
 	background-size: cover;
+	
+	blockquote {
+		text-align: center;
+		margin-top: 30%;
+	}
 }
 #news {
 	background: url("../images/salon2.jpg") no-repeat;
