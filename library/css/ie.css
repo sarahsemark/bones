@@ -167,31 +167,26 @@ SHADOWS
 BUTTONS
 *********************/
 /* line 209, ../scss/_mixins.scss */
-.button, .button:visited {
+.button, .button:visited, input[type="submit"] {
   font-family: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #5c7742;
-  border-top-color: #6b8b4d;
-  border-left-color: #6b8b4d;
-  padding: 4px 12px;
+  border: 1px solid #b6a582;
+  padding: 5px 10px;
   color: #c9bca2;
   display: inline-block;
-  font-size: 11px;
-  font-weight: bold;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.75);
   cursor: pointer;
-  margin-bottom: 20px;
+  margin: 10px;
   line-height: 21px;
-  border-radius: 4px;
-  background-color: #709251;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7da25a), to(#709251));
-  background-image: -webkit-linear-gradient(top, #7da25a, #709251);
-  background-image: -moz-linear-gradient(top, #7da25a, #709251);
-  background-image: -o-linear-gradient(top, #7da25a, #709251);
-  background-image: linear-gradient(to bottom, #7da25a, #709251);
+  background-color: #270004;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#400007), to(#270004));
+  background-image: -webkit-linear-gradient(top, #400007, #270004);
+  background-image: -moz-linear-gradient(top, #400007, #270004);
+  background-image: -o-linear-gradient(top, #400007, #270004);
+  background-image: linear-gradient(to bottom, #400007, #270004);
 }
-/* line 228, ../scss/_mixins.scss */
-.button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
+/* line 222, ../scss/_mixins.scss */
+.button:hover, .button:focus, .button:visited:hover, .button:visited:focus, input[type="submit"]:hover, input[type="submit"]:focus {
   color: #c9bca2;
   border: 1px solid #5c7742;
   border-top-color: #4a6036;
@@ -203,40 +198,8 @@ BUTTONS
   background-image: -o-linear-gradient(top, #709251, #648148);
   background-image: linear-gradient(to bottom, #709251, #648148);
 }
-/* line 236, ../scss/_mixins.scss */
-.button:active, .button:visited:active {
-  background-color: #7da25a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#709251), to(#7da25a));
-  background-image: -webkit-linear-gradient(top, #709251, #7da25a);
-  background-image: -moz-linear-gradient(top, #709251, #7da25a);
-  background-image: -o-linear-gradient(top, #709251, #7da25a);
-  background-image: linear-gradient(to bottom, #709251, #7da25a);
-}
-
-/* line 241, ../scss/_mixins.scss */
-.blue-button, .blue-button:visited {
-  border-color: #648148;
-  text-shadow: 0 1px 1px #648148;
-  background-color: #709251;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7da25a), to(#709251));
-  background-image: -webkit-linear-gradient(top, #7da25a, #709251);
-  background-image: -moz-linear-gradient(top, #7da25a, #709251);
-  background-image: -o-linear-gradient(top, #7da25a, #709251);
-  background-image: linear-gradient(to bottom, #7da25a, #709251);
-  box-shadow: inset 0 0 3px #a6c08e;
-}
-/* line 247, ../scss/_mixins.scss */
-.blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
-  border-color: #57713f;
-  background-color: #648148;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#739553), to(#648148));
-  background-image: -webkit-linear-gradient(top, #739553, #648148);
-  background-image: -moz-linear-gradient(top, #739553, #648148);
-  background-image: -o-linear-gradient(top, #739553, #648148);
-  background-image: linear-gradient(to bottom, #739553, #648148);
-}
-/* line 251, ../scss/_mixins.scss */
-.blue-button:active, .blue-button:visited:active {
+/* line 230, ../scss/_mixins.scss */
+.button:active, .button:visited:active, input[type="submit"]:active {
   background-color: #7da25a;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#709251), to(#7da25a));
   background-image: -webkit-linear-gradient(top, #709251, #7da25a);

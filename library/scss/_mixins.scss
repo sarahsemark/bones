@@ -206,24 +206,18 @@ SHADOWS
 BUTTONS
 *********************/
 
-.button, .button:visited {
+.button, .button:visited, input[type="submit"] {
 	font-family: $slab-serif;
-	border: 1px solid darken($link-color, 13%);
-	border-top-color: darken($link-color, 7%);
-	border-left-color: darken($link-color, 7%);
-	padding: 4px 12px;
+	border: 1px solid $beige;
+	padding: 5px 10px;
 	color: $white;
 	display: inline-block;
-	font-size: 11px;
-	font-weight: bold;
 	text-decoration: none;
 	text-shadow: 0 1px rgba(0,0,0, .75);
 	cursor: pointer;
-	margin-bottom: 20px;
+	margin: 10px;
 	line-height: 21px;
-	border-radius: 4px;
-	@include css-gradient($link-color, darken($link-color, 5%));
-
+	@include css-gradient($burgundy, darken($burgundy, 5%));
 
 	&:hover, &:focus {
 		color: $white;
@@ -235,20 +229,5 @@ BUTTONS
 
 	&:active {
 		@include css-gradient(darken($link-color, 5%), $link-color);
-	}
-}
-
-.blue-button, .blue-button:visited {
-	border-color: darken($green, 10%);
-	text-shadow: 0 1px 1px darken($green, 10%);
-	@include css-gradient( $green, darken($green, 5%) );
-	box-shadow: inset 0 0 3px lighten($green, 16%);
-
-	&:hover, &:focus {
-		border-color: darken($green, 15%);
-		@include css-gradient( darken($green, 4%), darken($green, 10%) );
-	}
-	&:active {
-		@include css-gradient( darken($green, 5%), $green );
 	}
 }
