@@ -21,8 +21,6 @@ Template Name: One-page site
 									<div id="<?php echo $slug; ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.5">
 										<div class="inner-content wrap clearfix">
 											<div class="twelvecol first last clearfix entry-content" role="main">
-											
-												<a class="button" data-slide="<?php echo ++$count; ?>" title=""></a>
 												<?php if ($title != "Home"):  echo '<h2>' . $title . '</h2>';  endif; ?>
 												<?php echo $content; ?>
 												
@@ -51,6 +49,7 @@ Template Name: One-page site
 											
 											</div>
 										</div>
+										<a class="down-button" data-slide="<?php echo ++$count; ?>" title=""></a>
 									</div>
 								<?php endforeach; ?>
 							

@@ -67,11 +67,11 @@ jQuery(document).ready(function($) {
     
 	
 	// Fade in homepage elements
-	$('#home, #home blockquote, header').css('opacity', '0');
+	$('#home, header, #home blockquote, #home .down-button').css('opacity', '0');
     $('#home').delay(0).fadeTo(1000, '1', 'linear');	
     $('header').delay(1500).fadeTo(1000, '1', 'linear');
     $('#home blockquote').delay(2500).fadeTo(1000, '1', 'linear');	
-    
+    $('#home .down-button').delay(3000).fadeTo(500, '1', 'linear');	
 	
 	// Parallax effects via the Stellar library
 	
@@ -81,11 +81,11 @@ jQuery(document).ready(function($) {
     //Cache some variables
     var links = $('.navigation').find('li');
     slide = $('.page-panel');
-    button = $('.button');
+    button = $('.down-button');
     mywindow = $(window);
     htmlbody = $('html,body');
     
-    //Set up waypoints plugin
+    // Set up waypoints plugin
     slide.waypoint(function (event, direction) {
         //cache the variable of the data-slide attribute associated with each slide
         dataslide = $(this).attr('data-slide');
