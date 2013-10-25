@@ -292,8 +292,10 @@ html, body {
 .inner-content {
     height: 100%;
     margin: 0 auto;
-    padding-top: 160px;
     position: relative;
+}
+.inner-content .entry-content {
+	padding-top: 160px;
 }
 
 /* individual page panels */
