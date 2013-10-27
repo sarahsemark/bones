@@ -146,11 +146,15 @@ h1 {
 }
 
 h2 {
-	font-size: 1.25em;
+	font-size: 1.1em;
 	font-family: $serif;
-	padding: 10px 0 7px 0;
-	border-top: 1px solid darken($beige, 20%);
-	border-bottom: 2px solid darken($beige, 20%);
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $pink;
+	letter-spacing: 1px;
+	padding: 10px 0 3px 0;
+	border-top: 1px solid darken($pink, 20%);
+	border-bottom: 2px solid darken($pink, 20%);
 	display: inline-block;
 	
 	
