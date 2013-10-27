@@ -116,48 +116,62 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 
-h1, .h1 {
+h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
 	color: $pink;
 	overflow: hidden;
 	text-align: center;
 	font-family: "Confection Caps";
-}
-h1:before,
-h1:after {
-    background-color: $pink;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-}
-h1:before {
-    right: 0.5em;
-    margin-left: -50%;
-}
-h1:after {
-    left: 0.5em;
-    margin-right: -50%;
+	
+	&:before, &:after {
+    	background-color: $pink;
+		content: "";
+		display: inline-block;
+		height: 1px;
+		position: relative;
+		vertical-align: middle;
+		width: 50%;
+	}
+	
+	&:before {
+    	right: 0.5em;
+    	margin-left: -50%;
+	}
+	
+	&:after {
+    	left: 0.5em;
+		margin-right: -50%;
+	}
 }
 
-h3, .h3 {
+h2 {
+	font-size: 1.25em;
+	font-family: $serif;
+	padding: 10px 0 7px 0;
+	border-top: 1px solid darken($beige, 20%);
+	border-bottom: 2px solid darken($beige, 20%);
+	display: inline-block;
+	
+	
+	&:before, &:after {
+		content: "\00b7";
+		display: inline-block;
+		margin: 0 10px;
+	}
+}
+
+
+h3 {
 	font-size: 1.125em;
 }
 
-
-h3, .h3 {
-	font-size: 1.125em;
-}
-
-h4, .h4 {
+h4 {
 	font-size: 1.1em;
 	font-weight: 700;
 }
 
-h5, .h5 {
+h5 {
 	font-size: 0.846em;
 	line-height: 2.09em;
 	text-transform: uppercase;
@@ -318,26 +332,6 @@ html, body {
 .inner-content .entry-content {
 	padding-top: 260px;
 }
-
-/* individual page panels */
-#home {
-	background: url('../images/salon.jpg') no-repeat;
-	background-size: cover;
-	
-	blockquote {
-		text-align: center;
-		margin-top: 20%;
-	}
-}
-#books {
-	background: url("../images/wallpaper.png") no-repeat;
-	background-size: cover;
-}
-#news {
-	background: url("../images/salon2.jpg") no-repeat;
-	background-size: cover;
-} 
-
 .down-button {
     display: block;
     width: 100%;
@@ -351,6 +345,43 @@ html, body {
     cursor: pointer;
 }
 
+
+
+/* individual page panels */
+#home {
+	background: url('../images/salon.jpg') no-repeat;
+	background-size: cover;
+	
+	blockquote {
+		text-align: center;
+		margin-top: 20%;
+	}
+}
+
+
+#books {
+	background: url("../images/wallpaper.png") no-repeat;
+	background-size: cover;
+	
+	#darkwalker {
+		height: 376px;
+		width: 233px;
+		@include box-shadow;
+		float: left;
+		margin: -100px 50px 0 0;
+	    transform: rotate(-2deg) ;
+		-webkit-transform: rotate(-2deg) ;
+		-moz-transform: rotate(-2deg) ;
+		-o-transform: rotate(-2deg) ;
+		-ms-transform: rotate(-2deg) ;
+	}
+}
+
+
+#news {
+	background: url("../images/salon2.jpg") no-repeat;
+	background-size: cover;
+} 
 
 
 
