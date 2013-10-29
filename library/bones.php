@@ -144,6 +144,7 @@ function bones_scripts_and_styles() {
 	wp_register_script( 'stellar', get_stylesheet_directory_uri() . '/library/js/jquery.stellar.min.js', array( 'jquery' ), '', true );
 	wp_register_script( 'waypoints', get_stylesheet_directory_uri() . '/library/js/waypoints.min.js', array( 'jquery' ), '', true );
 	wp_register_script( 'easing', get_stylesheet_directory_uri() . '/library/js/jquery.easing.1.3.js', array( 'jquery' ), '', true );
+	wp_register_script( 'homepage', get_stylesheet_directory_uri() . '/library/js/homepage.js', array( 'jquery' ), '', true );
 	
     // enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
@@ -162,9 +163,13 @@ function bones_scripts_and_styles() {
     wp_enqueue_script( 'stellar' );
     wp_enqueue_script( 'waypoints' );
     wp_enqueue_script( 'easing' );
+    if (is_page_template('page-onepage.php')) {
+    	wp_enqueue_script('homepage');
+    }
 
   }
 }
+
 
 /*********************
 THEME SUPPORT
