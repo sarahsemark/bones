@@ -393,13 +393,19 @@ html, body {
 POSTS & CONTENT STYLES
 *********************/
 
+#main {
+	padding-top: 300px;
+}
+
 .entry-content {
 	
 }
 
 		.hentry {
 
-			header {}
+			header {
+				text-align: center;
+			}
 
 			footer {}
 
