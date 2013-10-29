@@ -25,27 +25,8 @@ Template Name: One-page site
 												<?php echo $content; ?>
 												
 												<?php if ($title == "News"): ?>
-													<?php
-													$args = array( 'posts_per_page' => 3);
-													$posts = get_posts( $args );
-													$news_count = 1;
-													foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-														<?php
-															if ($news_count == 1) {
-																$class = "first";
-															} elseif ($news_count == 3) {
-																$class="last";
-															}
-														?>
-														<div class="fourcol <?php echo $class; ?>clearfix">
-															<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-														</div>
-													<?php 
-														$news_count++;
-														endforeach; 
-														wp_reset_postdata();
-													?>
-											<?php endif; ?>	
+													<?php get_template_part('news'); ?>
+												<?php endif; ?>	
 											
 											</div>
 										</div>
