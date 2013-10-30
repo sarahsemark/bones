@@ -3,10 +3,10 @@ jQuery(document).ready(function($) {
 
 	// Fade in homepage elements
 	$('#home, header, #home blockquote, #home .down-button').css('opacity', '0');
-    $('#home').delay(0).fadeTo(1000, '1', 'linear');	
+    $('#home').delay(0).fadeTo(1000, '1', 'linear');
     $('header').delay(1500).fadeTo(1000, '1', 'linear');
-    $('#home blockquote').delay(2500).fadeTo(1000, '1', 'linear');	
-    $('#home .down-button').delay(3000).fadeTo(500, '1', 'linear');	
+    $('#home blockquote').delay(2500).fadeTo(1000, '1', 'linear');
+    $('#home .down-button').delay(3000).fadeTo(500, '1', 'linear');
 	
 	// Parallax effects via the Stellar library
 	
@@ -15,16 +15,16 @@ jQuery(document).ready(function($) {
     
     //Cache some variables
     var links = $('nav').find('li a');
-    slide = $('.page-panel');
-    button = $('.down-button');
-    mywindow = $(window);
-    htmlbody = $('html,body');
+    var slide = $('.page-panel');
+    var button = $('.down-button');
+    var mywindow = $(window);
+    var htmlbody = $('html,body');
     
     // Set up waypoints plugin
     // This should only be active if we're actually on that main page! Also, direction appears not to work, so I've overwritten it. Needs cleaning up. 
     slide.waypoint(function (event, direction) {
         //cache the variable of the data-slide attribute associated with each slide
-        dataslide = $(this).attr('data-slide');
+        var dataslide = $(this).attr('data-slide');
         //If the user scrolls up change the navigation link that has the same data-slide attribute as the slide to active and
         //remove the active class from the previous navigation link
         if (direction === 'down') {
@@ -33,14 +33,14 @@ jQuery(document).ready(function($) {
         // if the user scrolls down change the navigation link that has the same data-slide attribute as the slide to active and
         //remove the active class from the next navigation link
         else {
-        	$('nav li a[data-slide="' + dataslide + '"]').parent().addClass('active').siblings().removeClass('active');
+            $('nav li a[data-slide="' + dataslide + '"]').parent().addClass('active').siblings().removeClass('active');
         }
     });
     
     // waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
     // from navigation link slide 2 and adds it to navigation link slide 1.
     mywindow.scroll(function () {
-        if (mywindow.scrollTop() == 0) {
+        if (mywindow.scrollTop() === 0) {
           $('nav li a[data-slide="1"]').parent().addClass('active');
           $('nav li a[data-slide="2"]').parent().removeClass('active');
         }
