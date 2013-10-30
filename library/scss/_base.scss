@@ -1034,27 +1034,22 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-}
-
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
-
-		ul {
-
-			li {}
-
+	background: url('../images/nav-ribbon.png') repeat-x 0px center;
+	background-size: 30px 57px;
+	margin: 40px 0 20px;
+	padding: 10px;
+	text-align: center;
+	font-size: .8em;
+	color: darken($pink, 30%);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	
+	a {
+		color: darken($pink, 30%);
+		text-decoration: none;
+		
+		&:hover {
+			color: $burgundy;
 		}
-
-	} /* end .footer-links */
-
-
-	.copyright {}
-
+	}
+}
