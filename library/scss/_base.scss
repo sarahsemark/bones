@@ -375,7 +375,7 @@ html, body {
 
 
 #books {
-	background: url("../images/wallpaper.png") no-repeat;
+	background: url('../images/wallpaper.png') no-repeat;
 	background-size: cover;
 	
 	#darkwalker {
@@ -390,6 +390,11 @@ html, body {
 		-o-transform: rotate(-2deg) ;
 		-ms-transform: rotate(-2deg) ;
 	}
+}
+
+#about-the-author {
+	background: url('../images/wood.png') repeat;
+	background-size: 512px 512px;
 }
 
 
