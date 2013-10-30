@@ -40,6 +40,6 @@ Template Name: One-page site
 									
 								<?php endforeach; ?>
 							
-							<img id="absinthe" src="<?php echo get_template_directory_uri(); ?>/library/images/smoke.png" alt="smoke" width="547" height="820" data-stellar-ratio="2.5"/>
+							<img id="absinthe" src="<?php echo get_template_directory_uri(); ?>/library/images/smoke.png" alt="smoke" width="547" height="820" data-stellar-ratio="3.5"/>
 
 <?php get_footer(); ?>
