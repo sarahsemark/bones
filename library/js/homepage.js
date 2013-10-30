@@ -2,18 +2,6 @@
 jQuery(document).ready(function($) {
 
 
-    // Let's see if we're at the top of the page, shall we?
-    $('#home').waypoint(function() {
-		// If we are, fade in homepage elements
-		$('#home, header, #home blockquote, #home .down-button').css('opacity', '0');
-		$('#home').delay(0).fadeTo(1000, '1', 'linear');
-		$('header').delay(1500).fadeTo(1000, '1', 'linear');
-		$('#home blockquote').delay(2500).fadeTo(1000, '1', 'linear');
-		$('#home .down-button').delay(3000).fadeTo(500, '1', 'linear');
-	});
-	
-	// Parallax effects via the Stellar library
-	
     // initialise Stellar.js
     $(window).stellar();
     
@@ -23,6 +11,31 @@ jQuery(document).ready(function($) {
     var button = $('.down-button');
     var mywindow = $(window);
     var htmlbody = $('html,body');
+
+    // Let's see if we're at the top of the page, shall we?
+    $('#home').waypoint(function() {
+		// If we are, move header down
+		$('header').css({'top': '100px'});
+		// Fade in homepage elements
+		$('#home, header, #home blockquote, #home .down-button').css('opacity', '0');
+		$('#home').delay(0).fadeTo(1000, '1', 'linear');
+		$('header').delay(1500).fadeTo(1000, '1', 'linear');
+		$('#home blockquote').delay(2500).fadeTo(1000, '1', 'linear');
+		$('#home .down-button').delay(3000).fadeTo(500, '1', 'linear');
+	});
+	
+	if (mywindow.scrollTop() === 100) {
+		$('header').css({'top': '100px'});
+		alert("Hi, we're 100px down!");
+	};
+	
+	$('#books').waypoint(function() {
+		// If we are, move header down
+		$('header').css({'top': '0px'});
+	});
+	
+	
+
     
     // Set up waypoints plugin
     // Direction appears not to work, so I've overwritten it. Needs cleaning up. 
