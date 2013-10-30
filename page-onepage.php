@@ -32,11 +32,19 @@ Template Name: One-page site
 										</div>
 										
 										<?php if ($slug == "home"): ?>
+											<div id="paper-edge-top"></div>
+										<?php endif; ?>
 										
+										<?php if ($slug == "books"): ?>
+											<div id="paper-edge-bottom"></div>
 										<?php endif; ?>
 										
 										<a class="down-button" data-slide="<?php echo ++$count; ?>" title=""></a>
 									</div>
+									
+								<?php if ($slug == "home"): ?>
+											<div id="paper-edge-middle">Want some in-the-middle text?</div>
+										<?php endif; ?>
 									
 								<?php endforeach; ?>
 							

@@ -390,6 +390,24 @@ html, body, #container {
 	}
 }
 
+#paper-edge-top, #paper-edge-bottom {
+	position: absolute;
+	bottom: 0px;
+	height: 25px;
+	width: 100%;
+	background: url('../images/paper-edge.png') no-repeat 0 0;
+}
+#paper-edge-bottom {
+	top: 0px;
+	background-position: 0 bottom;
+}
+#paper-edge-middle {
+	background: url('../images/paper-edge.png') no-repeat 0 -25px;
+	height: 350px;
+	width: 100%;
+	border: purple;
+}
+
 
 #books {
 	background: url('../images/wallpaper.png') repeat;
