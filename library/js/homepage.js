@@ -1,19 +1,23 @@
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
-	// Fade in homepage elements
-	$('#home, header, #home blockquote, #home .down-button').css('opacity', '0');
-    $('#home').delay(0).fadeTo(1000, '1', 'linear');
-    $('header').delay(1500).fadeTo(1000, '1', 'linear');
-    $('#home blockquote').delay(2500).fadeTo(1000, '1', 'linear');
-    $('#home .down-button').delay(3000).fadeTo(500, '1', 'linear');
+
+    // Let's see if we're at the top of the page, shall we?
+    $('#home').waypoint(function() {
+		// If we are, fade in homepage elements
+		$('#home, header, #home blockquote, #home .down-button').css('opacity', '0');
+		$('#home').delay(0).fadeTo(1000, '1', 'linear');
+		$('header').delay(1500).fadeTo(1000, '1', 'linear');
+		$('#home blockquote').delay(2500).fadeTo(1000, '1', 'linear');
+		$('#home .down-button').delay(3000).fadeTo(500, '1', 'linear');
+	});
 	
 	// Parallax effects via the Stellar library
 	
-    //initialise Stellar.js
+    // initialise Stellar.js
     $(window).stellar();
     
-    //Cache some variables
+    // Cache some variables
     var links = $('nav').find('li a');
     var slide = $('.page-panel');
     var button = $('.down-button');
@@ -21,7 +25,7 @@ jQuery(document).ready(function($) {
     var htmlbody = $('html,body');
     
     // Set up waypoints plugin
-    // This should only be active if we're actually on that main page! Also, direction appears not to work, so I've overwritten it. Needs cleaning up. 
+    // Direction appears not to work, so I've overwritten it. Needs cleaning up. 
     slide.waypoint(function (event, direction) {
         //cache the variable of the data-slide attribute associated with each slide
         var dataslide = $(this).attr('data-slide');
