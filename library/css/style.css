@@ -1144,7 +1144,7 @@ html, body, #container {
 
 /* line 392, ../scss/_base.scss */
 #books {
-  background: url("../images/wallpaper.png") no-repeat;
+  background: url("../images/wallpaper.png") repeat;
   background-size: cover;
 }
 /* line 396, ../scss/_base.scss */
