@@ -21,6 +21,8 @@ body {
 	line-height: 1.5;
 	color: $white;
 	background-color: $black;
+	background: url('../images/wallpaper.png') fixed repeat;
+	background-size: cover;
 }
 
 /********************
@@ -391,7 +393,6 @@ html, body, #container {
 
 #books {
 	background: url('../images/wallpaper.png') repeat;
-	background-size: cover;
 	
 	#darkwalker {
 		height: 376px;
