@@ -320,6 +320,7 @@ html, body {
 	height: 100%;
 }
 
+/* main panels */
 .page-panel {
     background-attachment: fixed;
     width:100%;
@@ -336,6 +337,16 @@ html, body {
 .inner-content .entry-content {
 	padding-top: 260px;
 }
+
+/* between panels */
+
+#absinthe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* down buttons */
 .down-button {
     display: block;
     width: 100%;

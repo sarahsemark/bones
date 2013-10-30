@@ -30,9 +30,16 @@ Template Name: One-page site
 											
 											</div>
 										</div>
+										
+										<?php if ($title == "Home"): ?>
+										
+										<?php endif; ?>
+										
 										<a class="down-button" data-slide="<?php echo ++$count; ?>" title=""></a>
 									</div>
+									
 								<?php endforeach; ?>
 							
+							<img id="absinthe" src="<?php echo get_template_directory_uri(); ?>/library/images/smoke.png" alt="smoke" width="547" height="820" data-stellar-ratio="2.5"/>
 
 <?php get_footer(); ?>
