@@ -187,7 +187,7 @@ HEADER STYLES
 *********************/
 
 .header {
-	background: url('../images/nav-ribbon.png') repeat-x 0px 110px;
+	background: url('../images/nav-ribbon.png') repeat-x 0px 38px;
 	background-size: 30px 57px;
 	width: 100%;
 	position: fixed;
@@ -196,12 +196,12 @@ HEADER STYLES
 }
 
 	#logo {
-		width: 396px;
-		height: 263px;
+		width: 300px;
+		height: 199px;
 		padding: 30px 20px;
 		font: 0/0 a;
 		overflow: hidden;
-		margin: 10px auto;
+		margin: -30px auto 0;
 		background: url('../images/logo.png');
 		background-size: cover;
 	}
@@ -219,7 +219,7 @@ and more scalable.
 */
 
 .nav {
-	margin-top: -167px;
+	margin-top: -126px;
 	font-size: .9em;
 
 	li {
@@ -323,8 +323,8 @@ html, body {
 /* main panels */
 .page-panel {
     background-attachment: fixed;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     min-height: 800px;
     position: relative;
     background: transparent;
