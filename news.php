@@ -13,7 +13,6 @@ foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 		}
 	?>
 	<div class="fourcol <?php echo $class; ?> clearfix">
-		<img src="<?php echo get_template_directory_uri(); ?>/library/images/painting1.png" alt="painting1" />
 		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		<?php the_excerpt(); ?>
 	</div>
