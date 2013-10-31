@@ -11,9 +11,25 @@ jQuery(document).ready(function($) {
     var button = $('.down-button');
     var mywindow = $(window);
     var htmlbody = $('html,body');
+
+    var ranHomeAnimation = false;
     
+    if (window.localStorage && window.localStorage.ranHomeAnimation === 'true') {
+	    ranHomeAnimation = true;
+
+		// TODO: REMOVE ME ONCE IN PRODUCTION.
+	    window.localStorage.FORCE_ANIMATION = 'true';
+	    if (window.localStorage.FORCE_ANIMATION === 'true') {
+		    ranHomeAnimation = false;
+	    }
+    }
+
     // Let's see if we're at the top of the page, shall we?
     $('#home').waypoint(function() {
+    	if (ranHomeAnimation) {
+	    	return;
+    	}
+
 		// If we are, move header down
 		$('#header').removeClass('scrolled');
 		// Fade in homepage elements
@@ -23,6 +39,8 @@ jQuery(document).ready(function($) {
 		$('#header').delay(2500).fadeTo(1000, '1', 'linear');
 		$('#home blockquote').delay(3500).fadeTo(1000, '1', 'linear');
 		$('#home .down-button').delay(4500).fadeTo(500, '1', 'linear');
+		ranHomeAnimation = true;
+		window.localStorage.ranHomeAnimation = 'true';
 	});
 
 	var scrollCheck = false;
