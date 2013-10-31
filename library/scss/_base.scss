@@ -266,6 +266,7 @@ and more scalable.
 #social {
 	margin-top: -83px;
 	float: right;
+	z-index: 400;
 	
 	li {
 		float: left;
@@ -331,7 +332,10 @@ html, body, #container {
 #absinthe {
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 25%;
+    opacity: 0;
+    z-index: 200;
+    pointer-events: none;
 }
 
 /* down buttons */

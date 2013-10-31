@@ -11,6 +11,8 @@ jQuery(document).ready(function($) {
     var button = $('.down-button');
     var mywindow = $(window);
     var htmlbody = $('html,body');
+    
+    
 
     // Let's see if we're at the top of the page, shall we?
     $('#home').waypoint(function() {
@@ -19,9 +21,10 @@ jQuery(document).ready(function($) {
 		// Fade in homepage elements
 		$('#home, header, #home blockquote, #home .down-button').css('opacity', '0');
 		$('#home').delay(0).fadeTo(1000, '1', 'linear');
-		$('header').delay(1500).fadeTo(1000, '1', 'linear');
-		$('#home blockquote').delay(2500).fadeTo(1000, '1', 'linear');
-		$('#home .down-button').delay(3000).fadeTo(500, '1', 'linear');
+		$('#absinthe').delay(1500).fadeTo(5000, '.5', 'linear');
+		$('header').delay(2500).fadeTo(1000, '1', 'linear');
+		$('#home blockquote').delay(3500).fadeTo(1000, '1', 'linear');
+		$('#home .down-button').delay(4500).fadeTo(500, '1', 'linear');
 	});
 	
 	if (mywindow.scrollTop() === 100) {
