@@ -43,7 +43,7 @@
 
 		<div id="container">
 
-			<header class="header" role="banner">
+			<header class="header" role="banner" id="header">
 
 				<div id="inner-header" class="wrap clearfix">
 

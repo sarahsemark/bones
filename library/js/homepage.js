@@ -12,33 +12,40 @@ jQuery(document).ready(function($) {
     var mywindow = $(window);
     var htmlbody = $('html,body');
     
-    
-
     // Let's see if we're at the top of the page, shall we?
     $('#home').waypoint(function() {
 		// If we are, move header down
-		$('header').css({'top': '100px'});
+		$('#header').removeClass('scrolled');
 		// Fade in homepage elements
 		$('#home, header, #home blockquote, #home .down-button').css('opacity', '0');
 		$('#home').delay(0).fadeTo(1000, '1', 'linear');
 		$('#absinthe').delay(1500).fadeTo(5000, '.5', 'linear');
-		$('header').delay(2500).fadeTo(1000, '1', 'linear');
+		$('#header').delay(2500).fadeTo(1000, '1', 'linear');
 		$('#home blockquote').delay(3500).fadeTo(1000, '1', 'linear');
 		$('#home .down-button').delay(4500).fadeTo(500, '1', 'linear');
 	});
-	
-	if (mywindow.scrollTop() === 100) {
-		$('header').css({'top': '100px'});
-		alert("Hi, we're 100px down!");
-	};
-	
-	$('#books').waypoint(function() {
-		// If we are, move header down
-		$('header').css({'top': '0px'});
-	});
-	
-	
 
+	var scrollCheck = false;
+	function checkScrollPosition() {
+		if (scrollCheck) {
+			return;
+		}
+		
+		scrollCheck = true;
+
+		if (mywindow.scrollTop() >= 100) {
+			$('#header').addClass('scrolled');
+		} else {
+			$('#header').removeClass('scrolled');
+		}
+		
+		setTimeout(function() {
+			scrollCheck = false;
+		}, 200);
+	}
+
+	mywindow.on('scroll', checkScrollPosition);
+	checkScrollPosition();
     
     // Set up waypoints plugin
     // Direction appears not to work, so I've overwritten it. Needs cleaning up. 

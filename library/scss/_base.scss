@@ -190,13 +190,18 @@ h5 {
 HEADER STYLES
 *********************/
 
-.header {
+#header {
 	background: url('../images/nav-ribbon.png') repeat-x 0px 38px;
 	background-size: 30px 57px;
 	width: 100%;
 	position: fixed;
 	z-index: 10;
-	top: 0;
+	top: 100px;
+	transition: all 200ms linear;
+	
+	&.scrolled {
+		top: -20px;
+	}
 }
 
 	#logo {
@@ -431,166 +436,164 @@ POSTS & CONTENT STYLES
 	padding-top: 300px;
 }
 
-.entry-content {
-	
+
+.hentry {
+
+	header {
+		text-align: center;
+	}
+
+	footer {}
+
+} /* end .hentry */
+
+.single-title,
+.page-title {}
+
+.single-title {}
+
+.page-title {}
+
+.archive-title { }
+
+/* want to style individual post classes? Booya! */
+.post-id {}         /* post by id (i.e. post-3) */
+.post {}            /* general post style */
+.page {}            /* general article on a page style */
+.attachment {}      /* general style on an attatchment */
+.sticky {}          /* sticky post style */
+.hentry {}          /* hentry class */
+.category-slug {}   /* style by category (i.e. category-videos) */
+.tag-slug {}        /* style by tag (i.e. tag-news) */
+
+/* post meta */
+.byline {
+	color: #999;
+
+	time {}
 }
 
-		.hentry {
+/* entry content */
+.entry-content {
+	text-align: justify;
 
-			header {
-				text-align: center;
-			}
-
-			footer {}
-
-		} /* end .hentry */
-
-		.single-title,
-		.page-title {}
-
-		.single-title {}
-
-		.page-title {}
-
-		.archive-title { }
-
-		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
-
-		/* post meta */
-		.byline {
-			color: #999;
-
-			time {}
-		}
-
-		/* entry content */
-		.entry-content {
-		
-			p {}
+	p {}
 
 
-			ul, ol, table, dl {}
+	ul, ol, table, dl {}
 
-			ul, ol {
+	ul, ol {
 
-				li {}
+		li {}
 
-			}
+	}
 
-			ul {
+	ul {
 
-				li {}
+		li {}
 
-			}
+	}
 
-			ol {
+	ol {
 
-				li {}
+		li {}
 
-			}
+	}
 
-			blockquote {
-				font-family: $serif;
-				font-style: italic;
-				font-size: 2em; 
-				color: $beige;
+	blockquote {
+		font-family: $serif;
+		font-style: italic;
+		font-size: 2em; 
+		color: $beige;
 
-				&:before {}
+		&:before {}
 
-			}
+	}
 
-			dl {}
+	dl {}
 
-			dt {}
+	dt {}
 
-			dd {
-				margin-left: 0;
-				font-size: 0.9em;
-				color: #787878;
-				margin-bottom: 1.5em;
-			}
+	dd {
+		margin-left: 0;
+		font-size: 0.9em;
+		color: #787878;
+		margin-bottom: 1.5em;
+	}
 
-			img {
-				margin: 0 0 1.5em 0;
-				max-width: 100%;
-				height: auto;
-			}
+	img {
+		margin: 0 0 1.5em 0;
+		max-width: 100%;
+		height: auto;
+	}
 
-			/*
-			image alignment on a screen this size may be
-			a bit difficult. It's set to start aligning
-			and floating images at the next breakpoint,
-			but it's up to you. Feel free to change it up.
-			*/
-			.alignleft, img.alignleft {}
-			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
+	/*
+	image alignment on a screen this size may be
+	a bit difficult. It's set to start aligning
+	and floating images at the next breakpoint,
+	but it's up to you. Feel free to change it up.
+	*/
+	.alignleft, img.alignleft {}
+	.alignright, img.alignright {}
+	.aligncenter, img.aligncenter {}
 
-			video, object {
-				max-width: 100%;
-				height: auto;
-			}
+	video, object {
+		max-width: 100%;
+		height: auto;
+	}
 
-			pre {
-				background: #eee;
-				border: 1px solid #cecece;
-				padding: 10px;
-			}
+	pre {
+		background: #eee;
+		border: 1px solid #cecece;
+		padding: 10px;
+	}
 
-		} /* end .entry-content */
+} /* end .entry-content */
 
-		.wp-caption {
-			max-width: 100%;
-			background: #eee;
-			padding: 5px;
+.wp-caption {
+	max-width: 100%;
+	background: #eee;
+	padding: 5px;
 
-			/* images inside wp-caption */
-			img {
-				max-width: 100%;
-				margin-bottom: 0;
-				width: 100%;
-			}
+	/* images inside wp-caption */
+	img {
+		max-width: 100%;
+		margin-bottom: 0;
+		width: 100%;
+	}
 
-			p.wp-caption-text {
-				font-size: 0.85em;
-				margin: 4px 0 7px;
-				text-align: center;
-			}
+	p.wp-caption-text {
+		font-size: 0.85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
 
-		} /* end .wp-caption */
+} /* end .wp-caption */
 
-		/* image gallery styles */
-		.gallery {
+/* image gallery styles */
+.gallery {
 
-			dl {
+	dl {
 
-				a {}
+		a {}
 
-				img {}
+		img {}
 
-			}
+	}
 
-			dt {}
+	dt {}
 
-			dd {}
+	dd {}
 
-		} /* end .gallery */
+} /* end .gallery */
 
-		/* gallery caption styles */
-		.gallery-caption {}
+/* gallery caption styles */
+.gallery-caption {}
 
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
 
 /******************************************************************
 PAGE NAVI STYLES
