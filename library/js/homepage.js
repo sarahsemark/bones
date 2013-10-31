@@ -1,7 +1,5 @@
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
-
-
     // initialise Stellar.js
     $(window).stellar();
     
@@ -13,15 +11,18 @@ jQuery(document).ready(function($) {
     var htmlbody = $('html,body');
 
     var ranHomeAnimation = false;
-    
+
     if (window.localStorage && window.localStorage.ranHomeAnimation === 'true') {
 	    ranHomeAnimation = true;
+	    
+	    // TODO: Remove me for production!
+	    ranHomeAnimation = false;
 
-		// TODO: REMOVE ME ONCE IN PRODUCTION.
-	    window.localStorage.FORCE_ANIMATION = 'true';
-	    if (window.localStorage.FORCE_ANIMATION === 'true') {
-		    ranHomeAnimation = false;
-	    }
+		if (ranHomeAnimation) {
+			$('body').addClass('ran-animation').removeClass('loading');	
+		}
+    } else if (!window.localStorage) {
+	    $('body').addClass('ran-animation').removeClass('loading');
     }
 
     // Let's see if we're at the top of the page, shall we?
@@ -30,15 +31,37 @@ jQuery(document).ready(function($) {
 	    	return;
     	}
 
-		// If we are, move header down
+    	// Fade out current elements
+    	$('#home, header, #home blockquote, #home .down-buttonm, #smoke').addClass('fade-out');
+
+    	// If we are, move header down
 		$('#header').removeClass('scrolled');
-		// Fade in homepage elements
-		$('#home, header, #home blockquote, #home .down-button').css('opacity', '0');
-		$('#home').delay(0).fadeTo(1000, '1', 'linear');
-		$('#absinthe').delay(1500).fadeTo(5000, '.5', 'linear');
-		$('#header').delay(2500).fadeTo(1000, '1', 'linear');
-		$('#home blockquote').delay(3500).fadeTo(1000, '1', 'linear');
-		$('#home .down-button').delay(4500).fadeTo(500, '1', 'linear');
+
+		$(window).on('load', function() {
+			setTimeout(function() {
+				$('body').removeClass('loading');
+	
+				// Fade in homepage elements
+		    	$('#home').removeClass('fade-out');
+		    	
+		    	setTimeout(function() {
+					$('#smoke').removeClass('fade-out');
+				}, 1500);
+				
+				setTimeout(function() {
+					$('#header').removeClass('fade-out');
+				}, 2500);
+		
+				setTimeout(function() {
+					$('#home blockquote').removeClass('fade-out');
+				}, 3500);
+		
+				setTimeout(function() {
+					$('#home .down-button').removeClass('fade-out');
+				}, 4500);
+			}, 1000);
+		});
+
 		ranHomeAnimation = true;
 		window.localStorage.ranHomeAnimation = 'true';
 	});

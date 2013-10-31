@@ -308,6 +308,37 @@ and more scalable.
 
 
 
+/*************************************
+FADE OUT AND FADE IN ON FIRST REQUEST
+*************************************/
+.loading {
+	#home, #header, #home blockquote, #home .down-button, #smoke {
+		opacity: 0;
+	}
+}
+
+.ran-animation-once {
+	#home .down-button, #smoke {
+		transition: opacity 100ms linear;
+	}
+}
+
+#home, #header, #home blockquote, #home .down-button, #smoke {
+	transition: opacity 1000ms linear;
+
+	&.fade-out {
+		opacity: 0;
+		transition: opacity 100ms linear;
+	}
+}
+
+#home .down-button {
+	transition-delay: 500ms;
+}
+
+#smoke {
+	transition-delay: 5000ms;
+}
 
 /*********************
 PARALLAX PANEL STYLES
@@ -335,11 +366,11 @@ html, body, #container {
 }
 
 
-#absinthe {
+#smoke {
     position: absolute;
     top: 0px;
     right: calc(50% - 500px);
-    opacity: 0;
+    opacity: 0.5;
     z-index: 200;
     pointer-events: none;
 }

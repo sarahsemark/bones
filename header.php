@@ -39,7 +39,7 @@
 
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class('loading'); ?>>
 
 		<div id="container">
 
