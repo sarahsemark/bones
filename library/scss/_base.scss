@@ -332,7 +332,7 @@ html, body, #container {
 #absinthe {
     position: absolute;
     top: 0px;
-    right: 25%;
+    right: calc(50% - 500px);
     opacity: 0;
     z-index: 200;
     pointer-events: none;
