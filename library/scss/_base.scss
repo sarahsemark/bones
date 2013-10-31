@@ -329,7 +329,6 @@ html, body, #container {
 	padding-top: 160px;
 }
 
-/* between panels */
 
 #absinthe {
     position: absolute;
@@ -339,6 +338,23 @@ html, body, #container {
     z-index: 200;
     pointer-events: none;
 }
+
+
+/* between panels */
+.middle-slide {
+	height: 250px;
+	width: 100%;
+	border-top: 1px solid darken($pink, 30%);
+	border-bottom: 1px solid darken($pink, 30%);
+	text-align: center;
+	background: url('../images/in-between.png') 0 0 repeat;
+	background-size: auto;
+	
+	div {
+		padding: 100px;
+	}
+}
+
 
 /* down buttons */
 .down-button {
@@ -366,25 +382,6 @@ html, body, #container {
 		margin-top: 20%;
 	}
 }
-
-#paper-edge-top, #paper-edge-bottom {
-	position: absolute;
-	bottom: 0px;
-	height: 25px;
-	width: 100%;
-	background: url('../images/paper-edge.png') no-repeat 0 0;
-}
-#paper-edge-bottom {
-	top: 0px;
-	background-position: 0 bottom;
-}
-#paper-edge-middle {
-	background: url('../images/paper-edge.png') no-repeat 0 -25px;
-	height: 350px;
-	width: 100%;
-	border: purple;
-}
-
 
 #books {
 	background: url('../images/wallpaper.png') repeat;
