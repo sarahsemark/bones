@@ -332,12 +332,16 @@ FADE OUT AND FADE IN ON FIRST REQUEST
 	}
 }
 
+#home blockquote {
+	transition-delay: 1000ms;
+}
+
 #home .down-button {
-	transition-delay: 500ms;
+	transition-delay: 5000ms;
 }
 
 #smoke {
-	transition-delay: 5000ms;
+	transition: opacity 5000ms linear;
 }
 
 /*********************
