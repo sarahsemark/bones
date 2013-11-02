@@ -39,8 +39,11 @@ jQuery(document).ready(function($) {
 
 		$(window).on('load', function() {
 			setTimeout(function() {
-				$('body').removeClass('loading');
-	
+			
+				setTimeout(function() {
+					$('body').removeClass('loading');
+				}, 1500);
+				
 				// Fade in homepage elements
 		    	$('#home').removeClass('fade-out');
 		    	
@@ -59,7 +62,7 @@ jQuery(document).ready(function($) {
 				setTimeout(function() {
 					$('#home .down-button').removeClass('fade-out');
 				}, 4500);
-			}, 1000);
+			}, 0);
 		});
 
 		ranHomeAnimation = true;
