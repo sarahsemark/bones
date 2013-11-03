@@ -213,6 +213,13 @@ HEADER STYLES
 	}
 }
 
+/* move banner up on static pages */
+.blog #header, .single #header {
+	top: -20px;
+	position: static;
+}
+
+
 	#logo {
 		width: 300px;
 		height: 199px;
@@ -511,7 +518,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #main {
-	padding-top: 300px;
+	padding-top: 100px;
 }
 
 
