@@ -552,10 +552,9 @@ POSTS & CONTENT STYLES
 .tag-slug {}        /* style by tag (i.e. tag-news) */
 
 /* post meta */
-.byline {
-	color: #999;
-
-	time {}
+.date {
+	width: 40%;
+	margin: 0 auto;
 }
 
 /* entry content */
