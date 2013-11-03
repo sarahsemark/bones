@@ -61,6 +61,7 @@ jQuery(document).ready(function($) {
 		
 				setTimeout(function() {
 					$('#home .down-button').removeClass('fade-out');
+					$('body').addClass('show-background');
 				}, 4500);
 			}, 0);
 		});

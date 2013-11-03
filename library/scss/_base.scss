@@ -15,7 +15,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 
-body {
+body, body.home.show-background {
 	font-family: $slab-serif;
 	font-size: 100%;
 	line-height: 1.5;
@@ -317,9 +317,12 @@ and more scalable.
 /*************************************
 FADE OUT AND FADE IN ON FIRST REQUEST
 *************************************/
-.loading {
+.home {
 	background: url('../images/salon-bw.jpg');
 	background-size: cover;
+}
+
+.home.loading {
 	transition: opacity 1000ms linear;
 	
 	#home, #header, #home blockquote, #home .down-button, #smoke {

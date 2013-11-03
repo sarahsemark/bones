@@ -29,6 +29,9 @@ if (!window.getComputedStyle) {
 
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
+	$(window).on('load', function() {
+		$('body').removeClass('loading');
+	});
 
     /*
     Responsive jQuery is a tricky thing.
