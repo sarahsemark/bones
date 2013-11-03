@@ -154,14 +154,17 @@ h2 {
 	font-family: $serif;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: $pink;
+	color: darken($beige, 20%);
 	letter-spacing: 1px;
 	padding: 10px 0 3px 0;
-	border-top: 1px solid darken($pink, 20%);
-	border-bottom: 2px solid darken($pink, 20%);
+	border-top: 1px solid darken($beige, 40%);
+	border-bottom: 2px solid darken($beige, 40%);
 	display: block;
 	text-align: center;
 	
+	a:link, a:visited {
+		color: darken($beige, 20%);
+	}
 	
 	&:before, &:after {
 		content: "\00b7";
