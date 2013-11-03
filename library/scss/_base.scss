@@ -268,17 +268,19 @@ and more scalable.
 
 	} /* end .menu li */
 
-	/* highlight current page */
-	li.active {
-		background: url('../images/active-link.png') center center no-repeat;
-		 a {
-			 color: darken($green, 20%);
-		 }
-	}
-  /* end current highlighters */
-
 } /* end .nav */
 
+
+/* highlight current page */
+.nav li.active, .blog .nav #menu-item-246, .single .nav #menu-item-246 {
+	background: url('../images/active-link.png') center center no-repeat;
+	
+	a {
+		color: darken($green, 20%);
+	}
+}
+
+/* social media links */
 #social {
 	margin-top: -83px;
 	float: right;
