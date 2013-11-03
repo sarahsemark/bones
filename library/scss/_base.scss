@@ -403,15 +403,19 @@ html, body, #container {
 /* down buttons */
 .down-button {
     display: block;
-    width: 100%;
-    height: 101px;
+    width: 62px;
+    height: 62px;
     position: absolute;
-    bottom: 10px;
-    background: url('../images/down-button.png') center 10px no-repeat; 
-    background-size: 81px 81px;
-}
-.down-button:hover { 
-    cursor: pointer;
+    left: 50%;
+    margin-left: -31px;
+    bottom: 20px;
+    background: url('../images/button-down.png') 0px 0px no-repeat; 
+    background-size: cover;
+    
+    &:hover {
+		background-position: 0 -62px;
+		cursor: pointer;
+	}
 }
 
 
