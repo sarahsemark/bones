@@ -150,7 +150,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.1em;
+	font-size: 1.05em;
 	font-family: $serif;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -159,13 +159,19 @@ h2 {
 	padding: 10px 0 3px 0;
 	border-top: 1px solid darken($pink, 20%);
 	border-bottom: 2px solid darken($pink, 20%);
-	display: inline-block;
+	display: block;
+	text-align: center;
 	
 	
 	&:before, &:after {
 		content: "\00b7";
 		display: inline-block;
-		margin: 0 10px;
+	}
+	&:before {
+		margin-right: 5px;
+	} 
+	&:after {
+		margin-left: 5px;
 	}
 }
 
@@ -439,16 +445,33 @@ html, body, #container {
 	background: url('../images/wallpaper.png') repeat;
 	
 	#darkwalker {
-		height: 376px;
-		width: 233px;
+		width: 40%;
 		@include box-shadow;
 		float: left;
-		margin: -100px 50px 0 0;
-	    transform: rotate(-2deg) ;
-		-webkit-transform: rotate(-2deg) ;
-		-moz-transform: rotate(-2deg) ;
-		-o-transform: rotate(-2deg) ;
-		-ms-transform: rotate(-2deg) ;
+		margin: -20px -4% 0 0;
+	    transform: rotate(-2deg);
+		-webkit-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+	}
+	
+	.pre-order {
+		width: 64%;
+		margin: 50px 0 0 0;
+		font-size: .95em;
+		padding: 10px;
+		float: left;
+		background: url('../images/leather.png');
+		background-size: 398px 484px;
+		text-align: center;
+		border: 1px solid darken($beige, 50%);
+		@include box-shadow;
+		
+		div {
+			border: 1px solid darken($beige, 45%);
+			padding: 10px 20px;
+		}
 	}
 }
 
