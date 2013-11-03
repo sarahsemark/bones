@@ -558,6 +558,19 @@ POSTS & CONTENT STYLES
 }
 
 /* nav buttons */
+.article-header {
+	span {
+		display: inline-block;
+		width: 62px;
+		height: 62px;
+		vertical-align: middle;
+		overflow: hidden;
+		margin: 0 25px;
+	}
+	a + span {
+		display: none;
+	}
+}
 a[rel="prev"], a[rel="next"] {
     display: inline-block;
     vertical-align: middle;
