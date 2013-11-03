@@ -219,7 +219,6 @@ HEADER STYLES
 	position: static;
 }
 
-
 	#logo {
 		width: 300px;
 		height: 199px;
@@ -554,7 +553,30 @@ POSTS & CONTENT STYLES
 /* post meta */
 .date {
 	width: 40%;
-	margin: 0 auto;
+	margin: 10px auto 0px;
+	display: inline-block;
+}
+
+/* nav buttons */
+a[rel="prev"], a[rel="next"] {
+    display: inline-block;
+    vertical-align: middle;
+    width: 62px;
+    height: 62px;
+    background: url('../images/button-left.png') 0px 0px no-repeat; 
+    background-size: cover;
+    font: 0/0 a;
+	overflow: hidden;
+	margin: 0 25px;
+    
+    &:hover {
+		background-position: 0 -62px;
+		cursor: pointer;
+	}
+}
+a[rel="next"] {
+	background: url('../images/button-right.png') 0px 0px no-repeat; 
+	background-size: cover;
 }
 
 /* entry content */
