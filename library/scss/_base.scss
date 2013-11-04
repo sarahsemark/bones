@@ -199,6 +199,20 @@ h5 {
 	letter-spacing: 2px;
 }
 
+.entry-content > p:first-child:first-letter, .drop:first-letter {
+	font-family: "Confection Caps2";
+	font-size: 6em;
+    float: left;  
+    margin-right: 5px;  
+    color: $red;  
+    line-height: 1em;  
+}
+.alt:first-letter {
+	font-family: "Confection Caps";
+}
+
+
+
 /*********************
 HEADER STYLES
 *********************/
