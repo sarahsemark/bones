@@ -12,14 +12,14 @@
 
 								<header class="article-header">
 
-									<?php previous_post_link('%link', '&laquo;', TRUE); ?> 
+									<?php previous_post_link('%link', '&laquo;', FALSE); ?> 
 									<span></span>
 									
 									<h2 class="date"><?php
 										printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')) );
 									?></h2>
 									
-									<?php next_post_link('%link', '&laquo;', TRUE); ?> 
+									<?php next_post_link('%link', '&laquo;', FALSE); ?> 
 									<span></span>
 									
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
