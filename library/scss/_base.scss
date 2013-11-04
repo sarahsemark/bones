@@ -126,6 +126,10 @@ h1 {
 	text-align: center;
 	font-family: "Confection Caps";
 	
+	a:link, a:visited {
+		color: $pink;
+	}
+	
 	&:before, &:after {
 		content: "";
 		display: inline-block;
@@ -530,6 +534,10 @@ POSTS & CONTENT STYLES
 	footer {}
 
 } /* end .hentry */
+
+article + article {
+	margin-top: 100px;
+}
 
 .single-title,
 .page-title {}
