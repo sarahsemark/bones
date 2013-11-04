@@ -31,8 +31,14 @@ foreach ($pages as $page_data) :
 		<a class="down-button" data-slide="<?php echo ++$count; ?>" title=""></a>
 	</div>
 	
-<div class="middle-slide" data-stellar-background-ratio="4.5">
-	<div>Put patterns, images, etc here to break up the pages.</div>
+	
+<div class="middle-slide" data-stellar-background-ratio="2.5">
+	
+	<?php if ($slug == "home"):  ?>
+	<img id="the-books" src="<?php echo get_template_directory_uri(); ?>/library/images/books.png" alt="books" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
+	<img id="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="250" />
+	<?php endif; ?>
+	
 </div>
 	
 <?php endforeach; ?>

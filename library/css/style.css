@@ -1254,14 +1254,31 @@ html, body, #container {
   text-align: center;
   background: url("../images/in-between.png") 0 0 repeat;
   background-size: auto;
+  position: relative;
+  overflow: hidden;
 }
-/* line 463, ../scss/_base.scss */
+/* line 465, ../scss/_base.scss */
 .middle-slide div {
   padding: 100px;
 }
+/* line 469, ../scss/_base.scss */
+.middle-slide img {
+  opacity: 0.35;
+  position: absolute;
+}
+/* line 474, ../scss/_base.scss */
+.middle-slide #the-books {
+  left: 10%;
+  width: 788px;
+  height: 486px;
+}
+/* line 480, ../scss/_base.scss */
+.middle-slide #angel {
+  right: 10%;
+}
 
 /* down buttons */
-/* line 470, ../scss/_base.scss */
+/* line 487, ../scss/_base.scss */
 .down-button {
   display: block;
   width: 62px;
@@ -1273,33 +1290,33 @@ html, body, #container {
   background: url("../images/button-down.png") 0px 0px no-repeat;
   background-size: cover;
 }
-/* line 481, ../scss/_base.scss */
+/* line 498, ../scss/_base.scss */
 .down-button:hover {
   background-position: 0 -62px;
   cursor: pointer;
 }
 
 /* individual page panels */
-/* line 490, ../scss/_base.scss */
+/* line 507, ../scss/_base.scss */
 #home {
   background: url("../images/salon.jpg") no-repeat;
   background-size: cover;
 }
-/* line 494, ../scss/_base.scss */
+/* line 511, ../scss/_base.scss */
 #home blockquote {
   text-align: center;
   margin-top: 25%;
 }
-/* line 499, ../scss/_base.scss */
+/* line 516, ../scss/_base.scss */
 #home .down-button {
   bottom: 50px;
 }
 
-/* line 504, ../scss/_base.scss */
+/* line 521, ../scss/_base.scss */
 #books {
   background: url("../images/wallpaper.png") repeat;
 }
-/* line 507, ../scss/_base.scss */
+/* line 524, ../scss/_base.scss */
 #books #darkwalker {
   width: 40%;
   -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
@@ -1315,7 +1332,7 @@ html, body, #container {
   -o-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
 }
-/* line 519, ../scss/_base.scss */
+/* line 536, ../scss/_base.scss */
 #books .pre-order {
   width: 64%;
   margin: 50px 0 0 0;
@@ -1332,30 +1349,30 @@ html, body, #container {
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 531, ../scss/_base.scss */
+/* line 548, ../scss/_base.scss */
 #books .pre-order div {
   border: 1px solid #342d1e;
   padding: 10px 20px;
 }
 
-/* line 538, ../scss/_base.scss */
+/* line 555, ../scss/_base.scss */
 #about-the-author {
   background: url("../images/wood.png") repeat;
   background-size: 512px 512px;
 }
 
-/* line 544, ../scss/_base.scss */
+/* line 561, ../scss/_base.scss */
 #news {
   background: url("../images/salon2.jpg") no-repeat;
   background-size: cover;
 }
-/* line 548, ../scss/_base.scss */
+/* line 565, ../scss/_base.scss */
 #news img {
   float: left;
   width: 40.055248616%;
   margin-right: 2.762430939%;
 }
-/* line 554, ../scss/_base.scss */
+/* line 571, ../scss/_base.scss */
 #news .down-button {
   display: none;
 }
@@ -1363,18 +1380,18 @@ html, body, #container {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 565, ../scss/_base.scss */
+/* line 582, ../scss/_base.scss */
 #main {
   padding-top: 100px;
 }
 
-/* line 572, ../scss/_base.scss */
+/* line 589, ../scss/_base.scss */
 .hentry header {
   text-align: center;
 }
 
 /* end .hentry */
-/* line 580, ../scss/_base.scss */
+/* line 597, ../scss/_base.scss */
 article + article {
   margin-top: 100px;
 }
@@ -1389,7 +1406,7 @@ article + article {
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 604, ../scss/_base.scss */
+/* line 621, ../scss/_base.scss */
 .date {
   width: 40%;
   margin: 10px auto -20px;
@@ -1397,7 +1414,7 @@ article + article {
 }
 
 /* nav buttons */
-/* line 612, ../scss/_base.scss */
+/* line 629, ../scss/_base.scss */
 .article-header span {
   display: inline-block;
   width: 62px;
@@ -1406,12 +1423,12 @@ article + article {
   overflow: hidden;
   margin: 0 25px;
 }
-/* line 620, ../scss/_base.scss */
+/* line 637, ../scss/_base.scss */
 .article-header a + span {
   display: none;
 }
 
-/* line 624, ../scss/_base.scss */
+/* line 641, ../scss/_base.scss */
 a[rel="prev"], a[rel="next"] {
   display: inline-block;
   vertical-align: middle;
@@ -1423,20 +1440,20 @@ a[rel="prev"], a[rel="next"] {
   overflow: hidden;
   margin: 0 25px;
 }
-/* line 635, ../scss/_base.scss */
+/* line 652, ../scss/_base.scss */
 a[rel="prev"]:hover, a[rel="next"]:hover {
   background-position: 0 -62px;
   cursor: pointer;
 }
 
-/* line 640, ../scss/_base.scss */
+/* line 657, ../scss/_base.scss */
 a[rel="next"] {
   background: url("../images/button-right.png") 0px 0px no-repeat;
   background-size: cover;
 }
 
 /* entry content */
-/* line 646, ../scss/_base.scss */
+/* line 663, ../scss/_base.scss */
 .entry-content {
   text-align: justify;
   /*
@@ -1446,32 +1463,32 @@ a[rel="next"] {
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 672, ../scss/_base.scss */
+/* line 689, ../scss/_base.scss */
 .entry-content blockquote {
   font-family: "Old Standard", "Georgia", Cambria, Times New Roman, Times, serif;
   font-style: italic;
   font-size: 2em;
   color: #b6a582;
 }
-/* line 686, ../scss/_base.scss */
+/* line 703, ../scss/_base.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 693, ../scss/_base.scss */
+/* line 710, ../scss/_base.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 709, ../scss/_base.scss */
+/* line 726, ../scss/_base.scss */
 .entry-content video, .entry-content object {
   max-width: 100%;
   height: auto;
 }
-/* line 714, ../scss/_base.scss */
+/* line 731, ../scss/_base.scss */
 .entry-content pre {
   background: #eee;
   border: 1px solid #cecece;
@@ -1479,20 +1496,20 @@ a[rel="next"] {
 }
 
 /* end .entry-content */
-/* line 722, ../scss/_base.scss */
+/* line 739, ../scss/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 728, ../scss/_base.scss */
+/* line 745, ../scss/_base.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 734, ../scss/_base.scss */
+/* line 751, ../scss/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1506,17 +1523,17 @@ a[rel="next"] {
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 772, ../scss/_base.scss */
+/* line 789, ../scss/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 775, ../scss/_base.scss */
+/* line 792, ../scss/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 777, ../scss/_base.scss */
+/* line 794, ../scss/_base.scss */
 .pagination ul {
   display: inline-block;
   white-space: nowrap;
@@ -1524,7 +1541,7 @@ PAGE NAVI STYLES
   clear: both;
   margin: 1px;
 }
-/* line 783, ../scss/_base.scss */
+/* line 800, ../scss/_base.scss */
 .pagination ul li {
   padding: 0;
   margin: 0;
@@ -1532,7 +1549,7 @@ PAGE NAVI STYLES
   display: inline;
   overflow: hidden;
 }
-/* line 789, ../scss/_base.scss */
+/* line 806, ../scss/_base.scss */
 .pagination ul li a, .pagination ul li span {
   margin: 0;
   text-decoration: none;
@@ -1544,18 +1561,18 @@ PAGE NAVI STYLES
   min-width: 1em;
   display: block;
 }
-/* line 800, ../scss/_base.scss */
+/* line 817, ../scss/_base.scss */
 .pagination ul li span.current {
   font-weight: bold;
 }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 815, ../scss/_base.scss */
+/* line 832, ../scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 819, ../scss/_base.scss */
+/* line 836, ../scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1565,12 +1582,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 830, ../scss/_base.scss */
+/* line 847, ../scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 847, ../scss/_base.scss */
+/* line 864, ../scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1581,7 +1598,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 849, ../scss/_base.scss */
+/* line 866, ../scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1603,77 +1620,77 @@ COMMENT STYLES
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   /* end .commentlist li ul.children */
 }
-/* line 865, ../scss/_base.scss */
+/* line 882, ../scss/_base.scss */
 .commentlist li article {
   border: 1px solid #342d1e;
   padding: 10px 20px;
 }
-/* line 870, ../scss/_base.scss */
+/* line 887, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 874, ../scss/_base.scss */
+/* line 891, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 892, ../scss/_base.scss */
+/* line 909, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 896, ../scss/_base.scss */
+/* line 913, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 901, ../scss/_base.scss */
+/* line 918, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 915, ../scss/_base.scss */
+/* line 932, ../scss/_base.scss */
 .commentlist .odd {
   float: right;
 }
-/* line 918, ../scss/_base.scss */
+/* line 935, ../scss/_base.scss */
 .commentlist .even {
   float: left;
 }
-/* line 933, ../scss/_base.scss */
+/* line 950, ../scss/_base.scss */
 .commentlist .vcard {
   border-bottom: 2px solid #443b28;
   font-family: "Old Standard", "Georgia", Cambria, Times New Roman, Times, serif;
   text-transform: uppercase;
   text-align: left;
 }
-/* line 939, ../scss/_base.scss */
+/* line 956, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
   margin-left: 55px;
 }
-/* line 944, ../scss/_base.scss */
+/* line 961, ../scss/_base.scss */
 .commentlist .vcard cite.fn a.url {
   color: #a58176;
   text-decoration: none;
 }
-/* line 951, ../scss/_base.scss */
+/* line 968, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 954, ../scss/_base.scss */
+/* line 971, ../scss/_base.scss */
 .commentlist .vcard time a {
   color: #a58176;
   text-decoration: none;
 }
-/* line 958, ../scss/_base.scss */
+/* line 975, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 968, ../scss/_base.scss */
+/* line 985, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 4px;
@@ -1692,17 +1709,17 @@ COMMENT STYLES
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 1000, ../scss/_base.scss */
+/* line 1017, ../scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 55px;
 }
-/* line 1003, ../scss/_base.scss */
+/* line 1020, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 1012, ../scss/_base.scss */
+/* line 1029, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1713,7 +1730,7 @@ COMMENT STYLES
   margin-bottom: 5px;
   font-size: 0.8em;
 }
-/* line 1023, ../scss/_base.scss */
+/* line 1040, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1722,25 +1739,25 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 1035, ../scss/_base.scss */
+/* line 1052, ../scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 1039, ../scss/_base.scss */
+/* line 1056, ../scss/_base.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 1050, ../scss/_base.scss */
+/* line 1067, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
 .respond-form form textarea {
   /* form validation */
 }
-/* line 1057, ../scss/_base.scss */
+/* line 1074, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1753,14 +1770,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1070, ../scss/_base.scss */
+/* line 1087, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 1075, ../scss/_base.scss */
+/* line 1092, ../scss/_base.scss */
 .respond-form form textarea {
   height: 200px;
   clear: both;
@@ -1768,7 +1785,7 @@ COMMENT FORM STYLES
   width: 80%;
 }
 
-/* line 1085, ../scss/_base.scss */
+/* line 1102, ../scss/_base.scss */
 .comment-subscription-form {
   text-align: center;
 }
@@ -1776,7 +1793,7 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* no comments */
-/* line 1098, ../scss/_base.scss */
+/* line 1115, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1784,7 +1801,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1114, ../scss/_base.scss */
+/* line 1131, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1792,43 +1809,43 @@ SIDEBARS & ASIDES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 1137, ../scss/_base.scss */
+/* line 1154, ../scss/_base.scss */
 form {
   padding-bottom: 2.2em;
   margin: 0 0 2em 0;
 }
-/* line 1141, ../scss/_base.scss */
+/* line 1158, ../scss/_base.scss */
 form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 1147, ../scss/_base.scss */
+/* line 1164, ../scss/_base.scss */
 form li label,
 form li small {
   display: none;
 }
-/* line 1152, ../scss/_base.scss */
+/* line 1169, ../scss/_base.scss */
 form div {
   clear: both;
   padding-top: 20px;
 }
-/* line 1157, ../scss/_base.scss */
+/* line 1174, ../scss/_base.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
 }
-/* line 1162, ../scss/_base.scss */
+/* line 1179, ../scss/_base.scss */
 form label span, form label.textarea {
   display: none;
 }
-/* line 1166, ../scss/_base.scss */
+/* line 1183, ../scss/_base.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 1174, ../scss/_base.scss */
+/* line 1191, ../scss/_base.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -1855,14 +1872,14 @@ form textarea {
   width: 75%;
   /* form validation */
 }
-/* line 1187, ../scss/_base.scss */
+/* line 1204, ../scss/_base.scss */
 form input[type=text]:focus,
 form input[type=email]:focus,
 form input[type=url]:focus,
 form textarea:focus {
   background: #fff;
 }
-/* line 1192, ../scss/_base.scss */
+/* line 1209, ../scss/_base.scss */
 form input[type=text]:invalid,
 form input[type=email]:invalid,
 form input[type=url]:invalid,
@@ -1875,17 +1892,17 @@ form textarea:invalid {
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1203, ../scss/_base.scss */
+/* line 1220, ../scss/_base.scss */
 form textarea {
   width: 100%;
   height: 150px;
   margin: 5px 0;
 }
-/* line 1209, ../scss/_base.scss */
+/* line 1226, ../scss/_base.scss */
 form .contact-submit {
   text-align: center;
 }
-/* line 1213, ../scss/_base.scss */
+/* line 1230, ../scss/_base.scss */
 form input[type=submit] {
   display: block;
   clear: both;
@@ -1895,7 +1912,7 @@ form input[type=submit] {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1230, ../scss/_base.scss */
+/* line 1247, ../scss/_base.scss */
 .footer {
   clear: both;
   background: url("../images/nav-ribbon.png") repeat-x 0px center;
@@ -1908,12 +1925,12 @@ FOOTER STYLES
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 1242, ../scss/_base.scss */
+/* line 1259, ../scss/_base.scss */
 .footer a {
   color: #4e3a34;
   text-decoration: none;
 }
-/* line 1246, ../scss/_base.scss */
+/* line 1263, ../scss/_base.scss */
 .footer a:hover {
   color: #400007;
 }

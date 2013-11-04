@@ -459,9 +459,26 @@ html, body, #container {
 	text-align: center;
 	background: url('../images/in-between.png') 0 0 repeat;
 	background-size: auto;
+	position: relative;
+	overflow: hidden;
 	
 	div {
 		padding: 100px;
+	}
+	
+	img {
+		opacity: 0.35;
+		position: absolute;
+	}
+	
+	#the-books {
+		left: 10%;
+		width: 788px;
+		height: 486px;
+	}
+	
+	#angel {
+		right: 10%;
 	}
 }
 
