@@ -199,16 +199,22 @@ h5 {
 	letter-spacing: 2px;
 }
 
+/* drop caps */
 .entry-content > p:first-child:first-letter, .drop:first-letter {
 	font-family: "Confection Caps2";
 	font-size: 6em;
     float: left;  
-    margin-right: 5px;  
-    color: $red;  
+    margin: -.1em .05em -.1em -.1em;  
+    color: darken($beige, 10%);
     line-height: 1em;  
 }
 .alt:first-letter {
 	font-family: "Confection Caps";
+}
+.entry-content > p:first-child:first-line, .drop:first-line {
+	text-transform: uppercase;
+	color: darken($beige, 10%);
+	letter-spacing: 1px;
 }
 
 
