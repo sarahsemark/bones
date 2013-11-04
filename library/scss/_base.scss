@@ -959,32 +959,22 @@ COMMENT FORM STYLES
 .respond-form {
 	margin: 1.5em 10px;
 	padding-bottom: 2.2em;
+	
+	div {
+		width: 60%;
+		margin: 10px 20%;
+		clear: both;
+	}
 
 	form {
-		margin: 0.75em 0;
-
-		li {
-			list-style-type: none;
-			clear: both;
-			margin-bottom: 0.7335em;
-
-			label,
-			small {
-				display: none;
-			}
-		}
-
+	
 		input[type=text],
 		input[type=email],
 		input[type=url],
 		textarea {
-			padding: 3px 6px;
-			background: #efefef;
-			border: 2px solid #cecece;
-			line-height: 1.5em;
 
 			&:focus {
-				background: #fff;
+
 			}
 
 			/* form validation */
@@ -1007,22 +997,19 @@ COMMENT FORM STYLES
 		}
 
 		textarea {
-			resize: none;
-			width: 97.3%;
-			height: 150px;
+			height: 200px;
+			clear: both;
+			margin: 20px 10%;
+			width: 80%;
 		}
 
 	}
 }
 
-	/* comment submit button */
-	#submit {}
-
-	/* comment form title */
-	#comment-form-title {
-		margin: 0 0 1.1em;
+	.comment-subscription-form {
+		text-align: center;
 	}
-
+	
 	/* cancel comment reply link */
 	#cancel-comment-reply {
 		a {}
@@ -1030,11 +1017,6 @@ COMMENT FORM STYLES
 
 	/* logged in comments */
 	.comments-logged-in-as {}
-
-	/* allowed tags */
-	#allowed_tags {
-		margin: 1.5em 10px 0.7335em 0;
-	}
 
 	/* no comments */
 	.nocomments {
@@ -1105,6 +1087,10 @@ form {
 			display: none;
 		}
 	}
+	input[type="checkbox"] + label {
+		 float: none;
+		 width: 100%;
+	 }
 
 	input[type=text],
 	input[type=email],
@@ -1139,10 +1125,9 @@ form {
 	}
 
 	textarea {
-		resize: none;
 		width: 100%;
 		height: 150px;
-		margin: 0;
+		margin: 5px 0;
 	}
 	
 	.contact-submit {
@@ -1150,6 +1135,9 @@ form {
 	}
 	
 	input[type=submit] {
+		display: block;
+		clear: both;
+		margin: 10px auto;
 		
 	}
 

@@ -1626,39 +1626,19 @@ COMMENT FORM STYLES
   padding-bottom: 2.2em;
 }
 /* line 963, ../scss/_base.scss */
-.respond-form form {
-  margin: 0.75em 0;
-}
-/* line 966, ../scss/_base.scss */
-.respond-form form li {
-  list-style-type: none;
+.respond-form div {
+  width: 60%;
+  margin: 10px 20%;
   clear: both;
-  margin-bottom: 0.7335em;
 }
-/* line 972, ../scss/_base.scss */
-.respond-form form li label,
-.respond-form form li small {
-  display: none;
-}
-/* line 980, ../scss/_base.scss */
+/* line 974, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
 .respond-form form textarea {
-  padding: 3px 6px;
-  background: #efefef;
-  border: 2px solid #cecece;
-  line-height: 1.5em;
   /* form validation */
 }
-/* line 986, ../scss/_base.scss */
-.respond-form form input[type=text]:focus,
-.respond-form form input[type=email]:focus,
-.respond-form form input[type=url]:focus,
-.respond-form form textarea:focus {
-  background: #fff;
-}
-/* line 991, ../scss/_base.scss */
+/* line 981, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1671,37 +1651,30 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1004, ../scss/_base.scss */
+/* line 994, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 1009, ../scss/_base.scss */
+/* line 999, ../scss/_base.scss */
 .respond-form form textarea {
-  resize: none;
-  width: 97.3%;
-  height: 150px;
+  height: 200px;
+  clear: both;
+  margin: 20px 10%;
+  width: 80%;
 }
 
-/* comment submit button */
-/* comment form title */
-/* line 1022, ../scss/_base.scss */
-#comment-form-title {
-  margin: 0 0 1.1em;
+/* line 1009, ../scss/_base.scss */
+.comment-subscription-form {
+  text-align: center;
 }
 
 /* cancel comment reply link */
 /* logged in comments */
-/* allowed tags */
-/* line 1035, ../scss/_base.scss */
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0;
-}
-
 /* no comments */
-/* line 1040, ../scss/_base.scss */
+/* line 1022, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1709,7 +1682,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1056, ../scss/_base.scss */
+/* line 1038, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1717,38 +1690,43 @@ SIDEBARS & ASIDES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 1079, ../scss/_base.scss */
+/* line 1061, ../scss/_base.scss */
 form {
   padding-bottom: 2.2em;
   margin: 0 0 2em 0;
 }
-/* line 1083, ../scss/_base.scss */
+/* line 1065, ../scss/_base.scss */
 form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 1089, ../scss/_base.scss */
+/* line 1071, ../scss/_base.scss */
 form li label,
 form li small {
   display: none;
 }
-/* line 1094, ../scss/_base.scss */
+/* line 1076, ../scss/_base.scss */
 form div {
   clear: both;
   padding-top: 20px;
 }
-/* line 1099, ../scss/_base.scss */
+/* line 1081, ../scss/_base.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
 }
-/* line 1104, ../scss/_base.scss */
+/* line 1086, ../scss/_base.scss */
 form label span, form label.textarea {
   display: none;
 }
-/* line 1112, ../scss/_base.scss */
+/* line 1090, ../scss/_base.scss */
+form input[type="checkbox"] + label {
+  float: none;
+  width: 100%;
+}
+/* line 1098, ../scss/_base.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -1775,14 +1753,14 @@ form textarea {
   width: 75%;
   /* form validation */
 }
-/* line 1125, ../scss/_base.scss */
+/* line 1111, ../scss/_base.scss */
 form input[type=text]:focus,
 form input[type=email]:focus,
 form input[type=url]:focus,
 form textarea:focus {
   background: #fff;
 }
-/* line 1130, ../scss/_base.scss */
+/* line 1116, ../scss/_base.scss */
 form input[type=text]:invalid,
 form input[type=email]:invalid,
 form input[type=url]:invalid,
@@ -1795,22 +1773,27 @@ form textarea:invalid {
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1141, ../scss/_base.scss */
+/* line 1127, ../scss/_base.scss */
 form textarea {
-  resize: none;
   width: 100%;
   height: 150px;
-  margin: 0;
+  margin: 5px 0;
 }
-/* line 1148, ../scss/_base.scss */
+/* line 1133, ../scss/_base.scss */
 form .contact-submit {
   text-align: center;
+}
+/* line 1137, ../scss/_base.scss */
+form input[type=submit] {
+  display: block;
+  clear: both;
+  margin: 10px auto;
 }
 
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1166, ../scss/_base.scss */
+/* line 1154, ../scss/_base.scss */
 .footer {
   clear: both;
   background: url("../images/nav-ribbon.png") repeat-x 0px center;
@@ -1823,12 +1806,12 @@ FOOTER STYLES
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 1178, ../scss/_base.scss */
+/* line 1166, ../scss/_base.scss */
 .footer a {
   color: #4e3a34;
   text-decoration: none;
 }
-/* line 1182, ../scss/_base.scss */
+/* line 1170, ../scss/_base.scss */
 .footer a:hover {
   color: #400007;
 }
