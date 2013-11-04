@@ -561,6 +561,18 @@ html, body, #container {
 		font-size: .9em;
 		text-align: center;
 	}
+	
+	#subscribe-field {
+		float: left;
+		width: 68%;
+		margin: 0;
+	}
+	input[name="jetpack_subscriptions_widget"] {
+		float: left;
+		width: 30%;
+		margin: 0 0 0 2%;
+		clear: none;
+	}
 }
 
 

@@ -143,5 +143,9 @@ jQuery(document).ready(function($) {
         goToByScroll(dataslide);
         $('nav li a[data-slide="' + dataslide + '"]').parent().addClass('active').siblings().removeClass('active');
     });
+    
+    
+    // Get rid of Jetpack's evil inline subscribe form CSS
+    $('#subscribe-field').removeAttr("style");     
    
 }); /* end of as page load scripts */
