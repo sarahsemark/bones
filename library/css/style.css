@@ -1326,7 +1326,7 @@ POSTS & CONTENT STYLES
 /* line 554, ../scss/_base.scss */
 .date {
   width: 40%;
-  margin: 10px auto 0px;
+  margin: 10px auto -20px;
   display: inline-block;
 }
 
