@@ -1521,97 +1521,133 @@ COMMENT STYLES
   clear: both;
   overflow: hidden;
   list-style-type: none;
-  margin-bottom: 1.5em;
-  padding: 0.7335em 10px;
+  width: 82.87292817100001%;
+  margin: 20px 0;
+  font-size: .95em;
+  padding: 10px;
+  float: left;
+  background: url("../images/leather.png");
+  background-size: 398px 484px;
+  text-align: left;
+  border: 1px solid #241f15;
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   /* end .commentlist li ul.children */
 }
-/* line 807, ../scss/_base.scss */
+/* line 815, ../scss/_base.scss */
+.commentlist li article {
+  border: 1px solid #342d1e;
+  padding: 10px 20px;
+}
+/* line 820, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 811, ../scss/_base.scss */
+/* line 824, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 829, ../scss/_base.scss */
+/* line 842, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 833, ../scss/_base.scss */
+/* line 846, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 838, ../scss/_base.scss */
+/* line 851, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 852, ../scss/_base.scss */
+/* line 865, ../scss/_base.scss */
 .commentlist .odd {
-  background: #eee;
+  float: right;
 }
-/* line 855, ../scss/_base.scss */
+/* line 868, ../scss/_base.scss */
 .commentlist .even {
-  background: #fefefe;
+  float: left;
 }
-/* line 870, ../scss/_base.scss */
+/* line 883, ../scss/_base.scss */
 .commentlist .vcard {
-  margin-left: 50px;
+  border-bottom: 2px solid #443b28;
+  font-family: "Old Standard", "Georgia", Cambria, Times New Roman, Times, serif;
+  text-transform: uppercase;
+  text-align: left;
 }
-/* line 873, ../scss/_base.scss */
+/* line 889, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
+  margin-left: 55px;
 }
-/* line 881, ../scss/_base.scss */
+/* line 894, ../scss/_base.scss */
+.commentlist .vcard cite.fn a.url {
+  color: #a58176;
+  text-decoration: none;
+}
+/* line 901, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 884, ../scss/_base.scss */
+/* line 904, ../scss/_base.scss */
 .commentlist .vcard time a {
-  color: #999;
+  color: #a58176;
   text-decoration: none;
 }
-/* line 888, ../scss/_base.scss */
+/* line 908, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 898, ../scss/_base.scss */
+/* line 918, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
-  left: 10px;
+  left: 4px;
+  top: 4px;
+  transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
   padding: 2px;
-  border: 1px solid #cecece;
-  background: #fff;
+  background: #180204;
+  border: 1px solid #443b28;
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 923, ../scss/_base.scss */
+/* line 950, ../scss/_base.scss */
 .commentlist .comment_content {
-  margin-left: 50px;
+  margin-left: 55px;
 }
-/* line 926, ../scss/_base.scss */
+/* line 953, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 935, ../scss/_base.scss */
+/* line 962, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
-  background: #4598bb;
-  padding: 3px 5px;
-  color: #fff;
+  background: #180204;
+  padding: 5px 10px;
+  color: #c9bca2;
   opacity: 0.65;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 0.9em;
+  margin-bottom: 5px;
+  font-size: 0.8em;
 }
-/* line 947, ../scss/_base.scss */
+/* line 973, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1620,25 +1656,25 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 959, ../scss/_base.scss */
+/* line 985, ../scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 963, ../scss/_base.scss */
+/* line 989, ../scss/_base.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 974, ../scss/_base.scss */
+/* line 1000, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
 .respond-form form textarea {
   /* form validation */
 }
-/* line 981, ../scss/_base.scss */
+/* line 1007, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1651,14 +1687,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 994, ../scss/_base.scss */
+/* line 1020, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 999, ../scss/_base.scss */
+/* line 1025, ../scss/_base.scss */
 .respond-form form textarea {
   height: 200px;
   clear: both;
@@ -1666,7 +1702,7 @@ COMMENT FORM STYLES
   width: 80%;
 }
 
-/* line 1009, ../scss/_base.scss */
+/* line 1035, ../scss/_base.scss */
 .comment-subscription-form {
   text-align: center;
 }
@@ -1674,7 +1710,7 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* no comments */
-/* line 1022, ../scss/_base.scss */
+/* line 1048, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1682,7 +1718,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1038, ../scss/_base.scss */
+/* line 1064, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1690,43 +1726,43 @@ SIDEBARS & ASIDES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 1061, ../scss/_base.scss */
+/* line 1087, ../scss/_base.scss */
 form {
   padding-bottom: 2.2em;
   margin: 0 0 2em 0;
 }
-/* line 1065, ../scss/_base.scss */
+/* line 1091, ../scss/_base.scss */
 form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 1071, ../scss/_base.scss */
+/* line 1097, ../scss/_base.scss */
 form li label,
 form li small {
   display: none;
 }
-/* line 1076, ../scss/_base.scss */
+/* line 1102, ../scss/_base.scss */
 form div {
   clear: both;
   padding-top: 20px;
 }
-/* line 1081, ../scss/_base.scss */
+/* line 1107, ../scss/_base.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
 }
-/* line 1086, ../scss/_base.scss */
+/* line 1112, ../scss/_base.scss */
 form label span, form label.textarea {
   display: none;
 }
-/* line 1090, ../scss/_base.scss */
+/* line 1116, ../scss/_base.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 1098, ../scss/_base.scss */
+/* line 1124, ../scss/_base.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -1753,14 +1789,14 @@ form textarea {
   width: 75%;
   /* form validation */
 }
-/* line 1111, ../scss/_base.scss */
+/* line 1137, ../scss/_base.scss */
 form input[type=text]:focus,
 form input[type=email]:focus,
 form input[type=url]:focus,
 form textarea:focus {
   background: #fff;
 }
-/* line 1116, ../scss/_base.scss */
+/* line 1142, ../scss/_base.scss */
 form input[type=text]:invalid,
 form input[type=email]:invalid,
 form input[type=url]:invalid,
@@ -1773,17 +1809,17 @@ form textarea:invalid {
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1127, ../scss/_base.scss */
+/* line 1153, ../scss/_base.scss */
 form textarea {
   width: 100%;
   height: 150px;
   margin: 5px 0;
 }
-/* line 1133, ../scss/_base.scss */
+/* line 1159, ../scss/_base.scss */
 form .contact-submit {
   text-align: center;
 }
-/* line 1137, ../scss/_base.scss */
+/* line 1163, ../scss/_base.scss */
 form input[type=submit] {
   display: block;
   clear: both;
@@ -1793,7 +1829,7 @@ form input[type=submit] {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1154, ../scss/_base.scss */
+/* line 1180, ../scss/_base.scss */
 .footer {
   clear: both;
   background: url("../images/nav-ribbon.png") repeat-x 0px center;
@@ -1806,12 +1842,12 @@ FOOTER STYLES
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 1166, ../scss/_base.scss */
+/* line 1192, ../scss/_base.scss */
 .footer a {
   color: #4e3a34;
   text-decoration: none;
 }
-/* line 1170, ../scss/_base.scss */
+/* line 1196, ../scss/_base.scss */
 .footer a:hover {
   color: #400007;
 }
