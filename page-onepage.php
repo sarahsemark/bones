@@ -22,7 +22,7 @@ foreach ($pages as $page_data) :
 				
 				<?php if ($slug == "news"): ?>
 					<?php get_template_part('news'); ?>
-					<a class="button" href="/news">Read all news posts</a>
+					<div class="twelvecol first last clearfix center"><a class="button" href="/news">Read all news posts</a></div>
 				<?php endif; ?>	
 			
 			</div>

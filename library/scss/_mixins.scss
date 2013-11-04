@@ -208,9 +208,12 @@ BUTTONS
 
 .button, .button:visited, input[type="submit"] {
 	font-family: $slab-serif;
-	border: 1px solid $beige;
-	padding: 5px 10px;
-	color: $white;
+	text-transform: uppercase;
+	font-size: .9em;
+	letter-spacing: 1px;
+	border: 1px solid darken($pink, 30%);
+	padding: 10px 30px;
+	color: $beige;
 	display: inline-block;
 	text-decoration: none;
 	text-shadow: 0 1px rgba(0,0,0, .75);
@@ -218,6 +221,7 @@ BUTTONS
 	margin: 10px;
 	line-height: 21px;
 	@include css-gradient($burgundy, darken($burgundy, 5%));
+	@include box-shadow;
 
 	&:hover, &:focus {
 		color: $white;
