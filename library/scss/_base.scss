@@ -200,7 +200,7 @@ h5 {
 }
 
 /* drop caps */
-.entry-content > p:first-child:first-letter, .drop:first-letter {
+.entry-content > p:first-child:first-letter, .drop:first-letter, .drop-span {
 	font-family: "Confection Caps2";
 	font-size: 6em;
     float: left;  
@@ -208,6 +208,17 @@ h5 {
     color: darken($beige, 10%);
     line-height: 1em;  
 }
+.drop-span {
+	font-size: 4.5em;
+	margin-left: -.2em;
+	margin-right: .1em;
+
+	&:first-letter {
+		font-family: "Confection Caps";
+		vertical-align: -5px;
+	}
+}
+
 .alt:first-letter {
 	font-family: "Confection Caps";
 }
