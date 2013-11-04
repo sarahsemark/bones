@@ -200,7 +200,7 @@ h5 {
 }
 
 /* drop caps */
-.entry-content > p:first-child:first-letter, .drop:first-letter, .drop-span {
+.entry-content > p:first-child:first-letter, .drop:first-letter, .drop-span, .news-excerpt p:first-letter {
 	font-family: "Confection Caps2";
 	font-size: 6em;
     float: left;  
@@ -208,6 +208,14 @@ h5 {
     color: darken($beige, 10%);
     line-height: 1em;  
 }
+.news-excerpt p {
+	margin-top: 40px;
+	
+	&:first-letter {
+		font-size: 4.5em;	
+	}
+}
+
 .drop-span {
 	font-size: 4.5em;
 	margin-left: -.2em;
@@ -222,7 +230,7 @@ h5 {
 .alt:first-letter {
 	font-family: "Confection Caps";
 }
-.entry-content > p:first-child:first-line, .drop:first-line {
+.entry-content > p:first-child:first-line, .drop:first-line, .news-excerpt p:first-line {
 	text-transform: uppercase;
 	color: darken($beige, 10%);
 	letter-spacing: 1px;

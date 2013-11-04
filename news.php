@@ -12,7 +12,7 @@ foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 			$class = "";
 		}
 	?>
-	<div class="fourcol <?php echo $class; ?> clearfix">
+	<div class="news-excerpt fourcol <?php echo $class; ?> clearfix">
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<?php the_excerpt(); ?>
 	</div>
