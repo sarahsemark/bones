@@ -36,7 +36,7 @@ foreach ($pages as $page_data) :
 	
 	<?php if ($slug == "home"):  ?>
 	<img id="the-books" src="<?php echo get_template_directory_uri(); ?>/library/images/books.png" alt="books" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
-	<img id="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="250" />
+	<img id="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="500" />
 	<?php endif; ?>
 	
 </div>
