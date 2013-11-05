@@ -2283,24 +2283,28 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 20, ../scss/_1030up.scss */
+  /* line 17, ../scss/_1030up.scss */
+  .nav {
+    width: 500px;
+  }
+  /* line 22, ../scss/_1030up.scss */
   .nav li:nth-child(3), .nav li:nth-child(4) {
     float: left;
   }
 
   /* show social media links */
-  /* line 30, ../scss/_1030up.scss */
+  /* line 32, ../scss/_1030up.scss */
   #social {
     display: block;
     margin-top: -73px;
     float: right;
     z-index: 400;
   }
-  /* line 36, ../scss/_1030up.scss */
+  /* line 38, ../scss/_1030up.scss */
   #social li {
     float: left;
   }
-  /* line 39, ../scss/_1030up.scss */
+  /* line 41, ../scss/_1030up.scss */
   #social li a {
     display: block;
     height: 62px;
@@ -2309,23 +2313,23 @@ you can add resource intensive styles.
     background-size: cover;
     font: 0/0 a;
   }
-  /* line 47, ../scss/_1030up.scss */
+  /* line 49, ../scss/_1030up.scss */
   #social li a:hover {
     background-position: 0 62px;
   }
-  /* line 53, ../scss/_1030up.scss */
+  /* line 55, ../scss/_1030up.scss */
   #social li:nth-of-type(1) a {
     background-image: url("../images/social-twitter.png");
   }
-  /* line 57, ../scss/_1030up.scss */
+  /* line 59, ../scss/_1030up.scss */
   #social li:nth-of-type(2) a {
     background-image: url("../images/social-facebook.png");
   }
-  /* line 61, ../scss/_1030up.scss */
+  /* line 63, ../scss/_1030up.scss */
   #social li:nth-of-type(3) a {
     background-image: url("../images/social-goodreads.png");
   }
-  /* line 65, ../scss/_1030up.scss */
+  /* line 67, ../scss/_1030up.scss */
   #social li:nth-of-type(4) a {
     background-image: url("../images/social-mail.png");
   }
