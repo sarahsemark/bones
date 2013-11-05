@@ -2296,7 +2296,7 @@ you can add resource intensive styles.
     margin-top: 3em;
   }
 
-  /* line 165, ../scss/_768up.scss */
+  /* line 167, ../scss/_768up.scss */
   .entry-content p {
     text-align: justify;
   }
@@ -2309,7 +2309,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 181, ../scss/_768up.scss */
+  /* line 183, ../scss/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -2319,6 +2319,14 @@ you can add resource intensive styles.
   }
 
   /* end .footer-links */
+}
+/* on tablets only, make abbreviated content pane full-width */
+@media only screen and (max-width: 1024px) and (min-width: 481px) {
+  /* line 66, ../scss/style.scss */
+  .eightcol.twopush {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 /*
 DESKTOP
