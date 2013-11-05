@@ -27,7 +27,6 @@ NAVIGATION STYLES
 }
 
 
-
 /* show social media links */
 #social {
 	display: block;
@@ -68,4 +67,14 @@ NAVIGATION STYLES
 			background-image: url('../images/social-mail.png');
 		}
 	}
+}
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+/* post meta */
+.date {
+	width: 40%;
 }
