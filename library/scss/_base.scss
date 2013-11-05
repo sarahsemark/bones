@@ -168,6 +168,7 @@ h2 {
 	border-bottom: 2px solid darken($beige, 40%);
 	display: block;
 	text-align: center;
+	margin: 4em 0 2em;
 	
 	a:link, a:visited {
 		color: darken($beige, 20%);
@@ -520,6 +521,9 @@ html, body, #container {
 		border: 1px solid darken($beige, 50%);
 		@include box-shadow;
 		
+		h2 {
+			margin: 1em 0 0;
+		}
 		div {
 			border: 1px solid darken($beige, 45%);
 			padding: 10px 20px;
@@ -534,6 +538,14 @@ html, body, #container {
 	.rep {
 		font-size: .9em;
 		text-align: center;
+	}
+	
+	h2 {
+		margin: 1.25em 0 1em;
+		
+		&.widgettitle {
+			margin-top: 2.5em;
+		}
 	}
 	
 	#subscribe-field {
@@ -553,6 +565,10 @@ html, body, #container {
 #news {
 	background: url("../images/absinthe-paper.jpg") no-repeat;
 	background-size: cover;
+	
+	h2 {
+		margin: 0;
+	}
 	
 	img {
 		float: left; 
