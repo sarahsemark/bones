@@ -21,7 +21,7 @@
 								</header> <!-- end article header -->
 
 								<section class="entry-content eightcol twopush clearfix">
-									<?php the_content(); ?>
+									<?php the_excerpt(); ?>
 								</section> <!-- end article section -->
 
 							</article> <!-- end article -->
