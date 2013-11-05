@@ -588,7 +588,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #main {
-	padding-top: 100px;
+	padding-top: 20px;
 }
 
 
@@ -627,7 +627,7 @@ article + article {
 
 /* post meta */
 .date {
-	width: 40%;
+	width: 100%;
 	margin: 10px auto -20px;
 	display: inline-block;
 }
@@ -635,7 +635,7 @@ article + article {
 /* nav buttons */
 .article-header {
 	span {
-		display: inline-block;
+		display: block;
 		width: 62px;
 		height: 62px;
 		vertical-align: middle;
@@ -648,6 +648,9 @@ article + article {
 }
 a[rel="prev"], a[rel="next"] {
     display: inline-block;
+    position: absolute;
+    top: 190px;
+    left: -20px;
     vertical-align: middle;
     width: 62px;
     height: 62px;
@@ -665,6 +668,8 @@ a[rel="prev"], a[rel="next"] {
 a[rel="next"] {
 	background: url('../images/button-right.png') 0px 0px no-repeat; 
 	background-size: cover;
+	right: -20px;
+	left: auto;
 }
 
 
