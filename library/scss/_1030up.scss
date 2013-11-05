@@ -10,11 +10,26 @@ be seen on the Desktop.
 ******************************************************************/
 
 
+/*********************
+NAVIGATION STYLES
+*********************/
 
-/* social media links */
+.nav {
+	li {
+	
+		&:nth-child(3), &:nth-child(4) {
+			float: left;
+			}
+			
+	}
+}
+
+
+
+/* show social media links */
 #social {
 	display: block;
-	margin-top: -63px;
+	margin-top: -73px;
 	float: right;
 	z-index: 400;
 	
