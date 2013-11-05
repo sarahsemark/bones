@@ -122,42 +122,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 
 h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
+	font-size: 2.2em;
+	line-height: 1em;
 	color: $pink;
 	overflow: hidden;
 	text-align: center;
 	font-family: "Confection Caps";
-	
+		
 	a:link, a:visited {
 		color: $pink;
-	}
-	
-	&:before, &:after {
-		content: "";
-		display: inline-block;
-		height: 34px;
-		position: relative;
-		vertical-align: middle;
-		width: 170px;
-		background: url('../images/header.png');
-	}
-	
-	&:before {
-    	right: 0.5em;
-    	margin-left: -50%;
-    	background-position: left center;
-	}
-	
-	&:after {
-    	left: 0.5em;
-		margin-right: -50%;
-		background-position: right center;
 	}
 }
 
 h2 {
-	font-size: 1.05em;
+	font-size: .95em;
 	font-family: $serif;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -628,14 +606,17 @@ article + article {
 /* post meta */
 .date {
 	width: 100%;
-	margin: 10px auto -20px;
+	margin: -10px auto 0px;
 	display: inline-block;
 }
 
 /* nav buttons */
 .article-header {
 	span {
-		display: block;
+		display: inline-block;
+		position: absolute;
+		top: 190px;
+		left: -20px;
 		width: 62px;
 		height: 62px;
 		vertical-align: middle;
@@ -649,7 +630,7 @@ article + article {
 a[rel="prev"], a[rel="next"] {
     display: inline-block;
     position: absolute;
-    top: 190px;
+    top: 170px;
     left: -20px;
     vertical-align: middle;
     width: 62px;

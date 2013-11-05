@@ -27,6 +27,46 @@ LAYOUT & GRID STYLES
 	max-width: 1140px;
 }
 
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1 {
+	font-size: 2.5em;
+	
+	&:before, &:after {
+		content: "";
+		display: inline-block;
+		height: 34px;
+		position: relative;
+		vertical-align: middle;
+		width: 170px;
+		background: url('../images/header.png');
+	}
+	
+	&:before {
+    	right: 0.5em;
+    	margin-left: -50%;
+    	background-position: left center;
+	}
+	
+	&:after {
+    	left: 0.5em;
+		margin-right: -50%;
+		background-position: right center;
+	}
+}
+
+h2 {
+	font-size: 1.05em;
+}
+
+.entry-content > p:first-child:first-letter, .drop:first-letter, .drop-span, .news-excerpt p:first-letter {
+	font-size: 6em;
+}
+
+
 /*********************
 HEADER STYLES
 *********************/
@@ -89,9 +129,19 @@ POSTS & CONTENT STYLES
 /* post meta */
 .date {
 	width: 60%;
+	margin: 10px auto -20px;
 }
 
 /* nav buttons */
+
+.article-header {
+	span {
+		display: inline-block;
+		position: relative;
+		top: 0;
+    }
+}
+		
 
 a[rel="prev"], a[rel="next"] {
     display: inline-block;
