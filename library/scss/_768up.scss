@@ -31,7 +31,10 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+	background: url('../images/nav-ribbon.png') repeat-x 0px 38px;
+	background-size: 30px 57px;
+}
 
 	#logo {}
 
@@ -40,14 +43,18 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-
+	background: none;
+	margin-top: -146px;
+	position: relative;
+	height: auto;
+	width: auto;
 
 	li {
-		float: left;
-		position: relative;
 
 		a {
 			border-bottom: 0;
+			padding: 5px 12px;
+			margin: 6px 16px;
 
 			/*
 			you can use hover styles here even though this size
@@ -120,13 +127,6 @@ NAVIGATION STYLES
 		}
 
 	} /* end .menu ul li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current-page-ancestor {
-		a {}
-	}  /* end current highlighters */
 
 } /* end .nav */
 

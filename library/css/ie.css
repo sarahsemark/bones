@@ -446,37 +446,46 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+/* line 34, ../scss/_768up.scss */
+.header {
+  background: url("../images/nav-ribbon.png") repeat-x 0px 38px;
+  background-size: 30px 57px;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 42, ../scss/_768up.scss */
-.nav {
-  /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */
-}
 /* line 45, ../scss/_768up.scss */
-.nav li {
-  float: left;
+.nav {
+  background: none;
+  margin-top: -146px;
   position: relative;
+  height: auto;
+  width: auto;
+  /* end .menu ul li */
+}
+/* line 52, ../scss/_768up.scss */
+.nav li {
   /*
   plan your menus and drop-downs wisely.
   */
   /* showing sub-menus */
 }
-/* line 49, ../scss/_768up.scss */
+/* line 54, ../scss/_768up.scss */
 .nav li a {
   border-bottom: 0;
+  padding: 5px 12px;
+  margin: 6px 16px;
   /*
   you can use hover styles here even though this size
   has the possibility of being a mobile device.
   */
 }
-/* line 56, ../scss/_768up.scss */
+/* line 63, ../scss/_768up.scss */
 .nav li a:hover, .nav li a:focus {
   background-color: rgba(255, 255, 255, 0.5);
 }
-/* line 68, ../scss/_768up.scss */
+/* line 75, ../scss/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -487,7 +496,7 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 76, ../scss/_768up.scss */
+/* line 83, ../scss/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -496,7 +505,7 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 78, ../scss/_768up.scss */
+/* line 85, ../scss/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -505,12 +514,12 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 95, ../scss/_768up.scss */
+/* line 102, ../scss/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 117, ../scss/_768up.scss */
+/* line 124, ../scss/_768up.scss */
 .nav li:hover ul {
   top: auto;
   display: block;
@@ -579,7 +588,7 @@ be seen on the Desktop.
 /* line 15, ../scss/_1030up.scss */
 #social {
   display: block;
-  margin-top: -83px;
+  margin-top: -63px;
   float: right;
   z-index: 400;
 }

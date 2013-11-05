@@ -246,8 +246,6 @@ HEADER STYLES
 *********************/
 
 #header {
-	background: url('../images/nav-ribbon.png') repeat-x 0px 38px;
-	background-size: 30px 57px;
 	width: 100%;
 	position: fixed;
 	z-index: 10;
@@ -289,16 +287,24 @@ and more scalable.
 */
 
 .nav {
-	margin-top: -126px;
 	font-size: .9em;
+	background: url('../images/nav-ribbon.png') repeat-x 0px 0px;
+	background-size: 30px 57px;
+	position: fixed;
+	bottom: -20px;
+	left: 0;
+	height: 57px;
+	width: 100%;
 
 	li {
+		float: left;
+		position: relative;
 
 		a {
 			display: block;
 			text-decoration: none;
-			padding: 5px 12px;
-			margin: 6px 16px;
+			padding: 10px 12px;
+			margin: 6px 6px;
 			
 			&:hover, &:focus {
 
