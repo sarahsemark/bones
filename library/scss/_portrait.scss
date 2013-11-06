@@ -38,6 +38,27 @@ PARALLAX PANEL STYLES
 }
 
 
+#about-the-author {
+	
+	.rep {
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+	}
+	
+	#subscribe-field {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	input[name="jetpack_subscriptions_widget"] {
+		float: none;
+		width: 60%;
+		margin: 0 20% 0 20%;
+	}
+}
+
+
 
 /*********************
 POSTS & CONTENT STYLES

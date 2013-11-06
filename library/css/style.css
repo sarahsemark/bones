@@ -2441,10 +2441,29 @@ you can add resource intensive styles.
     margin: 1em 0 0;
   }
 
+  /* line 43, ../scss/_portrait.scss */
+  #about-the-author .rep {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+  }
+  /* line 49, ../scss/_portrait.scss */
+  #about-the-author #subscribe-field {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  /* line 54, ../scss/_portrait.scss */
+  #about-the-author input[name="jetpack_subscriptions_widget"] {
+    float: none;
+    width: 60%;
+    margin: 0 20% 0 20%;
+  }
+
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 46, ../scss/_portrait.scss */
+  /* line 67, ../scss/_portrait.scss */
   .eightcol.twopush {
     margin-left: 0;
     width: 100%;
