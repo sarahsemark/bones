@@ -864,14 +864,14 @@ COMMENT STYLES
 		clear: both;
 		overflow: hidden;
 		list-style-type: none;		
-		width: 82.87292817100001%;
+		width: 100%;
 		margin: 20px 0;
 		font-size: .95em;
 		padding: 10px;
 		float: left;
 		background: url('../images/leather.png');
 		background-size: 398px 484px;
-		text-align: left;
+		text-align: center;
 		border: 1px solid darken($beige, 50%);
 		@include box-shadow;
 			
@@ -947,12 +947,11 @@ COMMENT STYLES
 		border-bottom: 2px solid darken($beige, 40%);
 		font-family: $serif;
 		text-transform: uppercase;
-		text-align: left;
+		text-align: center;
 
 		cite.fn {
 			font-weight: 700;
 			font-style: normal;
-			margin-left: 55px;
 
 			a.url {
 				color: $pink;
@@ -962,7 +961,8 @@ COMMENT STYLES
 		}
 
 		time {
-			float: right;
+			display: block;
+			font-size: .8em;
 
 			a {
 				color: $pink;
@@ -976,21 +976,8 @@ COMMENT STYLES
 
 		}
 
-		img.photo {}
-
 		img.avatar {
-			position: absolute;
-			left: 4px;
-			top: 4px;
-			transform: rotate(-4deg);
-			-webkit-transform: rotate(-4deg);
-			-moz-transform: rotate(-4deg);
-			-o-transform: rotate(-4deg);
-			-ms-transform: rotate(-4deg);
-			padding: 2px;
-			background: $black;
-			border: 1px solid darken($beige, 40%);
-			@include box-shadow;
+			display: none;
 		}
 
 	} /* end .commentlist .vcard */
@@ -1011,7 +998,7 @@ COMMENT STYLES
 
 	/* comment content */
 	.comment_content {
-		margin-left: 55px;
+		text-align: left;
 
 		p {
 			margin: 0.7335em 0 1.5em;
@@ -1024,12 +1011,11 @@ COMMENT STYLES
 	/* comment reply link */
 	.comment-reply-link {
 		text-decoration: none;
-		float: right;
 		background: $black;
 		padding: 5px 10px;
 		color: $white;
 		opacity: 0.65;
-		margin-bottom: 5px;
+		margin: 0 auto;
 		font-size: 0.8em;
 
 		&:hover,

@@ -569,19 +569,91 @@ a[rel="prev"]:hover, a[rel="next"]:hover {
 }
 
 /******************************************************************
+COMMENT STYLES
+******************************************************************/
+/* h3 comment title */
+/* line 179, ../scss/_768up.scss */
+#comments {
+  /* number of comments span */
+}
+
+/* line 196, ../scss/_768up.scss */
+.commentlist {
+  /* general comment classes */
+  /* vcard */
+  /* end .commentlist .vcard */
+  /* comment content */
+  /* comment reply link */
+}
+/* line 198, ../scss/_768up.scss */
+.commentlist li {
+  width: 82.87292817100001%;
+}
+/* line 203, ../scss/_768up.scss */
+.commentlist .odd {
+  float: right;
+}
+/* line 206, ../scss/_768up.scss */
+.commentlist .even {
+  float: left;
+}
+/* line 211, ../scss/_768up.scss */
+.commentlist .vcard {
+  text-align: left;
+}
+/* line 214, ../scss/_768up.scss */
+.commentlist .vcard cite.fn {
+  margin-left: 55px;
+}
+/* line 218, ../scss/_768up.scss */
+.commentlist .vcard time {
+  float: right;
+  font-size: 1em;
+}
+/* line 224, ../scss/_768up.scss */
+.commentlist .vcard img.avatar {
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  padding: 2px;
+  background: #180204;
+  border: 1px solid #443b28;
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+}
+/* line 244, ../scss/_768up.scss */
+.commentlist .comment_content {
+  margin-left: 55px;
+}
+/* line 249, ../scss/_768up.scss */
+.commentlist .comment-reply-link {
+  float: right;
+}
+
+/* end .commentlist */
+/******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 178, ../scss/_768up.scss */
+/* line 264, ../scss/_768up.scss */
 .respond-form {
   padding-bottom: 2.2em;
 }
-/* line 181, ../scss/_768up.scss */
+/* line 267, ../scss/_768up.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 188, ../scss/_768up.scss */
+/* line 274, ../scss/_768up.scss */
 .respond-form form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -590,23 +662,23 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 204, ../scss/_768up.scss */
+/* line 290, ../scss/_768up.scss */
 form div {
   padding-top: 20px;
 }
-/* line 208, ../scss/_768up.scss */
+/* line 294, ../scss/_768up.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
   display: block;
 }
-/* line 215, ../scss/_768up.scss */
+/* line 301, ../scss/_768up.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 223, ../scss/_768up.scss */
+/* line 309, ../scss/_768up.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -615,7 +687,7 @@ form textarea {
   float: left;
   width: 75%;
 }
-/* line 229, ../scss/_768up.scss */
+/* line 315, ../scss/_768up.scss */
 form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -624,11 +696,11 @@ form textarea {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 244, ../scss/_768up.scss */
+/* line 330, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
 }
-/* line 248, ../scss/_768up.scss */
+/* line 334, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }

@@ -172,6 +172,92 @@ a[rel="prev"], a[rel="next"] {
 
 
 /******************************************************************
+COMMENT STYLES
+******************************************************************/
+
+/* h3 comment title */
+#comments {
+
+	/* number of comments span */
+	span {}
+
+}
+
+.comment-nav {
+
+	ul {
+
+		li {}
+
+	}
+}
+
+
+.commentlist {
+
+	li {	
+		width: 82.87292817100001%;
+	}
+
+	/* general comment classes */
+	.odd {
+		float: right;
+	}
+	.even {
+		float: left;
+	}
+
+	/* vcard */
+	.vcard {
+		text-align: left;
+
+		cite.fn {
+			margin-left: 55px;
+		}
+
+		time {
+			float: right;
+			font-size: 1em;
+		}
+
+
+		img.avatar {
+			display: block;
+			position: absolute;
+			left: 4px;
+			top: 4px;
+			transform: rotate(-4deg);
+			-webkit-transform: rotate(-4deg);
+			-moz-transform: rotate(-4deg);
+			-o-transform: rotate(-4deg);
+			-ms-transform: rotate(-4deg);
+			padding: 2px;
+			background: $black;
+			border: 1px solid darken($beige, 40%);
+			@include box-shadow;
+		}
+
+	} /* end .commentlist .vcard */
+	
+
+	/* comment content */
+	.comment_content {
+		margin-left: 55px;
+	} 
+
+	/* comment reply link */
+	.comment-reply-link {
+		float: right;
+	} 
+
+} /* end .commentlist */
+
+
+
+
+
+
+/******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
 
