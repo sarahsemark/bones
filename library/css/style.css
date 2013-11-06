@@ -2460,10 +2460,17 @@ you can add resource intensive styles.
     margin: 0 20% 0 20%;
   }
 
+  /* line 63, ../scss/_portrait.scss */
+  #news .news-excerpt {
+    width: 100%;
+    clear: both;
+    margin: 10px 0 20px 0;
+  }
+
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 67, ../scss/_portrait.scss */
+  /* line 77, ../scss/_portrait.scss */
   .eightcol.twopush {
     margin-left: 0;
     width: 100%;
