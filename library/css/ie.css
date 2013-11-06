@@ -571,21 +571,15 @@ a[rel="prev"]:hover, a[rel="next"]:hover {
 /*********************
 FOOTER STYLES
 *********************/
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-/* line 183, ../scss/_768up.scss */
-.footer-links ul li {
-  /*
-  be careful with the depth of your menus.
-  it's very rare to have multi-depth menus in
-  the footer.
-  */
+/* line 177, ../scss/_768up.scss */
+.footer {
+  margin-bottom: 0px;
+}
+/* line 181, ../scss/_768up.scss */
+.footer a:hover {
+  color: #b99d95;
 }
 
-/* end .footer-links */
 /******************************************************************
 Site Name: 
 Author: 
@@ -657,6 +651,17 @@ POSTS & CONTENT STYLES
 /* line 78, ../scss/_1030up.scss */
 .date {
   width: 40%;
+}
+
+/* line 83, ../scss/_1030up.scss */
+.footer {
+  background: url("../images/nav-ribbon.png") repeat-x 0px center;
+  background-size: 30px 57px;
+  border-top: 0;
+  margin: 40px 0 20px;
+  padding: 10px;
+  color: #4e3a34;
+  letter-spacing: 2px;
 }
 
 /* 

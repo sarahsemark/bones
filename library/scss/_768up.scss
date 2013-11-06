@@ -169,28 +169,17 @@ a[rel="prev"], a[rel="next"] {
 	}
 }
 
+
 /*********************
 FOOTER STYLES
 *********************/
 
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links {
-	ul {
-		li {
-			a {
-				&:hover {}
-			}
-			/*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-			ul {}
+.footer {
+	margin-bottom: 0px;
+	
+	a {		
+		&:hover {
+			color: lighten($pink, 10%);
 		}
 	}
-} /* end .footer-links */
-
+}

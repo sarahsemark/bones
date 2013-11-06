@@ -1240,22 +1240,23 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background: url('../images/nav-ribbon.png') repeat-x 0px center;
-	background-size: 30px 57px;
-	margin: 40px 0 20px;
-	padding: 10px;
 	text-align: center;
 	font-size: .8em;
-	color: darken($pink, 30%);
+	color: darken($pink, 10%);
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
+	margin: 0 20px 40px;
+	border-top: 1px solid darken($pink, 30%);
 	
 	a {
-		color: darken($pink, 30%);
+		color: darken($pink, 20%);
 		text-decoration: none;
-		
-		&:hover {
-			color: $burgundy;
-		}
+	}
+	
+	p {
+		-webkit-hyphens: none;
+		-epub-hyphens: none;
+		-moz-hyphens: none;
+		hyphens: none;
 	}
 }

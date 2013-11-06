@@ -78,3 +78,14 @@ POSTS & CONTENT STYLES
 .date {
 	width: 40%;
 }
+
+
+.footer {
+	background: url('../images/nav-ribbon.png') repeat-x 0px center;
+	background-size: 30px 57px;
+	border-top: 0;
+	margin: 40px 0 20px;
+	padding: 10px;
+	color: darken($pink, 30%);
+	letter-spacing: 2px;
+}
