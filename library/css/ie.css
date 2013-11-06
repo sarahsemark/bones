@@ -602,19 +602,19 @@ html, body, #container {
 }
 /* line 191, ../scss/_768up.scss */
 .middle-slide img {
-  opacity: 0.1;
+  opacity: 0.2;
   position: absolute;
 }
 /* line 196, ../scss/_768up.scss */
-.middle-slide #the-books {
-  opacity: .05;
-  left: 20%;
-  width: 690px;
-  height: 426px;
+.middle-slide .middle-text {
+  opacity: .1;
+  left: 15%;
+  width: 771px;
+  height: 450px;
 }
 /* line 203, ../scss/_768up.scss */
-.middle-slide #angel {
-  right: 10%;
+.middle-slide .angel {
+  right: 15%;
 }
 
 /* down buttons */

@@ -35,8 +35,21 @@ foreach ($pages as $page_data) :
 <div class="middle-slide" data-stellar-background-ratio="2.5">
 	
 	<?php if ($slug == "home"):  ?>
-	<img id="the-books" src="<?php echo get_template_directory_uri(); ?>/library/images/books.png" alt="books" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
-	<img id="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="500" />
+	<img id="the-books" class="middle-text" src="<?php echo get_template_directory_uri(); ?>/library/images/books.png" alt="The Books" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
+	<img class="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="500" />
+	
+	<?php elseif ($slug == "books"):  ?>
+	<img id="the-author" class="middle-text" src="<?php echo get_template_directory_uri(); ?>/library/images/author.png" alt="The Author" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
+	<img class="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="500" />
+	
+	<?php elseif ($slug == "about-the-author"):  ?>
+	<img id="the-news" class="middle-text" src="<?php echo get_template_directory_uri(); ?>/library/images/news.png" alt="The Latest News" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
+	<img class="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="500" />
+
+	<?php elseif ($slug == "news"):  ?>
+	<img id="the-end" class="middle-text" src="<?php echo get_template_directory_uri(); ?>/library/images/end.png" alt="The End" data-stellar-ratio=".5" data-stellar-vertical-offset="350" />
+	<img class="angel" src="<?php echo get_template_directory_uri(); ?>/library/images/angel.png" alt="fleuron" data-stellar-ratio="1.5" data-stellar-vertical-offset="500" />
+
 	<?php endif; ?>
 	
 </div>

@@ -189,19 +189,19 @@ html, body, #container {
 	}
 	
 	img {
-		opacity: 0.1;
+		opacity: 0.2;
 		position: absolute;
 	}
 	
-	#the-books {
-		opacity: .05;
-		left: 20%;
-		width: 690px;
-		height: 426px;
+	.middle-text {
+		opacity: .1;
+		left: 15%;
+		width: 771px;
+		height: 450px;
 	}
 	
-	#angel {
-		right: 10%;
+	.angel {
+		right: 15%;
 	}
 }
 
