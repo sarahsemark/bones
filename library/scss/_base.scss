@@ -225,23 +225,8 @@ HEADER STYLES
 *********************/
 
 #header {
-	width: 100%;
-	position: fixed;
-	z-index: 10;
-	top: 100px;
-	transition: all 200ms linear;
-	
-	&.scrolled {
-		top: -20px;
-	}
-}
 
-/* move banner up on static pages */
-.blog #header, .single #header {
-	top: -20px;
-	position: static;
 }
-
 	#logo {
 		width: 300px;
 		height: 199px;
@@ -367,6 +352,8 @@ FADE OUT AND FADE IN ON FIRST REQUEST
 	transition: opacity 5000ms linear;
 }
 
+
+
 /*********************
 PARALLAX PANEL STYLES
 *********************/
@@ -379,9 +366,11 @@ html, body, #container {
 .page-panel {
     background-attachment: fixed;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: relative;
     background: transparent;
+    padding-bottom: 80px;
+	border-bottom: 1px solid darken($pink, 30%);
 }
 .inner-content {
     height: 100%;
@@ -389,51 +378,18 @@ html, body, #container {
     position: relative;
 }
 .inner-content .entry-content {
-	padding-top: 160px;
+	
 }
 
 
 #smoke {
-    position: absolute;
-    top: 0px;
-    right: calc(50% - 500px);
-    opacity: 0.5;
-    z-index: 200;
-    pointer-events: none;
+    display: none;
 }
 
 
 /* between panels */
 .middle-slide {
-	height: 150px;
-	width: 100%;
-	border-top: 1px solid darken($pink, 30%);
-	border-bottom: 1px solid darken($pink, 30%);
-	text-align: center;
-	background: url('../images/in-between.png') 0 0 repeat;
-	background-size: auto;
-	position: relative;
-	overflow: hidden;
-	
-	div {
-		padding: 100px;
-	}
-	
-	img {
-		opacity: 0.1;
-		position: absolute;
-	}
-	
-	#the-books {
-		opacity: .05;
-		left: 20%;
-		width: 690px;
-		height: 426px;
-	}
-	
-	#angel {
-		right: 10%;
-	}
+	display: none;
 }
 
 
