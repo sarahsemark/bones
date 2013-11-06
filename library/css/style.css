@@ -1808,43 +1808,38 @@ SIDEBARS & ASIDES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 1150, ../scss/_base.scss */
-form {
-  padding-bottom: 2.2em;
-  margin: 0 0 2em 0;
-}
-/* line 1154, ../scss/_base.scss */
+/* line 1152, ../scss/_base.scss */
 form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 1160, ../scss/_base.scss */
+/* line 1158, ../scss/_base.scss */
 form li label,
 form li small {
   display: none;
 }
-/* line 1165, ../scss/_base.scss */
+/* line 1163, ../scss/_base.scss */
 form div {
   clear: both;
   padding-top: 20px;
 }
-/* line 1170, ../scss/_base.scss */
+/* line 1168, ../scss/_base.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
 }
-/* line 1175, ../scss/_base.scss */
+/* line 1173, ../scss/_base.scss */
 form label span, form label.textarea {
   display: none;
 }
-/* line 1179, ../scss/_base.scss */
+/* line 1177, ../scss/_base.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 1187, ../scss/_base.scss */
+/* line 1185, ../scss/_base.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -1871,14 +1866,14 @@ form textarea {
   width: 75%;
   /* form validation */
 }
-/* line 1200, ../scss/_base.scss */
+/* line 1198, ../scss/_base.scss */
 form input[type=text]:focus,
 form input[type=email]:focus,
 form input[type=url]:focus,
 form textarea:focus {
   background: #fff;
 }
-/* line 1205, ../scss/_base.scss */
+/* line 1203, ../scss/_base.scss */
 form input[type=text]:invalid,
 form input[type=email]:invalid,
 form input[type=url]:invalid,
@@ -1891,17 +1886,17 @@ form textarea:invalid {
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1216, ../scss/_base.scss */
+/* line 1214, ../scss/_base.scss */
 form textarea {
   width: 100%;
   height: 150px;
   margin: 5px 0;
 }
-/* line 1222, ../scss/_base.scss */
+/* line 1220, ../scss/_base.scss */
 form .contact-submit {
   text-align: center;
 }
-/* line 1226, ../scss/_base.scss */
+/* line 1224, ../scss/_base.scss */
 form input[type=submit] {
   display: block;
   clear: both;
@@ -1911,7 +1906,7 @@ form input[type=submit] {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1243, ../scss/_base.scss */
+/* line 1241, ../scss/_base.scss */
 .footer {
   clear: both;
   background: url("../images/nav-ribbon.png") repeat-x 0px center;
@@ -1924,12 +1919,12 @@ FOOTER STYLES
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 1255, ../scss/_base.scss */
+/* line 1253, ../scss/_base.scss */
 .footer a {
   color: #4e3a34;
   text-decoration: none;
 }
-/* line 1259, ../scss/_base.scss */
+/* line 1257, ../scss/_base.scss */
 .footer a:hover {
   color: #400007;
 }
