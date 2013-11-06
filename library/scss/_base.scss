@@ -1046,13 +1046,11 @@ COMMENT FORM STYLES
 ******************************************************************/
 
 .respond-form {
-	margin: 1.5em 10px;
-	padding-bottom: 2.2em;
+	margin: 0 10px;
+	padding-bottom: 1em;
 	
-	div {
-		width: 60%;
-		margin: 10px 20%;
-		clear: both;
+	#comment-form-title {
+		margin-bottom: 10px;
 	}
 
 	form {
@@ -1081,15 +1079,12 @@ COMMENT FORM STYLES
 		input[type=text],
 		input[type=email],
 		input[type=url] {
-			max-width: 400px;
-			min-width: 250px;
+			max-width: 480px;
+			min-width: 200px;
 		}
 
 		textarea {
-			height: 200px;
-			clear: both;
-			margin: 20px 10%;
-			width: 80%;
+
 		}
 
 	}
@@ -1112,34 +1107,7 @@ COMMENT FORM STYLES
 		margin: 0 20px 1.1em;
 	}
 
-/*********************
-SIDEBARS & ASIDES
-*********************/
 
-.sidebar {}
-
-	.widgettitle {}
-
-	.widget {
-
-		ul {
-
-			li {
-
-				&:first-child {}
-
-				&:last-child {}
-
-				a {}
-
-				/* deep nesting */
-				ul {}
-
-			}
-
-		}
-
-	}
 	
 
 
@@ -1162,18 +1130,17 @@ form {
 	
 	div {
 		clear: both;
-		padding-top: 20px;
+		padding-top: 10px;
 	}
 	
 	label {
-		width: 20%;
-		padding-top: 10px;
-		float: left;
+		display: none;
 		
 		span, &.textarea {
 			display: none;
 		}
 	}
+	
 	input[type="checkbox"] + label {
 		 float: none;
 		 width: 100%;
@@ -1191,9 +1158,7 @@ form {
 		@include box-shadow (1px, rgba(0, 0, 0, .1));
 		border: 1px solid lighten($burgundy, 20%);
 		line-height: 1.5em;
-		margin-left: 5%;
-		float: left;
-		width: 75%;
+		width: 100%;
 
 		&:focus {
 			background: #fff;
@@ -1212,9 +1177,10 @@ form {
 	}
 
 	textarea {
+		height: 200px;
+		clear: both;
+		margin: 10px 0%;
 		width: 100%;
-		height: 150px;
-		margin: 5px 0;
 	}
 	
 	.contact-submit {

@@ -170,6 +170,73 @@ a[rel="prev"], a[rel="next"] {
 }
 
 
+
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+
+.respond-form {
+	padding-bottom: 2.2em;
+	
+	div {
+		width: 60%;
+		margin: 10px 20%;
+		clear: both;
+	}
+	
+	form {
+		textarea {
+			margin: 20px 10%;
+			width: 80%;
+		}
+	}
+}
+
+
+
+
+/******************************************************************
+FORM STYLES
+******************************************************************/
+
+form {
+	
+	div {
+		padding-top: 20px;
+	}
+	
+	label {
+		width: 20%;
+		padding-top: 10px;
+		float: left;
+		display: block;
+	}
+	
+	input[type="checkbox"] + label {
+		 float: none;
+		 width: 100%;
+	 }
+
+	input[type=text],
+	input[type=email],
+	input[type=url],
+	textarea {
+		margin-left: 5%;
+		float: left;
+		width: 75%;
+	}
+	
+	textarea {
+		margin: 20px 10%;
+		width: 80%;
+	}
+
+}
+
+
+
+
+
 /*********************
 FOOTER STYLES
 *********************/

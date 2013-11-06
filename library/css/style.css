@@ -1740,23 +1740,21 @@ COMMENT FORM STYLES
 ******************************************************************/
 /* line 1048, ../scss/_base.scss */
 .respond-form {
-  margin: 1.5em 10px;
-  padding-bottom: 2.2em;
+  margin: 0 10px;
+  padding-bottom: 1em;
 }
 /* line 1052, ../scss/_base.scss */
-.respond-form div {
-  width: 60%;
-  margin: 10px 20%;
-  clear: both;
+.respond-form #comment-form-title {
+  margin-bottom: 10px;
 }
-/* line 1063, ../scss/_base.scss */
+/* line 1061, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
 .respond-form form textarea {
   /* form validation */
 }
-/* line 1070, ../scss/_base.scss */
+/* line 1068, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1769,22 +1767,15 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1083, ../scss/_base.scss */
+/* line 1081, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
-  max-width: 400px;
-  min-width: 250px;
-}
-/* line 1088, ../scss/_base.scss */
-.respond-form form textarea {
-  height: 200px;
-  clear: both;
-  margin: 20px 10%;
-  width: 80%;
+  max-width: 480px;
+  min-width: 200px;
 }
 
-/* line 1098, ../scss/_base.scss */
+/* line 1093, ../scss/_base.scss */
 .comment-subscription-form {
   text-align: center;
 }
@@ -1792,54 +1783,44 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* no comments */
-/* line 1111, ../scss/_base.scss */
+/* line 1106, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
-}
-
-/*********************
-SIDEBARS & ASIDES
-*********************/
-/* line 1127, ../scss/_base.scss */
-.widget ul li {
-  /* deep nesting */
 }
 
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 1152, ../scss/_base.scss */
+/* line 1120, ../scss/_base.scss */
 form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 1158, ../scss/_base.scss */
+/* line 1126, ../scss/_base.scss */
 form li label,
 form li small {
   display: none;
 }
-/* line 1163, ../scss/_base.scss */
+/* line 1131, ../scss/_base.scss */
 form div {
   clear: both;
-  padding-top: 20px;
-}
-/* line 1168, ../scss/_base.scss */
-form label {
-  width: 20%;
   padding-top: 10px;
-  float: left;
 }
-/* line 1173, ../scss/_base.scss */
+/* line 1136, ../scss/_base.scss */
+form label {
+  display: none;
+}
+/* line 1139, ../scss/_base.scss */
 form label span, form label.textarea {
   display: none;
 }
-/* line 1177, ../scss/_base.scss */
+/* line 1144, ../scss/_base.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 1185, ../scss/_base.scss */
+/* line 1152, ../scss/_base.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -1861,19 +1842,17 @@ form textarea {
   box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
   border: 1px solid #a60012;
   line-height: 1.5em;
-  margin-left: 5%;
-  float: left;
-  width: 75%;
+  width: 100%;
   /* form validation */
 }
-/* line 1198, ../scss/_base.scss */
+/* line 1163, ../scss/_base.scss */
 form input[type=text]:focus,
 form input[type=email]:focus,
 form input[type=url]:focus,
 form textarea:focus {
   background: #fff;
 }
-/* line 1203, ../scss/_base.scss */
+/* line 1168, ../scss/_base.scss */
 form input[type=text]:invalid,
 form input[type=email]:invalid,
 form input[type=url]:invalid,
@@ -1886,17 +1865,18 @@ form textarea:invalid {
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1214, ../scss/_base.scss */
+/* line 1179, ../scss/_base.scss */
 form textarea {
+  height: 200px;
+  clear: both;
+  margin: 10px 0%;
   width: 100%;
-  height: 150px;
-  margin: 5px 0;
 }
-/* line 1220, ../scss/_base.scss */
+/* line 1186, ../scss/_base.scss */
 form .contact-submit {
   text-align: center;
 }
-/* line 1224, ../scss/_base.scss */
+/* line 1190, ../scss/_base.scss */
 form input[type=submit] {
   display: block;
   clear: both;
@@ -1906,7 +1886,7 @@ form input[type=submit] {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1241, ../scss/_base.scss */
+/* line 1207, ../scss/_base.scss */
 .footer {
   clear: both;
   text-align: center;
@@ -1917,12 +1897,12 @@ FOOTER STYLES
   margin: 0 20px 40px;
   border-top: 1px solid #4e3a34;
 }
-/* line 1251, ../scss/_base.scss */
+/* line 1217, ../scss/_base.scss */
 .footer a {
   color: #6d5148;
   text-decoration: none;
 }
-/* line 1256, ../scss/_base.scss */
+/* line 1222, ../scss/_base.scss */
 .footer p {
   -webkit-hyphens: none;
   -epub-hyphens: none;
@@ -2297,14 +2277,67 @@ you can add resource intensive styles.
     text-align: justify;
   }
 
+  /******************************************************************
+  COMMENT FORM STYLES
+  ******************************************************************/
+  /* line 178, ../scss/_768up.scss */
+  .respond-form {
+    padding-bottom: 2.2em;
+  }
+  /* line 181, ../scss/_768up.scss */
+  .respond-form div {
+    width: 60%;
+    margin: 10px 20%;
+    clear: both;
+  }
+  /* line 188, ../scss/_768up.scss */
+  .respond-form form textarea {
+    margin: 20px 10%;
+    width: 80%;
+  }
+
+  /******************************************************************
+  FORM STYLES
+  ******************************************************************/
+  /* line 204, ../scss/_768up.scss */
+  form div {
+    padding-top: 20px;
+  }
+  /* line 208, ../scss/_768up.scss */
+  form label {
+    width: 20%;
+    padding-top: 10px;
+    float: left;
+    display: block;
+  }
+  /* line 215, ../scss/_768up.scss */
+  form input[type="checkbox"] + label {
+    float: none;
+    width: 100%;
+  }
+  /* line 223, ../scss/_768up.scss */
+  form input[type=text],
+  form input[type=email],
+  form input[type=url],
+  form textarea {
+    margin-left: 5%;
+    float: left;
+    width: 75%;
+  }
+  /* line 229, ../scss/_768up.scss */
+  form textarea {
+    margin: 20px 10%;
+    width: 80%;
+  }
+
   /*********************
   FOOTER STYLES
   *********************/
-  /* line 177, ../scss/_768up.scss */
+  /* line 244, ../scss/_768up.scss */
   .footer {
     margin-bottom: 0px;
   }
-  /* line 181, ../scss/_768up.scss */
+  /* line 248, ../scss/_768up.scss */
   .footer a:hover {
     color: #b99d95;
   }

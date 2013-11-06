@@ -568,14 +568,67 @@ a[rel="prev"]:hover, a[rel="next"]:hover {
   text-align: justify;
 }
 
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+/* line 178, ../scss/_768up.scss */
+.respond-form {
+  padding-bottom: 2.2em;
+}
+/* line 181, ../scss/_768up.scss */
+.respond-form div {
+  width: 60%;
+  margin: 10px 20%;
+  clear: both;
+}
+/* line 188, ../scss/_768up.scss */
+.respond-form form textarea {
+  margin: 20px 10%;
+  width: 80%;
+}
+
+/******************************************************************
+FORM STYLES
+******************************************************************/
+/* line 204, ../scss/_768up.scss */
+form div {
+  padding-top: 20px;
+}
+/* line 208, ../scss/_768up.scss */
+form label {
+  width: 20%;
+  padding-top: 10px;
+  float: left;
+  display: block;
+}
+/* line 215, ../scss/_768up.scss */
+form input[type="checkbox"] + label {
+  float: none;
+  width: 100%;
+}
+/* line 223, ../scss/_768up.scss */
+form input[type=text],
+form input[type=email],
+form input[type=url],
+form textarea {
+  margin-left: 5%;
+  float: left;
+  width: 75%;
+}
+/* line 229, ../scss/_768up.scss */
+form textarea {
+  margin: 20px 10%;
+  width: 80%;
+}
+
 /*********************
 FOOTER STYLES
 *********************/
-/* line 177, ../scss/_768up.scss */
+/* line 244, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
 }
-/* line 181, ../scss/_768up.scss */
+/* line 248, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }
