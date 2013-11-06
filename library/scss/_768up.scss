@@ -86,7 +86,7 @@ HEADER STYLES
 }
 
 /* move banner up on static pages */
-.blog #header, .single #header {
+.blog #header, .single #header, .page-template-default #header, .error404 #header {
 	top: -20px;
 	position: static;
 }

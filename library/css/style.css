@@ -2148,7 +2148,7 @@ you can add resource intensive styles.
 
   /* move banner up on static pages */
   /* line 89, ../scss/_768up.scss */
-  .blog #header, .single #header {
+  .blog #header, .single #header, .page-template-default #header, .error404 #header {
     top: -20px;
     position: static;
   }
