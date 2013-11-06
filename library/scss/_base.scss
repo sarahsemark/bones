@@ -503,6 +503,10 @@ html, body, #container {
 		border: 1px solid darken($beige, 50%);
 		@include box-shadow;
 		
+		p {
+			text-align: center;
+		}
+		
 		h2 {
 			margin: 1em 0 0;
 		}
