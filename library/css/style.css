@@ -2406,9 +2406,45 @@ you can add resource intensive styles.
     color: #b99d95;
   }
 }
-/* on tablets only, make abbreviated content pane full-width */
-@media only screen and (max-width: 1024px) and (min-width: 481px) {
-  /* line 66, ../scss/style.scss */
+@media (orientation: portrait) {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Portrait Stylesheet
+  
+  This will mostly be used for tablets. It's only loaded when a device is using 
+  portrait orientation, ie, it's taller than it is wide. 
+  
+  ******************************************************************/
+  /*********************
+  PARALLAX PANEL STYLES
+  *********************/
+  /* line 19, ../scss/_portrait.scss */
+  #books #darkwalker {
+    width: 60%;
+    float: none;
+    margin: 10% 20% -50px;
+  }
+  /* line 25, ../scss/_portrait.scss */
+  #books .pre-order {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+  /* line 30, ../scss/_portrait.scss */
+  #books .pre-order p {
+    text-align: center;
+  }
+  /* line 34, ../scss/_portrait.scss */
+  #books .pre-order h2 {
+    margin: 1em 0 0;
+  }
+
+  /*********************
+  POSTS & CONTENT STYLES
+  *********************/
+  /* line 46, ../scss/_portrait.scss */
   .eightcol.twopush {
     margin-left: 0;
     width: 100%;

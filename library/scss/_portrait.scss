@@ -1,0 +1,49 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Portrait Stylesheet
+
+This will mostly be used for tablets. It's only loaded when a device is using 
+portrait orientation, ie, it's taller than it is wide. 
+
+******************************************************************/
+
+
+/*********************
+PARALLAX PANEL STYLES
+*********************/
+
+#books {
+	
+	#darkwalker {
+		width: 60%;
+		float: none;
+		margin: 10% 20% -50px;
+	}
+	
+	.pre-order {
+		width: 100%;
+		margin: 0;
+		float: none;
+		
+		p {
+			text-align: center;
+		}
+		
+		h2 {
+			margin: 1em 0 0;
+		}
+	}
+}
+
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+.eightcol.twopush {
+	margin-left: 0;
+	width: 100%;
+}
