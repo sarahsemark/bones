@@ -807,7 +807,7 @@ body, body.home.show-background {
   line-height: 1.5;
   color: #c9bca2;
   background-color: #180204;
-  background: url("../images/wallpaper.png") fixed repeat;
+  background: url("../images/wallpaper.jpg") fixed repeat;
   background-size: cover;
 }
 
@@ -1276,7 +1276,7 @@ html, body, #container {
 
 /* line 479, ../scss/_base.scss */
 #books {
-  background: url("../images/wallpaper.png") repeat;
+  background: url("../images/wallpaper.jpg") repeat;
 }
 /* line 482, ../scss/_base.scss */
 #books #darkwalker {
