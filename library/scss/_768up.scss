@@ -238,6 +238,12 @@ html, body, #container {
 		pointer-events: none;
 	}
 
+	.direction-button {
+		position: absolute;
+		left: 50%;
+		margin-left: -31px;
+		bottom: 20px;
+	}
 }
 
 
