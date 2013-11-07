@@ -220,11 +220,10 @@ html, body, #container {
 #news {
 	#smoke-two {
     	position: absolute;
-    	height: 800px;
-    	width: 1280px;
+    	max-width: 100%;
 		top: 0;
 		left: 0;
-		opacity: .25;
+		opacity: .5;
 		pointer-events: none;
 	}
 
