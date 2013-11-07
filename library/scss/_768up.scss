@@ -196,8 +196,13 @@ html, body, #container {
 /* individual page panels */
 #home {
 	
+	#mobile-logo {
+		display: none;
+	}
+	
 	blockquote {
 		font-size: 2em;
+		margin-top: 25%;
 	}
 }
 
@@ -218,6 +223,8 @@ html, body, #container {
 }
 
 #news {
+	padding-top: 0;
+
 	#smoke-two {
     	position: absolute;
     	max-width: 100%;

@@ -270,15 +270,6 @@ HEADER STYLES
 	
 	#logo {
 		display: none;
-		width: 150px;
-		height: 100px;
-		padding: 30px 20px;
-		font: 0/0 a;
-		overflow: hidden;
-		margin: 10px auto 0;
-		background: url('../images/logo.png');
-		background-size: cover;
-
 	}
 
 }
@@ -465,11 +456,18 @@ html, body, #container {
 #home {
 	background: url('../images/salon-ios.jpg') no-repeat;
 	background-size: cover;
+	text-align: center;
+	padding-top: 20px;
+	
+	#mobile-logo {
+		width: 250px;
+		height: 166px;
+		margin: 5% auto 10px;
+	}
 	
 	blockquote {
-		text-align: center;
-		margin-top: 25%;
-		font-size: 2em;
+		margin-top: 10%;
+		font-size: 1.2em;
 		
 		p {
 			text-align: center;
@@ -478,7 +476,7 @@ html, body, #container {
 	}
 	
 	.down-button {
-		bottom: 50px;
+		display: none;
 	}
 }
 
@@ -564,6 +562,7 @@ html, body, #container {
 #news {
 	background: url("../images/salon-bw-ios.jpg") no-repeat;
 	background-size: cover;
+	padding-top: 20px;
 	
 	h2 {
 		margin: 0;
