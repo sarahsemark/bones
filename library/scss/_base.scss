@@ -218,8 +218,9 @@ h5 {
 	font-size: 6em;
     float: left;  
     margin: -.1em .05em -.1em -.1em;  
-    color: darken($beige, 10%);
+    color: darken($beige, 25%);
     line-height: 1em;  
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.9), 0 1px 0 rgba(255,255,255,0.5);
 }
 .news-excerpt p {
 	margin-top: 40px;
