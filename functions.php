@@ -199,5 +199,19 @@ return '...';
 add_filter('excerpt_more', 'new_excerpt_more');
 
 
+// Let's make a fancy-pants date!
+function fancyDate($the_time) {
+	$fancyDate = '<h2 class="date">';
+	$fancyDate .= '<time class="updated" datetime="'.$the_time.'">';
+	$fancyDate .= '<span class="day">'. date('l', $the_time) .' </span>'; 
+	$fancyDate .= date('F j', $the_time);
+	$fancyDate .= '<span class="ordinal">'.date('S', $the_time).'</span>'; 
+	$fancyDate .= '<span class="year"> '.date('Y', $the_time).'</span>';
+	$fancyDate .= '</time>';
+	$fancyDate .= '</h2>';
+
+	return $fancyDate;
+}
+
 
 ?>

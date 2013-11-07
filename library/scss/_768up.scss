@@ -243,12 +243,29 @@ POSTS & CONTENT STYLES
 .date {
 	width: 60%;
 	margin-bottom: -20px;
+	
+	.day {
+		display: inline;
+		color: darken($beige, 30%);
+	}
+	
+	.ordinal {
+		display: inline;
+		display: inline;
+		font-size: 0.5em;
+		vertical-align: 30%;
+	}
+	
+	.year {
+		display: inline;
+		color: darken($beige, 30%);
+	}
 }
 
 /* nav buttons */
 
 .article-header {
-	span {
+	.spacer {
 		display: inline-block;
 		position: relative;
 		top: 0;

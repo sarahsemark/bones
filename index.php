@@ -12,9 +12,7 @@
 
 								<header class="article-header">
 
-									<h2 class="date"><?php
-										printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')) );
-									?></h2>
+									<?php echo fancyDate(get_post_time('U', true)); ?>	
 									
 									<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 										
