@@ -1,7 +1,11 @@
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
-    // initialise Stellar.js
-    $(window).stellar();
+    var mobileDevice = /(Android|iPad|iPhone|iPod|Windows Phone)/g.test(navigator.userAgent);
+
+    if (!mobileDevice) {
+        // initialise Stellar.js
+        $(window).stellar();
+    }
     
     // Cache some variables
     var links = $('nav').find('li a');
