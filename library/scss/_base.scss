@@ -443,9 +443,11 @@ html, body, #container {
 	blockquote {
 		text-align: center;
 		margin-top: 25%;
+		font-size: 2em;
 		
 		p {
 			text-align: center;
+			margin: .5em 0;
 		}
 	}
 	
@@ -671,8 +673,10 @@ a[rel="next"] {
 	blockquote {
 		font-family: $serif;
 		font-style: italic;
-		font-size: 2em; 
+		font-size: 1.25em; 
+		line-height: 1.25em;
 		color: $beige;
+		margin: 10% 5%;
 
 		&:before {}
 
