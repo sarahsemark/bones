@@ -243,19 +243,21 @@ h5 {
 HEADER STYLES
 *********************/
 
-#header {
-
-}
+.header {
+	
 	#logo {
-		width: 300px;
-		height: 199px;
+		width: 150px;
+		height: 100px;
 		padding: 30px 20px;
 		font: 0/0 a;
 		overflow: hidden;
-		margin: -30px auto 0;
+		margin: 10px auto 0;
 		background: url('../images/logo.png');
 		background-size: cover;
+
 	}
+
+}
 
 /*********************
 NAVIGATION STYLES
@@ -599,7 +601,7 @@ article + article {
 	span {
 		display: inline-block;
 		position: absolute;
-		top: 190px;
+		top: 110px;
 		left: -20px;
 		width: 62px;
 		height: 62px;
@@ -614,7 +616,7 @@ article + article {
 a[rel="prev"], a[rel="next"] {
     display: inline-block;
     position: absolute;
-    top: 170px;
+    top: 110px;
     left: -20px;
     vertical-align: middle;
     width: 62px;

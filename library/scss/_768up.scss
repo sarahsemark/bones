@@ -83,6 +83,17 @@ HEADER STYLES
 	&.scrolled {
 		top: -20px;
 	}
+	
+	#logo {
+		width: 300px;
+		height: 199px;
+		padding: 30px 20px;
+		font: 0/0 a;
+		overflow: hidden;
+		margin: -30px auto 0;
+		background: url('../images/logo.png');
+		background-size: cover;
+	}
 }
 
 /* move banner up on static pages */
@@ -90,8 +101,6 @@ HEADER STYLES
 	top: -20px;
 	position: static;
 }
-
-	#logo {}
 
 /*********************
 NAVIGATION STYLES
