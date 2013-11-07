@@ -112,6 +112,8 @@ NAVIGATION STYLES
 	width: auto;
 
 	li {
+		float: left;
+		position: relative;
 
 		a {
 			border-bottom: 0;
@@ -134,6 +136,16 @@ NAVIGATION STYLES
 	}
 
 } /* end .nav */
+
+
+/* highlight current page */
+.nav li.active, .blog .nav #menu-item-246, .single .nav #menu-item-246 {
+	background: url('../images/active-link.png') center center no-repeat;
+	
+	a {
+		color: darken($green, 20%);
+	}
+}
 
 
 

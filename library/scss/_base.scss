@@ -258,7 +258,7 @@ HEADER STYLES
 
 #header {
 	position: fixed;
-	top: -22px;
+	top: -10px;
 	left: 0;
 	height: 57px;
 	width: 100%;
@@ -299,16 +299,16 @@ and more scalable.
 	font-size: .9em;
 	background: url('../images/nav-ribbon.png') repeat-x 0px 0px;
 	background-size: 30px 57px;
+	text-align: center;
 
 	li {
-		float: left;
-		position: relative;
+		display: inline-block;
 
 		a {
 			display: block;
 			text-decoration: none;
-			padding: 10px 12px;
-			margin: 6px 6px;
+			padding: 15px 12px;
+			margin: 2px 4px;
 			color: $green;
 			
 			&:hover, &:focus {
@@ -336,7 +336,6 @@ and more scalable.
 
 /* highlight current page */
 .nav li.active, .blog .nav #menu-item-246, .single .nav #menu-item-246 {
-	background: url('../images/active-link.png') center center no-repeat;
 	
 	a {
 		color: darken($green, 20%);
@@ -585,7 +584,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #main {
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 
@@ -664,7 +663,7 @@ article + article {
 a[rel="prev"], a[rel="next"] {
     display: inline-block;
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: -17px;
     vertical-align: middle;
     width: 62px;
