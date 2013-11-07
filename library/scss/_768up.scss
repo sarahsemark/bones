@@ -203,6 +203,11 @@ html, body, #container {
 
 
 #books {
+
+	.sixcol.last {
+		clear: none;
+		padding-top: 0;
+	}
 	
 	.pre-order {
 	

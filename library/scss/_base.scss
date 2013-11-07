@@ -475,11 +475,16 @@ html, body, #container {
 #books {
 	background: url('../images/wallpaper.jpg') repeat;
 	
+	.sixcol.last {
+		clear: left;
+		padding-top: 40px;
+	}
+	
 	#darkwalker {
-		width: 40%;
+		width: 38%;
 		@include box-shadow;
 		float: left;
-		margin: -20px -4% 0 0;
+		margin: 2% -4% 0 0;
 	    transform: rotate(-2deg);
 		-webkit-transform: rotate(-2deg);
 		-moz-transform: rotate(-2deg);
@@ -488,8 +493,8 @@ html, body, #container {
 	}
 	
 	.pre-order {
-		width: 64%;
-		margin: 50px 0 0 0;
+		width: 66%;
+		margin: 10% 0 0 0;
 		font-size: .95em;
 		padding: 10px;
 		float: left;
