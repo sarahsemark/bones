@@ -106,6 +106,21 @@ a, a:visited {
 	}
 }
 
+
+/*********************
+SELECTED TEXT
+*********************/
+
+::selection {
+	background: $black; 
+	color: lighten($white, 10%);
+}
+
+::-moz-selection {
+	background: $black; 
+	color: lighten($white, 10%);
+}
+
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
