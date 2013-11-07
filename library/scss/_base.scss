@@ -1056,6 +1056,11 @@ COMMENT FORM STYLES
 		textarea {
 
 		}
+		
+		input[type=submit] {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
 
 	}
 }
@@ -1121,17 +1126,35 @@ form {
 	input[type=url],
 	textarea {
 		padding: 10px 8px;
-		color: lighten($burgundy, 20%);
+		color: lighten($burgundy, 10%);
 		font-family: $slab-serif;
+		font-size: .9em;
 		background: $beige;
-		@include css-gradient(lighten($beige, 10%), lighten($beige, 5%));
-		@include box-shadow (1px, rgba(0, 0, 0, .1));
-		border: 1px solid lighten($burgundy, 20%);
-		line-height: 1.5em;
+		@include css-gradient(lighten($beige, 15%), lighten($beige, 10%));
+		@include box-shadow;
+		border: 1px solid darken($red, 20%);
+		line-height: 21px;
 		width: 100%;
+		-webkit-appearance: none;
+		border-radius: 0;
+		
+		&::-webkit-input-placeholder {
+			color: darken($beige, 20%);  
+		}
+
+		&::-moz-placeholder {
+			color: darken($beige, 20%);  
+		}
+
+		&:-ms-input-placeholder {  
+			color: darken($beige, 20%);  
+		}
 
 		&:focus {
-			background: #fff;
+			background: lighten ($white, 50%);
+			@include css-gradient(lighten($beige, 15%), lighten($beige, 20%));
+			border: 1px solid $red;
+			color: lighten($red, 5%);
 		}
 
 		/* form validation */
@@ -1158,9 +1181,12 @@ form {
 	}
 	
 	input[type=submit] {
+		padding: 10px 8px;
 		display: block;
 		clear: both;
 		margin: 10px auto;
+		-webkit-appearance: none;
+		border-radius: 0;
 		
 	}
 

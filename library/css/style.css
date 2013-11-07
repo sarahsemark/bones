@@ -1736,8 +1736,13 @@ COMMENT FORM STYLES
   max-width: 480px;
   min-width: 200px;
 }
+/* line 1060, ../scss/_base.scss */
+.respond-form form input[type=submit] {
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
-/* line 1063, ../scss/_base.scss */
+/* line 1068, ../scss/_base.scss */
 .comment-subscription-form {
   text-align: center;
 }
@@ -1745,7 +1750,7 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* no comments */
-/* line 1076, ../scss/_base.scss */
+/* line 1081, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1753,68 +1758,100 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 1090, ../scss/_base.scss */
+/* line 1095, ../scss/_base.scss */
 form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 1096, ../scss/_base.scss */
+/* line 1101, ../scss/_base.scss */
 form li label,
 form li small {
   display: none;
 }
-/* line 1101, ../scss/_base.scss */
+/* line 1106, ../scss/_base.scss */
 form div {
   clear: both;
   padding-top: 10px;
 }
-/* line 1106, ../scss/_base.scss */
+/* line 1111, ../scss/_base.scss */
 form label {
   display: none;
 }
-/* line 1109, ../scss/_base.scss */
+/* line 1114, ../scss/_base.scss */
 form label span, form label.textarea {
   display: none;
 }
-/* line 1114, ../scss/_base.scss */
+/* line 1119, ../scss/_base.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 1122, ../scss/_base.scss */
+/* line 1127, ../scss/_base.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
 form textarea {
   padding: 10px 8px;
-  color: #a60012;
+  color: #73000d;
   font-family: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .9em;
   background: #b6a582;
-  background-color: #bfb192;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c9bca2), to(#bfb192));
-  background-image: -webkit-linear-gradient(top, #c9bca2, #bfb192);
-  background-image: -moz-linear-gradient(top, #c9bca2, #bfb192);
-  background-image: -o-linear-gradient(top, #c9bca2, #bfb192);
-  background-image: linear-gradient(to bottom, #c9bca2, #bfb192);
-  -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
-  border: 1px solid #a60012;
-  line-height: 1.5em;
+  background-color: #c9bca2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d2c8b2), to(#c9bca2));
+  background-image: -webkit-linear-gradient(top, #d2c8b2, #c9bca2);
+  background-image: -moz-linear-gradient(top, #d2c8b2, #c9bca2);
+  background-image: -o-linear-gradient(top, #d2c8b2, #c9bca2);
+  background-image: linear-gradient(to bottom, #d2c8b2, #c9bca2);
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  border: 1px solid #0c0003;
+  line-height: 21px;
   width: 100%;
+  -webkit-appearance: none;
+  border-radius: 0;
   /* form validation */
 }
-/* line 1133, ../scss/_base.scss */
+/* line 1141, ../scss/_base.scss */
+form input[type=text]::-webkit-input-placeholder,
+form input[type=email]::-webkit-input-placeholder,
+form input[type=url]::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  color: #85734d;
+}
+/* line 1145, ../scss/_base.scss */
+form input[type=text]::-moz-placeholder,
+form input[type=email]::-moz-placeholder,
+form input[type=url]::-moz-placeholder,
+form textarea::-moz-placeholder {
+  color: #85734d;
+}
+/* line 1149, ../scss/_base.scss */
+form input[type=text]:-ms-input-placeholder,
+form input[type=email]:-ms-input-placeholder,
+form input[type=url]:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  color: #85734d;
+}
+/* line 1153, ../scss/_base.scss */
 form input[type=text]:focus,
 form input[type=email]:focus,
 form input[type=url]:focus,
 form textarea:focus {
-  background: #fff;
+  background: lighten #c9bca2, 50%;
+  background-color: #dcd3c2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d2c8b2), to(#dcd3c2));
+  background-image: -webkit-linear-gradient(top, #d2c8b2, #dcd3c2);
+  background-image: -moz-linear-gradient(top, #d2c8b2, #dcd3c2);
+  background-image: -o-linear-gradient(top, #d2c8b2, #dcd3c2);
+  background-image: linear-gradient(to bottom, #d2c8b2, #dcd3c2);
+  border: 1px solid #6e041a;
+  color: #870520;
 }
-/* line 1138, ../scss/_base.scss */
+/* line 1161, ../scss/_base.scss */
 form input[type=text]:invalid,
 form input[type=email]:invalid,
 form input[type=url]:invalid,
@@ -1827,28 +1864,31 @@ form textarea:invalid {
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1149, ../scss/_base.scss */
+/* line 1172, ../scss/_base.scss */
 form textarea {
   height: 200px;
   clear: both;
   margin: 10px 0%;
   width: 100%;
 }
-/* line 1156, ../scss/_base.scss */
+/* line 1179, ../scss/_base.scss */
 form .contact-submit {
   text-align: center;
 }
-/* line 1160, ../scss/_base.scss */
+/* line 1183, ../scss/_base.scss */
 form input[type=submit] {
+  padding: 10px 8px;
   display: block;
   clear: both;
   margin: 10px auto;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1177, ../scss/_base.scss */
+/* line 1203, ../scss/_base.scss */
 .footer {
   clear: both;
   text-align: center;
@@ -1859,12 +1899,12 @@ FOOTER STYLES
   margin: 0 20px 40px;
   border-top: 1px solid #4e3a34;
 }
-/* line 1187, ../scss/_base.scss */
+/* line 1213, ../scss/_base.scss */
 .footer a {
   color: #6d5148;
   text-decoration: none;
 }
-/* line 1192, ../scss/_base.scss */
+/* line 1218, ../scss/_base.scss */
 .footer p {
   -webkit-hyphens: none;
   -epub-hyphens: none;
