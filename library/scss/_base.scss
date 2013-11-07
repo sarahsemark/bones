@@ -393,6 +393,13 @@ html, body, #container {
     background: transparent;
     padding-bottom: 80px;
 	border-bottom: 1px solid darken($pink, 30%);
+	
+	p {
+			-webkit-hyphens: none;
+			-epub-hyphens:   none;
+			-moz-hyphens:    none;
+			hyphens:         none;
+	}
 }
 .inner-content {
     height: 100%;
