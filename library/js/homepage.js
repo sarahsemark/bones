@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
     // Cache some variables
     var links = $('nav').find('li a');
     var slide = $('.page-panel');
-    var button = $('.down-button');
+    var button = $('.direction-button');
     var mywindow = $(window);
     var htmlbody = $('html,body');
 
@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
     	}
 
     	// Fade out current elements
-    	$('#home, header, #home blockquote, #home .down-buttonm, #smoke').addClass('fade-out');
+    	$('#home, header, #home blockquote, #home .direction-buttonm, #smoke').addClass('fade-out');
 
     	// If we are, move header down
 		$('#header').removeClass('scrolled');
@@ -64,7 +64,7 @@ jQuery(document).ready(function($) {
 				}, 3500);
 		
 				setTimeout(function() {
-					$('#home .down-button').removeClass('fade-out');
+					$('#home .direction-button').removeClass('fade-out');
 					$('body').addClass('show-background');
 				}, 4500);
 			}, 0);

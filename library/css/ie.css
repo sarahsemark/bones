@@ -603,7 +603,7 @@ html, body, #container {
 
 /* down buttons */
 /* line 190, ../scss/_768up.scss */
-.down-button {
+.direction-button {
   top: auto;
   bottom: 20px;
 }
@@ -618,22 +618,26 @@ html, body, #container {
   font-size: 2em;
   margin-top: 25%;
 }
+/* line 208, ../scss/_768up.scss */
+#home .direction-button {
+  display: block;
+}
 
-/* line 212, ../scss/_768up.scss */
+/* line 216, ../scss/_768up.scss */
 #books .sixcol.last {
   clear: none;
   padding-top: 0;
 }
-/* line 219, ../scss/_768up.scss */
+/* line 223, ../scss/_768up.scss */
 #books .pre-order div {
   padding: 10px 20px;
 }
 
-/* line 225, ../scss/_768up.scss */
+/* line 229, ../scss/_768up.scss */
 #news {
   padding-top: 0;
 }
-/* line 228, ../scss/_768up.scss */
+/* line 232, ../scss/_768up.scss */
 #news #smoke-two {
   position: absolute;
   max-width: 100%;
@@ -646,65 +650,65 @@ html, body, #container {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 245, ../scss/_768up.scss */
+/* line 249, ../scss/_768up.scss */
 #main {
   padding-top: 100px;
 }
 
 /* post meta */
-/* line 250, ../scss/_768up.scss */
+/* line 254, ../scss/_768up.scss */
 .date {
   width: 60%;
   margin-bottom: -20px;
 }
-/* line 254, ../scss/_768up.scss */
+/* line 258, ../scss/_768up.scss */
 .date .day {
   display: inline;
   color: #64573b;
 }
-/* line 259, ../scss/_768up.scss */
+/* line 263, ../scss/_768up.scss */
 .date .ordinal {
   display: inline;
   display: inline;
   font-size: 0.5em;
   vertical-align: 30%;
 }
-/* line 266, ../scss/_768up.scss */
+/* line 270, ../scss/_768up.scss */
 .date .year {
   display: inline;
   color: #64573b;
 }
 
 /* nav buttons */
-/* line 275, ../scss/_768up.scss */
+/* line 279, ../scss/_768up.scss */
 .article-header .spacer {
   display: inline-block;
   position: relative;
   top: 0;
 }
 
-/* line 283, ../scss/_768up.scss */
+/* line 287, ../scss/_768up.scss */
 a[rel="prev"], a[rel="next"] {
   display: inline-block;
   position: relative;
   top: 0;
 }
-/* line 288, ../scss/_768up.scss */
+/* line 292, ../scss/_768up.scss */
 a[rel="prev"]:hover, a[rel="next"]:hover {
   background-position: 0 -62px;
   cursor: pointer;
 }
 
-/* line 297, ../scss/_768up.scss */
+/* line 301, ../scss/_768up.scss */
 .single .entry-content {
   margin-top: 3em;
 }
 
-/* line 304, ../scss/_768up.scss */
+/* line 308, ../scss/_768up.scss */
 .entry-content p {
   text-align: justify;
 }
-/* line 308, ../scss/_768up.scss */
+/* line 312, ../scss/_768up.scss */
 .entry-content blockquote {
   font-size: 1.5em;
   line-height: 1.4em;
@@ -715,12 +719,12 @@ a[rel="prev"]:hover, a[rel="next"]:hover {
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 324, ../scss/_768up.scss */
+/* line 328, ../scss/_768up.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 341, ../scss/_768up.scss */
+/* line 345, ../scss/_768up.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -728,32 +732,32 @@ COMMENT STYLES
   /* comment content */
   /* comment reply link */
 }
-/* line 343, ../scss/_768up.scss */
+/* line 347, ../scss/_768up.scss */
 .commentlist li {
   width: 82.87292817100001%;
 }
-/* line 348, ../scss/_768up.scss */
+/* line 352, ../scss/_768up.scss */
 .commentlist .odd {
   float: right;
 }
-/* line 351, ../scss/_768up.scss */
+/* line 355, ../scss/_768up.scss */
 .commentlist .even {
   float: left;
 }
-/* line 356, ../scss/_768up.scss */
+/* line 360, ../scss/_768up.scss */
 .commentlist .vcard {
   text-align: left;
 }
-/* line 359, ../scss/_768up.scss */
+/* line 363, ../scss/_768up.scss */
 .commentlist .vcard cite.fn {
   margin-left: 55px;
 }
-/* line 363, ../scss/_768up.scss */
+/* line 367, ../scss/_768up.scss */
 .commentlist .vcard time {
   float: right;
   font-size: 1em;
 }
-/* line 369, ../scss/_768up.scss */
+/* line 373, ../scss/_768up.scss */
 .commentlist .vcard img.avatar {
   display: block;
   position: absolute;
@@ -773,11 +777,11 @@ COMMENT STYLES
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 389, ../scss/_768up.scss */
+/* line 393, ../scss/_768up.scss */
 .commentlist .comment_content {
   margin-left: 55px;
 }
-/* line 394, ../scss/_768up.scss */
+/* line 398, ../scss/_768up.scss */
 .commentlist .comment-reply-link {
   float: right;
 }
@@ -786,17 +790,17 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 409, ../scss/_768up.scss */
+/* line 413, ../scss/_768up.scss */
 .respond-form {
   padding-bottom: 2.2em;
 }
-/* line 412, ../scss/_768up.scss */
+/* line 416, ../scss/_768up.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 419, ../scss/_768up.scss */
+/* line 423, ../scss/_768up.scss */
 .respond-form form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -805,23 +809,23 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 435, ../scss/_768up.scss */
+/* line 439, ../scss/_768up.scss */
 form div {
   padding-top: 20px;
 }
-/* line 439, ../scss/_768up.scss */
+/* line 443, ../scss/_768up.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
   display: block;
 }
-/* line 446, ../scss/_768up.scss */
+/* line 450, ../scss/_768up.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 454, ../scss/_768up.scss */
+/* line 458, ../scss/_768up.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -830,7 +834,7 @@ form textarea {
   float: left;
   width: 75%;
 }
-/* line 460, ../scss/_768up.scss */
+/* line 464, ../scss/_768up.scss */
 form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -839,11 +843,11 @@ form textarea {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 475, ../scss/_768up.scss */
+/* line 479, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
 }
-/* line 479, ../scss/_768up.scss */
+/* line 483, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }

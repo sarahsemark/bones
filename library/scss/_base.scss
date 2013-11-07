@@ -351,18 +351,18 @@ FADE OUT AND FADE IN ON FIRST REQUEST
 .home.loading {
 	transition: opacity 1000ms linear;
 	
-	#home, #header, #home blockquote, #home .down-button, #smoke {
+	#home, #header, #home blockquote, #home .direction-button, #smoke {
 		opacity: 0;
 	}
 }
 
 .ran-animation-once {
-	#home .down-button, #smoke {
+	#home .direction-button, #smoke {
 		transition: opacity 100ms linear;
 	}
 }
 
-#home, #header, #home blockquote, #home .down-button, #smoke {
+#home, #header, #home blockquote, #home .direction-button, #smoke {
 	transition: opacity 1000ms linear;
 
 	&.fade-out {
@@ -375,7 +375,7 @@ FADE OUT AND FADE IN ON FIRST REQUEST
 	transition-delay: 1000ms;
 }
 
-#home .down-button {
+#home .direction-button {
 	transition-delay: 7000ms;
 }
 
@@ -432,8 +432,8 @@ html, body, #container {
 }
 
 
-/* down buttons */
-.down-button {
+/* direction buttons */
+.direction-button {
     display: block;
     width: 62px;
     height: 62px;
@@ -441,14 +441,23 @@ html, body, #container {
     left: 50%;
     margin-left: -31px;
     top: 70px;
-    background: url('../images/button-down.png') 0px 0px no-repeat; 
-    background-size: cover;
     
     &:hover {
 		background-position: 0 -62px;
 		cursor: pointer;
 	}
 }
+
+.down {
+	background: url('../images/button-down.png') 0px 0px no-repeat; 
+	background-size: cover;
+}
+
+.up {
+	background: url('../images/button-up.png') 0px 0px no-repeat; 
+	background-size: cover;
+}
+
 
 
 
@@ -475,7 +484,7 @@ html, body, #container {
 		}
 	}
 	
-	.down-button {
+	.direction-button {
 		display: none;
 	}
 }
@@ -568,12 +577,15 @@ html, body, #container {
 		margin: 0;
 	}
 	
-	.down-button {
-		display: none;
-	}
-	
 	#smoke-two {
 		display: none !important;
+	}
+	
+	.direction-button {
+		position: relative;
+		left: auto;
+		top: auto;
+		margin: 10px auto;
 	}
 }
 

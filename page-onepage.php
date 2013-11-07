@@ -33,7 +33,11 @@ foreach ($pages as $page_data) :
 			</div>
 		</div>
 		
-		<a class="down-button" data-slide="<?php echo ++$count; ?>" title=""></a>
+		<?php if ($slug == "news"): ?>
+			<a class="direction-button up" data-slide="1" title="Back to top"></a>
+		<?php else: ?>
+			<a class="direction-button down" data-slide="<?php echo ++$count; ?>" title="Next panel"></a>			
+		<?php endif; ?>
 		
 	</div>
 	
