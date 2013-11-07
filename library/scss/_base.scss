@@ -243,9 +243,20 @@ h5 {
 HEADER STYLES
 *********************/
 
-.header {
+#header {
+	position: fixed;
+	top: -22px;
+	left: 0;
+	height: 57px;
+	width: 100%;
+	z-index: 200;
+	
+	.wrap {
+		width: 100%;
+	}
 	
 	#logo {
+		display: none;
 		width: 150px;
 		height: 100px;
 		padding: 30px 20px;
@@ -275,11 +286,6 @@ and more scalable.
 	font-size: .9em;
 	background: url('../images/nav-ribbon.png') repeat-x 0px 0px;
 	background-size: 30px 57px;
-	position: fixed;
-	bottom: -20px;
-	left: 0;
-	height: 57px;
-	width: 100%;
 
 	li {
 		float: left;
@@ -407,7 +413,7 @@ html, body, #container {
     position: relative;
 }
 .inner-content .entry-content {
-	
+	padding-top: 40px;
 }
 
 
@@ -561,7 +567,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #main {
-	padding-top: 20px;
+	padding-top: 50px;
 }
 
 
@@ -601,7 +607,7 @@ article + article {
 /* post meta */
 .date {
 	width: 100%;
-	margin: -10px auto 0px;
+	margin: 10px auto 0px;
 	display: inline-block;
 }
 
@@ -610,7 +616,7 @@ article + article {
 	span {
 		display: inline-block;
 		position: absolute;
-		top: 110px;
+		top: 100px;
 		left: -20px;
 		width: 62px;
 		height: 62px;
@@ -625,7 +631,7 @@ article + article {
 a[rel="prev"], a[rel="next"] {
     display: inline-block;
     position: absolute;
-    top: 110px;
+    top: 50px;
     left: -20px;
     vertical-align: middle;
     width: 62px;

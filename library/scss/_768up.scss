@@ -71,20 +71,19 @@ h2 {
 HEADER STYLES
 *********************/
 
-.header {
+#header {
 	background: url('../images/nav-ribbon.png') repeat-x 0px 38px;
 	background-size: 30px 57px;
-	width: 100%;
-	position: fixed;
-	z-index: 10;
 	top: 100px;
 	transition: all 200ms linear;
+	height: auto;
 	
 	&.scrolled {
 		top: -20px;
 	}
 	
 	#logo {
+		display: block;
 		width: 300px;
 		height: 199px;
 		padding: 30px 20px;
@@ -108,7 +107,7 @@ NAVIGATION STYLES
 
 .nav {
 	background: none;
-	margin-top: -146px;
+	margin-top: -126px;
 	position: relative;
 	width: auto;
 
@@ -226,7 +225,7 @@ POSTS & CONTENT STYLES
 /* post meta */
 .date {
 	width: 60%;
-	margin: 10px auto -20px;
+	margin-bottom: -20px;
 }
 
 /* nav buttons */
