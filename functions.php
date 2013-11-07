@@ -188,7 +188,7 @@ add_filter('show_admin_bar', '__return_false');
 
 // Changing excerpt length
 function new_excerpt_length($length) {
-return 60;
+return 30;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
 
