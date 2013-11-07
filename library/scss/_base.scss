@@ -84,6 +84,10 @@ LINK STYLES
 
 a, a:visited {
 	color: $link-color;
+	-o-transition: color 1s ease;
+	-moz-transition: color 1s ease;
+	-webkit-transition: color 1s ease;
+	transition: color 1s ease;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -92,7 +96,7 @@ a, a:visited {
 
 	/* on click */
 	&:active {
-
+		color: $link-active;
 	}
 
 	/* mobile tap color */
@@ -102,7 +106,7 @@ a, a:visited {
 		so it basically works like the :hover selector
 		for mobile devices.
 		*/
-		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+		-webkit-tap-highlight-color : rgba( 125, 162, 90, 0.3 );
 	}
 }
 
@@ -284,9 +288,10 @@ and more scalable.
 			text-decoration: none;
 			padding: 10px 12px;
 			margin: 6px 6px;
+			color: $green;
 			
 			&:hover, &:focus {
-
+				color: $pink;
 			}
 		}
 

@@ -87,53 +87,53 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 101, ../scss/_mixins.scss */
+/* line 102, ../scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
-/* line 107, ../scss/_mixins.scss */
+/* line 108, ../scss/_mixins.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 108, ../scss/_mixins.scss */
+/* line 109, ../scss/_mixins.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 109, ../scss/_mixins.scss */
+/* line 110, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 113, ../scss/_mixins.scss */
+/* line 114, ../scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 119, ../scss/_mixins.scss */
+/* line 120, ../scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 125, ../scss/_mixins.scss */
+/* line 126, ../scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 131, ../scss/_mixins.scss */
+/* line 132, ../scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 137, ../scss/_mixins.scss */
+/* line 138, ../scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -166,13 +166,13 @@ SHADOWS
 /*********************
 BUTTONS
 *********************/
-/* line 209, ../scss/_mixins.scss */
+/* line 210, ../scss/_mixins.scss */
 .button, .button:visited, input[type="submit"] {
   font-family: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: .9em;
   letter-spacing: 1px;
-  border: 1px solid #4e3a34;
+  border: 1px solid #110c0b;
   padding: 10px 30px;
   color: #b6a582;
   display: inline-block;
@@ -193,27 +193,25 @@ BUTTONS
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 226, ../scss/_mixins.scss */
+/* line 227, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus, input[type="submit"]:hover, input[type="submit"]:focus {
   color: #c9bca2;
-  border: 1px solid #5c7742;
-  border-top-color: #4a6036;
-  border-left-color: #4a6036;
-  background-color: #648148;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#709251), to(#648148));
-  background-image: -webkit-linear-gradient(top, #709251, #648148);
-  background-image: -moz-linear-gradient(top, #709251, #648148);
-  background-image: -o-linear-gradient(top, #709251, #648148);
-  background-image: linear-gradient(to bottom, #709251, #648148);
+  border: 1px solid #4e3a34;
+  background-color: #400007;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#270004), to(#400007));
+  background-image: -webkit-linear-gradient(top, #270004, #400007);
+  background-image: -moz-linear-gradient(top, #270004, #400007);
+  background-image: -o-linear-gradient(top, #270004, #400007);
+  background-image: linear-gradient(to bottom, #270004, #400007);
 }
-/* line 234, ../scss/_mixins.scss */
+/* line 233, ../scss/_mixins.scss */
 .button:active, .button:visited:active, input[type="submit"]:active {
-  background-color: #7da25a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#709251), to(#7da25a));
-  background-image: -webkit-linear-gradient(top, #709251, #7da25a);
-  background-image: -moz-linear-gradient(top, #709251, #7da25a);
-  background-image: -o-linear-gradient(top, #709251, #7da25a);
-  background-image: linear-gradient(to bottom, #709251, #7da25a);
+  background-color: #a58176;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9b7367), to(#a58176));
+  background-image: -webkit-linear-gradient(top, #9b7367, #a58176);
+  background-image: -moz-linear-gradient(top, #9b7367, #a58176);
+  background-image: -o-linear-gradient(top, #9b7367, #a58176);
+  background-image: linear-gradient(to bottom, #9b7367, #a58176);
 }
 
 /******************************************************************
@@ -524,15 +522,11 @@ NAVIGATION STYLES
   padding: 5px 12px;
   margin: 6px 16px;
 }
-/* line 113, ../scss/_768up.scss */
-.nav li a:hover, .nav li a:focus {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-/* line 118, ../scss/_768up.scss */
+/* line 114, ../scss/_768up.scss */
 .nav li:nth-child(3), .nav li:nth-child(4) {
   float: right;
 }
-/* line 126, ../scss/_768up.scss */
+/* line 122, ../scss/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   display: none;
@@ -542,14 +536,14 @@ NAVIGATION STYLES
 /*********************
 PARALLAX PANEL STYLES
 *********************/
-/* line 139, ../scss/_768up.scss */
+/* line 135, ../scss/_768up.scss */
 html, body, #container {
   width: 100%;
   height: 100%;
 }
 
 /* main panels */
-/* line 145, ../scss/_768up.scss */
+/* line 141, ../scss/_768up.scss */
 .page-panel {
   background-attachment: fixed;
   width: 100%;
@@ -560,19 +554,19 @@ html, body, #container {
   border-bottom: 0;
 }
 
-/* line 154, ../scss/_768up.scss */
+/* line 150, ../scss/_768up.scss */
 .inner-content {
   height: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-/* line 159, ../scss/_768up.scss */
+/* line 155, ../scss/_768up.scss */
 .inner-content .entry-content {
   padding-top: 160px;
 }
 
-/* line 164, ../scss/_768up.scss */
+/* line 160, ../scss/_768up.scss */
 #smoke {
   position: absolute;
   top: 0px;
@@ -583,7 +577,7 @@ html, body, #container {
 }
 
 /* between panels */
-/* line 175, ../scss/_768up.scss */
+/* line 171, ../scss/_768up.scss */
 .middle-slide {
   display: block;
   height: 150px;
@@ -596,29 +590,29 @@ html, body, #container {
   position: relative;
   overflow: hidden;
 }
-/* line 187, ../scss/_768up.scss */
+/* line 183, ../scss/_768up.scss */
 .middle-slide div {
   padding: 100px;
 }
-/* line 191, ../scss/_768up.scss */
+/* line 187, ../scss/_768up.scss */
 .middle-slide img {
   opacity: 0.2;
   position: absolute;
 }
-/* line 196, ../scss/_768up.scss */
+/* line 192, ../scss/_768up.scss */
 .middle-slide .middle-text {
   opacity: .1;
   left: 15%;
   width: 771px;
   height: 450px;
 }
-/* line 203, ../scss/_768up.scss */
+/* line 199, ../scss/_768up.scss */
 .middle-slide .angel {
   right: 15%;
 }
 
 /* down buttons */
-/* line 210, ../scss/_768up.scss */
+/* line 206, ../scss/_768up.scss */
 .down-button {
   display: block;
   width: 62px;
@@ -630,7 +624,7 @@ html, body, #container {
   background: url("../images/button-down.png") 0px 0px no-repeat;
   background-size: cover;
 }
-/* line 221, ../scss/_768up.scss */
+/* line 217, ../scss/_768up.scss */
 .down-button:hover {
   background-position: 0 -62px;
   cursor: pointer;
@@ -639,44 +633,44 @@ html, body, #container {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 233, ../scss/_768up.scss */
+/* line 229, ../scss/_768up.scss */
 #main {
   padding-top: 100px;
 }
 
 /* post meta */
-/* line 238, ../scss/_768up.scss */
+/* line 234, ../scss/_768up.scss */
 .date {
   width: 60%;
   margin: 10px auto -20px;
 }
 
 /* nav buttons */
-/* line 246, ../scss/_768up.scss */
+/* line 242, ../scss/_768up.scss */
 .article-header span {
   display: inline-block;
   position: relative;
   top: 0;
 }
 
-/* line 254, ../scss/_768up.scss */
+/* line 250, ../scss/_768up.scss */
 a[rel="prev"], a[rel="next"] {
   display: inline-block;
   position: relative;
   top: 0;
 }
-/* line 259, ../scss/_768up.scss */
+/* line 255, ../scss/_768up.scss */
 a[rel="prev"]:hover, a[rel="next"]:hover {
   background-position: 0 -62px;
   cursor: pointer;
 }
 
-/* line 268, ../scss/_768up.scss */
+/* line 264, ../scss/_768up.scss */
 .single .entry-content {
   margin-top: 3em;
 }
 
-/* line 275, ../scss/_768up.scss */
+/* line 271, ../scss/_768up.scss */
 .entry-content p {
   text-align: justify;
 }
@@ -685,12 +679,12 @@ a[rel="prev"]:hover, a[rel="next"]:hover {
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 287, ../scss/_768up.scss */
+/* line 283, ../scss/_768up.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 304, ../scss/_768up.scss */
+/* line 300, ../scss/_768up.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -698,32 +692,32 @@ COMMENT STYLES
   /* comment content */
   /* comment reply link */
 }
-/* line 306, ../scss/_768up.scss */
+/* line 302, ../scss/_768up.scss */
 .commentlist li {
   width: 82.87292817100001%;
 }
-/* line 311, ../scss/_768up.scss */
+/* line 307, ../scss/_768up.scss */
 .commentlist .odd {
   float: right;
 }
-/* line 314, ../scss/_768up.scss */
+/* line 310, ../scss/_768up.scss */
 .commentlist .even {
   float: left;
 }
-/* line 319, ../scss/_768up.scss */
+/* line 315, ../scss/_768up.scss */
 .commentlist .vcard {
   text-align: left;
 }
-/* line 322, ../scss/_768up.scss */
+/* line 318, ../scss/_768up.scss */
 .commentlist .vcard cite.fn {
   margin-left: 55px;
 }
-/* line 326, ../scss/_768up.scss */
+/* line 322, ../scss/_768up.scss */
 .commentlist .vcard time {
   float: right;
   font-size: 1em;
 }
-/* line 332, ../scss/_768up.scss */
+/* line 328, ../scss/_768up.scss */
 .commentlist .vcard img.avatar {
   display: block;
   position: absolute;
@@ -743,11 +737,11 @@ COMMENT STYLES
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 352, ../scss/_768up.scss */
+/* line 348, ../scss/_768up.scss */
 .commentlist .comment_content {
   margin-left: 55px;
 }
-/* line 357, ../scss/_768up.scss */
+/* line 353, ../scss/_768up.scss */
 .commentlist .comment-reply-link {
   float: right;
 }
@@ -756,17 +750,17 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 372, ../scss/_768up.scss */
+/* line 368, ../scss/_768up.scss */
 .respond-form {
   padding-bottom: 2.2em;
 }
-/* line 375, ../scss/_768up.scss */
+/* line 371, ../scss/_768up.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 382, ../scss/_768up.scss */
+/* line 378, ../scss/_768up.scss */
 .respond-form form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -775,23 +769,23 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 398, ../scss/_768up.scss */
+/* line 394, ../scss/_768up.scss */
 form div {
   padding-top: 20px;
 }
-/* line 402, ../scss/_768up.scss */
+/* line 398, ../scss/_768up.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
   display: block;
 }
-/* line 409, ../scss/_768up.scss */
+/* line 405, ../scss/_768up.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 417, ../scss/_768up.scss */
+/* line 413, ../scss/_768up.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -800,7 +794,7 @@ form textarea {
   float: left;
   width: 75%;
 }
-/* line 423, ../scss/_768up.scss */
+/* line 419, ../scss/_768up.scss */
 form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -809,11 +803,11 @@ form textarea {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 438, ../scss/_768up.scss */
+/* line 434, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
 }
-/* line 442, ../scss/_768up.scss */
+/* line 438, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }

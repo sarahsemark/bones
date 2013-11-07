@@ -62,8 +62,9 @@ $green:		 		#7da25a;
 $beige:				#b6a582;
 $pink: 				#a58176;
 
-$link-color:        $green;
-$link-hover:        $red;
+$link-color:        $pink;
+$link-hover:        $green;
+$link-active: 		darken($green, 10%);
 
 $button-color: 		$burgundy; 
 
@@ -211,7 +212,7 @@ BUTTONS
 	text-transform: uppercase;
 	font-size: .9em;
 	letter-spacing: 1px;
-	border: 1px solid darken($pink, 30%);
+	border: 1px solid darken($pink, 50%);
 	padding: 10px 30px;
 	color: $beige;
 	display: inline-block;
@@ -225,10 +226,8 @@ BUTTONS
 
 	&:hover, &:focus {
 		color: $white;
-	  	border: 1px solid darken($link-color, 13%);
-	  	border-top-color: darken($link-color, 20%);
-	 	border-left-color: darken($link-color, 20%);
-		@include css-gradient(darken($link-color, 5%), darken($link-color, 10%));
+	  	border: 1px solid darken($pink, 30%);
+		@include css-gradient(darken($burgundy, 5%), $burgundy);
 	}
 
 	&:active {
