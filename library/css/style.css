@@ -1123,7 +1123,7 @@ FADE OUT AND FADE IN ON FIRST REQUEST
 *************************************/
 /* line 335, ../scss/_base.scss */
 .home {
-  background: url("../images/salon-bw.jpg");
+  background: url("../images/salon-bw-ios.jpg");
   background-size: cover;
 }
 
@@ -1227,7 +1227,7 @@ html, body, #container {
 /* individual page panels */
 /* line 437, ../scss/_base.scss */
 #home {
-  background: url("../images/salon.jpg") no-repeat;
+  background: url("../images/salon-ios.jpg") no-repeat;
   background-size: cover;
 }
 /* line 441, ../scss/_base.scss */
@@ -1329,7 +1329,7 @@ html, body, #container {
 
 /* line 527, ../scss/_base.scss */
 #news {
-  background: url("../images/salon-bw.jpg") no-repeat;
+  background: url("../images/salon-bw-ios.jpg") no-repeat;
   background-size: cover;
 }
 /* line 531, ../scss/_base.scss */

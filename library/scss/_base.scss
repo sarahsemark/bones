@@ -333,7 +333,7 @@ and more scalable.
 FADE OUT AND FADE IN ON FIRST REQUEST
 *************************************/
 .home {
-	background: url('../images/salon-bw.jpg');
+	background: url('../images/salon-bw-ios.jpg');
 	background-size: cover;
 }
 
@@ -435,7 +435,7 @@ html, body, #container {
 
 /* individual page panels */
 #home {
-	background: url('../images/salon.jpg') no-repeat;
+	background: url('../images/salon-ios.jpg') no-repeat;
 	background-size: cover;
 	
 	blockquote {
@@ -525,7 +525,7 @@ html, body, #container {
 
 
 #news {
-	background: url("../images/salon-bw.jpg") no-repeat;
+	background: url("../images/salon-bw-ios.jpg") no-repeat;
 	background-size: cover;
 	
 	h2 {
