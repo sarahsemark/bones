@@ -219,16 +219,8 @@ html, body, #container {
     	width: 1280px;
 		top: 0;
 		left: 0;
-		opacity: .75;
-	}
-	
-	#smoke-three {
-    	position: absolute;
-    	min-height: 100%;
-    	min-width: 100%;
-		top: 0;
-		left: 0;
 		opacity: .25;
+		pointer-events: none;
 	}
 
 }

@@ -420,7 +420,7 @@ html, body, #container {
 }
 
 
-#smoke, #news #smoke-two2, #news #smoke-three3  {
+#smoke {
     display: none;
 }
 
@@ -552,13 +552,11 @@ html, body, #container {
 		margin: 0;
 	}
 	
-	img {
-		float: left; 
-		width: 40.055248616%;
-		margin-right: 2.762430939%;
+	.down-button {
+		display: none;
 	}
 	
-	.down-button {
+	#smoke-two {
 		display: none;
 	}
 }

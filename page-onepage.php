@@ -16,6 +16,10 @@ foreach ($pages as $page_data) :
 	?>
 	<div id="<?php echo $slug; ?>" class="page-panel" data-slide="<?php echo $count; ?>" data-stellar-background-ratio="0.5">
 	
+	<?php if ($slug == "news"): ?>
+		<img id="smoke-two" src="<?php echo get_template_directory_uri(); ?>/library/images/smoky.png" alt="Smoke Layer" data-stellar-ratio="2.5" />
+	<?php endif; ?>
+	
 		<div class="inner-content wrap clearfix">
 			<div class="twelvecol first last clearfix entry-content" role="main">
 				<?php if ($slug != "home"):  echo '<h1>' . $title . '</h1>';  endif; ?>
@@ -31,10 +35,6 @@ foreach ($pages as $page_data) :
 		
 		<a class="down-button" data-slide="<?php echo ++$count; ?>" title=""></a>
 		
-		<?php if ($slug == "news"): ?>
-			<img id="smoke-two" src="<?php echo get_template_directory_uri(); ?>/library/images/smoky.png" alt="Smoke Layer" data-stellar-ratio="2.5" />
-			<img id="smoke-three" src="<?php echo get_template_directory_uri(); ?>/library/images/smoky-2.png" alt="Smoke Layer" data-stellar-ratio="1.5" />
-		<?php endif; ?>
 	</div>
 	
 	
