@@ -1292,7 +1292,7 @@ html, body, #container {
 /* line 489, ../scss/_base.scss */
 #books .pre-order div {
   border: 1px solid #342d1e;
-  padding: 10px 20px;
+  padding: 15px 10px 0;
 }
 
 /* line 496, ../scss/_base.scss */
@@ -2343,47 +2343,52 @@ you can add resource intensive styles.
     cursor: pointer;
   }
 
+  /* line 229, ../scss/_768up.scss */
+  #books .pre-order div {
+    padding: 10px 20px;
+  }
+
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 229, ../scss/_768up.scss */
+  /* line 241, ../scss/_768up.scss */
   #main {
     padding-top: 100px;
   }
 
   /* post meta */
-  /* line 234, ../scss/_768up.scss */
+  /* line 246, ../scss/_768up.scss */
   .date {
     width: 60%;
     margin: 10px auto -20px;
   }
 
   /* nav buttons */
-  /* line 242, ../scss/_768up.scss */
+  /* line 254, ../scss/_768up.scss */
   .article-header span {
     display: inline-block;
     position: relative;
     top: 0;
   }
 
-  /* line 250, ../scss/_768up.scss */
+  /* line 262, ../scss/_768up.scss */
   a[rel="prev"], a[rel="next"] {
     display: inline-block;
     position: relative;
     top: 0;
   }
-  /* line 255, ../scss/_768up.scss */
+  /* line 267, ../scss/_768up.scss */
   a[rel="prev"]:hover, a[rel="next"]:hover {
     background-position: 0 -62px;
     cursor: pointer;
   }
 
-  /* line 264, ../scss/_768up.scss */
+  /* line 276, ../scss/_768up.scss */
   .single .entry-content {
     margin-top: 3em;
   }
 
-  /* line 271, ../scss/_768up.scss */
+  /* line 283, ../scss/_768up.scss */
   .entry-content p {
     text-align: justify;
   }
@@ -2392,12 +2397,12 @@ you can add resource intensive styles.
   COMMENT STYLES
   ******************************************************************/
   /* h3 comment title */
-  /* line 283, ../scss/_768up.scss */
+  /* line 295, ../scss/_768up.scss */
   #comments {
     /* number of comments span */
   }
 
-  /* line 300, ../scss/_768up.scss */
+  /* line 312, ../scss/_768up.scss */
   .commentlist {
     /* general comment classes */
     /* vcard */
@@ -2405,32 +2410,32 @@ you can add resource intensive styles.
     /* comment content */
     /* comment reply link */
   }
-  /* line 302, ../scss/_768up.scss */
+  /* line 314, ../scss/_768up.scss */
   .commentlist li {
     width: 82.87292817100001%;
   }
-  /* line 307, ../scss/_768up.scss */
+  /* line 319, ../scss/_768up.scss */
   .commentlist .odd {
     float: right;
   }
-  /* line 310, ../scss/_768up.scss */
+  /* line 322, ../scss/_768up.scss */
   .commentlist .even {
     float: left;
   }
-  /* line 315, ../scss/_768up.scss */
+  /* line 327, ../scss/_768up.scss */
   .commentlist .vcard {
     text-align: left;
   }
-  /* line 318, ../scss/_768up.scss */
+  /* line 330, ../scss/_768up.scss */
   .commentlist .vcard cite.fn {
     margin-left: 55px;
   }
-  /* line 322, ../scss/_768up.scss */
+  /* line 334, ../scss/_768up.scss */
   .commentlist .vcard time {
     float: right;
     font-size: 1em;
   }
-  /* line 328, ../scss/_768up.scss */
+  /* line 340, ../scss/_768up.scss */
   .commentlist .vcard img.avatar {
     display: block;
     position: absolute;
@@ -2450,11 +2455,11 @@ you can add resource intensive styles.
     -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   }
-  /* line 348, ../scss/_768up.scss */
+  /* line 360, ../scss/_768up.scss */
   .commentlist .comment_content {
     margin-left: 55px;
   }
-  /* line 353, ../scss/_768up.scss */
+  /* line 365, ../scss/_768up.scss */
   .commentlist .comment-reply-link {
     float: right;
   }
@@ -2463,17 +2468,17 @@ you can add resource intensive styles.
   /******************************************************************
   COMMENT FORM STYLES
   ******************************************************************/
-  /* line 368, ../scss/_768up.scss */
+  /* line 380, ../scss/_768up.scss */
   .respond-form {
     padding-bottom: 2.2em;
   }
-  /* line 371, ../scss/_768up.scss */
+  /* line 383, ../scss/_768up.scss */
   .respond-form div {
     width: 60%;
     margin: 10px 20%;
     clear: both;
   }
-  /* line 378, ../scss/_768up.scss */
+  /* line 390, ../scss/_768up.scss */
   .respond-form form textarea {
     margin: 20px 10%;
     width: 80%;
@@ -2482,23 +2487,23 @@ you can add resource intensive styles.
   /******************************************************************
   FORM STYLES
   ******************************************************************/
-  /* line 394, ../scss/_768up.scss */
+  /* line 406, ../scss/_768up.scss */
   form div {
     padding-top: 20px;
   }
-  /* line 398, ../scss/_768up.scss */
+  /* line 410, ../scss/_768up.scss */
   form label {
     width: 20%;
     padding-top: 10px;
     float: left;
     display: block;
   }
-  /* line 405, ../scss/_768up.scss */
+  /* line 417, ../scss/_768up.scss */
   form input[type="checkbox"] + label {
     float: none;
     width: 100%;
   }
-  /* line 413, ../scss/_768up.scss */
+  /* line 425, ../scss/_768up.scss */
   form input[type=text],
   form input[type=email],
   form input[type=url],
@@ -2507,7 +2512,7 @@ you can add resource intensive styles.
     float: left;
     width: 75%;
   }
-  /* line 419, ../scss/_768up.scss */
+  /* line 431, ../scss/_768up.scss */
   form textarea {
     margin: 20px 10%;
     width: 80%;
@@ -2516,11 +2521,11 @@ you can add resource intensive styles.
   /*********************
   FOOTER STYLES
   *********************/
-  /* line 434, ../scss/_768up.scss */
+  /* line 446, ../scss/_768up.scss */
   .footer {
     margin-bottom: 0px;
   }
-  /* line 438, ../scss/_768up.scss */
+  /* line 450, ../scss/_768up.scss */
   .footer a:hover {
     color: #b99d95;
   }
