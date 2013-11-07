@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 	    ranHomeAnimation = true;
 	    
 	    // TODO: Remove me for production!
-	    ranHomeAnimation = false;
+	    // ranHomeAnimation = false;
 
 		if (ranHomeAnimation) {
 			$('body').addClass('ran-animation').removeClass('loading');	

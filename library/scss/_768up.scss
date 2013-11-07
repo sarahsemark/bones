@@ -212,6 +212,27 @@ html, body, #container {
 	}
 }
 
+#news {
+	#smoke-two {
+    	position: absolute;
+    	height: 800px;
+    	width: 1280px;
+		top: 0;
+		left: 0;
+		opacity: .75;
+	}
+	
+	#smoke-three {
+    	position: absolute;
+    	min-height: 100%;
+    	min-width: 100%;
+		top: 0;
+		left: 0;
+		opacity: .25;
+	}
+
+}
+
 
 
 /*********************
