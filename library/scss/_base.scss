@@ -22,7 +22,7 @@ body, body.home.show-background {
 	color: $white;
 	background-color: $black;
 	background: url('../images/wallpaper.jpg') fixed repeat;
-	background-size: cover;
+	background-size: 303px 380.5px;
 }
 
 /********************
@@ -474,6 +474,7 @@ html, body, #container {
 
 #books {
 	background: url('../images/wallpaper.jpg') repeat;
+	background-size: 303px 380.5px;
 	
 	.sixcol.last {
 		clear: left;
