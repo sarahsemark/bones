@@ -164,7 +164,7 @@ html, body, #container {
     height: 100%;
     position: relative;
     background: transparent;
-    padding-bottom: 0;
+    padding: 0;
     border-bottom: 0;
 }
 .inner-content {
@@ -188,20 +188,8 @@ html, body, #container {
 
 /* down buttons */
 .down-button {
-    display: block;
-    width: 62px;
-    height: 62px;
-    position: absolute;
-    left: 50%;
-    margin-left: -31px;
+    top: auto;
     bottom: 20px;
-    background: url('../images/button-down.png') 0px 0px no-repeat; 
-    background-size: cover;
-    
-    &:hover {
-		background-position: 0 -62px;
-		cursor: pointer;
-	}
 }
 
 

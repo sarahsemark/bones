@@ -575,7 +575,7 @@ html, body, #container {
   height: 100%;
   position: relative;
   background: transparent;
-  padding-bottom: 0;
+  padding: 0;
   border-bottom: 0;
 }
 
@@ -604,39 +604,27 @@ html, body, #container {
 /* down buttons */
 /* line 190, ../scss/_768up.scss */
 .down-button {
-  display: block;
-  width: 62px;
-  height: 62px;
-  position: absolute;
-  left: 50%;
-  margin-left: -31px;
+  top: auto;
   bottom: 20px;
-  background: url("../images/button-down.png") 0px 0px no-repeat;
-  background-size: cover;
-}
-/* line 201, ../scss/_768up.scss */
-.down-button:hover {
-  background-position: 0 -62px;
-  cursor: pointer;
 }
 
 /* individual page panels */
-/* line 211, ../scss/_768up.scss */
+/* line 199, ../scss/_768up.scss */
 #home blockquote {
   font-size: 2em;
 }
 
-/* line 219, ../scss/_768up.scss */
+/* line 207, ../scss/_768up.scss */
 #books .sixcol.last {
   clear: none;
   padding-top: 0;
 }
-/* line 226, ../scss/_768up.scss */
+/* line 214, ../scss/_768up.scss */
 #books .pre-order div {
   padding: 10px 20px;
 }
 
-/* line 233, ../scss/_768up.scss */
+/* line 221, ../scss/_768up.scss */
 #news #smoke-two {
   position: absolute;
   max-width: 100%;
@@ -649,65 +637,65 @@ html, body, #container {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 250, ../scss/_768up.scss */
+/* line 238, ../scss/_768up.scss */
 #main {
   padding-top: 100px;
 }
 
 /* post meta */
-/* line 255, ../scss/_768up.scss */
+/* line 243, ../scss/_768up.scss */
 .date {
   width: 60%;
   margin-bottom: -20px;
 }
-/* line 259, ../scss/_768up.scss */
+/* line 247, ../scss/_768up.scss */
 .date .day {
   display: inline;
   color: #64573b;
 }
-/* line 264, ../scss/_768up.scss */
+/* line 252, ../scss/_768up.scss */
 .date .ordinal {
   display: inline;
   display: inline;
   font-size: 0.5em;
   vertical-align: 30%;
 }
-/* line 271, ../scss/_768up.scss */
+/* line 259, ../scss/_768up.scss */
 .date .year {
   display: inline;
   color: #64573b;
 }
 
 /* nav buttons */
-/* line 280, ../scss/_768up.scss */
+/* line 268, ../scss/_768up.scss */
 .article-header .spacer {
   display: inline-block;
   position: relative;
   top: 0;
 }
 
-/* line 288, ../scss/_768up.scss */
+/* line 276, ../scss/_768up.scss */
 a[rel="prev"], a[rel="next"] {
   display: inline-block;
   position: relative;
   top: 0;
 }
-/* line 293, ../scss/_768up.scss */
+/* line 281, ../scss/_768up.scss */
 a[rel="prev"]:hover, a[rel="next"]:hover {
   background-position: 0 -62px;
   cursor: pointer;
 }
 
-/* line 302, ../scss/_768up.scss */
+/* line 290, ../scss/_768up.scss */
 .single .entry-content {
   margin-top: 3em;
 }
 
-/* line 309, ../scss/_768up.scss */
+/* line 297, ../scss/_768up.scss */
 .entry-content p {
   text-align: justify;
 }
-/* line 313, ../scss/_768up.scss */
+/* line 301, ../scss/_768up.scss */
 .entry-content blockquote {
   font-size: 1.5em;
   line-height: 1.4em;
@@ -718,12 +706,12 @@ a[rel="prev"]:hover, a[rel="next"]:hover {
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 329, ../scss/_768up.scss */
+/* line 317, ../scss/_768up.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 346, ../scss/_768up.scss */
+/* line 334, ../scss/_768up.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -731,32 +719,32 @@ COMMENT STYLES
   /* comment content */
   /* comment reply link */
 }
-/* line 348, ../scss/_768up.scss */
+/* line 336, ../scss/_768up.scss */
 .commentlist li {
   width: 82.87292817100001%;
 }
-/* line 353, ../scss/_768up.scss */
+/* line 341, ../scss/_768up.scss */
 .commentlist .odd {
   float: right;
 }
-/* line 356, ../scss/_768up.scss */
+/* line 344, ../scss/_768up.scss */
 .commentlist .even {
   float: left;
 }
-/* line 361, ../scss/_768up.scss */
+/* line 349, ../scss/_768up.scss */
 .commentlist .vcard {
   text-align: left;
 }
-/* line 364, ../scss/_768up.scss */
+/* line 352, ../scss/_768up.scss */
 .commentlist .vcard cite.fn {
   margin-left: 55px;
 }
-/* line 368, ../scss/_768up.scss */
+/* line 356, ../scss/_768up.scss */
 .commentlist .vcard time {
   float: right;
   font-size: 1em;
 }
-/* line 374, ../scss/_768up.scss */
+/* line 362, ../scss/_768up.scss */
 .commentlist .vcard img.avatar {
   display: block;
   position: absolute;
@@ -776,11 +764,11 @@ COMMENT STYLES
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 394, ../scss/_768up.scss */
+/* line 382, ../scss/_768up.scss */
 .commentlist .comment_content {
   margin-left: 55px;
 }
-/* line 399, ../scss/_768up.scss */
+/* line 387, ../scss/_768up.scss */
 .commentlist .comment-reply-link {
   float: right;
 }
@@ -789,17 +777,17 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 414, ../scss/_768up.scss */
+/* line 402, ../scss/_768up.scss */
 .respond-form {
   padding-bottom: 2.2em;
 }
-/* line 417, ../scss/_768up.scss */
+/* line 405, ../scss/_768up.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 424, ../scss/_768up.scss */
+/* line 412, ../scss/_768up.scss */
 .respond-form form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -808,23 +796,23 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 440, ../scss/_768up.scss */
+/* line 428, ../scss/_768up.scss */
 form div {
   padding-top: 20px;
 }
-/* line 444, ../scss/_768up.scss */
+/* line 432, ../scss/_768up.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
   display: block;
 }
-/* line 451, ../scss/_768up.scss */
+/* line 439, ../scss/_768up.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 459, ../scss/_768up.scss */
+/* line 447, ../scss/_768up.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -833,7 +821,7 @@ form textarea {
   float: left;
   width: 75%;
 }
-/* line 465, ../scss/_768up.scss */
+/* line 453, ../scss/_768up.scss */
 form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -842,11 +830,11 @@ form textarea {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 480, ../scss/_768up.scss */
+/* line 468, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
 }
-/* line 484, ../scss/_768up.scss */
+/* line 472, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }

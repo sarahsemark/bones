@@ -409,7 +409,7 @@ html, body, #container {
     min-height: 100%;
     position: relative;
     background: transparent;
-    padding-bottom: 80px;
+    padding-top: 80px;
 	border-bottom: 1px solid darken($pink, 30%);
 	
 	p {
@@ -434,6 +434,7 @@ html, body, #container {
 }
 
 
+
 /* between panels */
 .middle-slide {
 	display: none;
@@ -448,7 +449,7 @@ html, body, #container {
     position: absolute;
     left: 50%;
     margin-left: -31px;
-    bottom: 20px;
+    top: 70px;
     background: url('../images/button-down.png') 0px 0px no-repeat; 
     background-size: cover;
     
@@ -573,7 +574,7 @@ html, body, #container {
 	}
 	
 	#smoke-two {
-		display: none;
+		display: none !important;
 	}
 }
 
