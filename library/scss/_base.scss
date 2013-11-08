@@ -624,7 +624,7 @@ POSTS & CONTENT STYLES
 } /* end .hentry */
 
 article + article {
-	margin-top: 100px;
+	margin-top: 40px;
 }
 
 .single-title,
@@ -1287,11 +1287,11 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	text-align: center;
-	font-size: .8em;
+	font-size: .7em;
 	color: darken($pink, 10%);
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	margin: 0 20px 40px;
+	margin: 0 5px 5px;
 	border-top: 1px solid darken($pink, 30%);
 	
 	a {

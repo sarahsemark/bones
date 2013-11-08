@@ -262,6 +262,10 @@ POSTS & CONTENT STYLES
 #main {
 	padding-top: 100px;
 }
+	
+article + article {
+	margin-top: 80px;
+}
 
 /* post meta */
 .date {
@@ -491,6 +495,8 @@ FOOTER STYLES
 
 .footer {
 	margin-bottom: 0px;
+	font-size: .8em;
+
 	
 	a {		
 		&:hover {

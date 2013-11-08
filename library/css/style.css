@@ -1425,7 +1425,7 @@ POSTS & CONTENT STYLES
 /* end .hentry */
 /* line 626, ../scss/_base.scss */
 article + article {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 /* want to style individual post classes? Booya! */
@@ -1976,11 +1976,11 @@ FOOTER STYLES
 .footer {
   clear: both;
   text-align: center;
-  font-size: .8em;
+  font-size: .7em;
   color: #8c675c;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 0 20px 40px;
+  margin: 0 5px 5px;
   border-top: 1px solid #4e3a34;
 }
 /* line 1297, ../scss/_base.scss */
@@ -2465,60 +2465,65 @@ you can add resource intensive styles.
     padding-top: 100px;
   }
 
+  /* line 266, ../scss/_768up.scss */
+  article + article {
+    margin-top: 80px;
+  }
+
   /* post meta */
-  /* line 267, ../scss/_768up.scss */
+  /* line 271, ../scss/_768up.scss */
   .date {
     width: 60%;
     margin-bottom: -20px;
   }
-  /* line 271, ../scss/_768up.scss */
+  /* line 275, ../scss/_768up.scss */
   .date .day {
     display: inline;
     color: #64573b;
   }
-  /* line 276, ../scss/_768up.scss */
+  /* line 280, ../scss/_768up.scss */
   .date .ordinal {
     display: inline;
     display: inline;
     font-size: 0.5em;
     vertical-align: 30%;
   }
-  /* line 283, ../scss/_768up.scss */
+  /* line 287, ../scss/_768up.scss */
   .date .year {
     display: inline;
     color: #64573b;
   }
 
   /* nav buttons */
-  /* line 292, ../scss/_768up.scss */
+  /* line 296, ../scss/_768up.scss */
   .article-header .spacer {
     display: inline-block;
     position: relative;
     top: 0;
   }
 
-  /* line 300, ../scss/_768up.scss */
+  /* line 304, ../scss/_768up.scss */
   a[rel="prev"], a[rel="next"] {
     display: inline-block;
     position: relative;
     top: 0;
   }
-  /* line 305, ../scss/_768up.scss */
+  /* line 309, ../scss/_768up.scss */
   a[rel="prev"]:hover, a[rel="next"]:hover {
     background-position: 0 -62px;
     cursor: pointer;
   }
 
-  /* line 314, ../scss/_768up.scss */
+  /* line 318, ../scss/_768up.scss */
   .single .entry-content {
     margin-top: 3em;
   }
 
-  /* line 321, ../scss/_768up.scss */
+  /* line 325, ../scss/_768up.scss */
   .entry-content p {
     text-align: justify;
   }
-  /* line 325, ../scss/_768up.scss */
+  /* line 329, ../scss/_768up.scss */
   .entry-content blockquote {
     font-size: 1.5em;
     line-height: 1.4em;
@@ -2529,12 +2534,12 @@ you can add resource intensive styles.
   COMMENT STYLES
   ******************************************************************/
   /* h3 comment title */
-  /* line 341, ../scss/_768up.scss */
+  /* line 345, ../scss/_768up.scss */
   #comments {
     /* number of comments span */
   }
 
-  /* line 358, ../scss/_768up.scss */
+  /* line 362, ../scss/_768up.scss */
   .commentlist {
     /* general comment classes */
     /* vcard */
@@ -2542,32 +2547,32 @@ you can add resource intensive styles.
     /* comment content */
     /* comment reply link */
   }
-  /* line 360, ../scss/_768up.scss */
+  /* line 364, ../scss/_768up.scss */
   .commentlist li {
     width: 82.87292817100001%;
   }
-  /* line 365, ../scss/_768up.scss */
+  /* line 369, ../scss/_768up.scss */
   .commentlist .odd {
     float: right;
   }
-  /* line 368, ../scss/_768up.scss */
+  /* line 372, ../scss/_768up.scss */
   .commentlist .even {
     float: left;
   }
-  /* line 373, ../scss/_768up.scss */
+  /* line 377, ../scss/_768up.scss */
   .commentlist .vcard {
     text-align: left;
   }
-  /* line 376, ../scss/_768up.scss */
+  /* line 380, ../scss/_768up.scss */
   .commentlist .vcard cite.fn {
     margin-left: 55px;
   }
-  /* line 380, ../scss/_768up.scss */
+  /* line 384, ../scss/_768up.scss */
   .commentlist .vcard time {
     float: right;
     font-size: 1em;
   }
-  /* line 386, ../scss/_768up.scss */
+  /* line 390, ../scss/_768up.scss */
   .commentlist .vcard img.avatar {
     display: block;
     position: absolute;
@@ -2587,11 +2592,11 @@ you can add resource intensive styles.
     -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   }
-  /* line 406, ../scss/_768up.scss */
+  /* line 410, ../scss/_768up.scss */
   .commentlist .comment_content {
     margin-left: 55px;
   }
-  /* line 411, ../scss/_768up.scss */
+  /* line 415, ../scss/_768up.scss */
   .commentlist .comment-reply-link {
     float: right;
   }
@@ -2600,17 +2605,17 @@ you can add resource intensive styles.
   /******************************************************************
   COMMENT FORM STYLES
   ******************************************************************/
-  /* line 426, ../scss/_768up.scss */
+  /* line 430, ../scss/_768up.scss */
   .respond-form {
     padding-bottom: 2.2em;
   }
-  /* line 429, ../scss/_768up.scss */
+  /* line 433, ../scss/_768up.scss */
   .respond-form div {
     width: 60%;
     margin: 10px 20%;
     clear: both;
   }
-  /* line 436, ../scss/_768up.scss */
+  /* line 440, ../scss/_768up.scss */
   .respond-form form textarea {
     margin: 20px 10%;
     width: 80%;
@@ -2619,23 +2624,23 @@ you can add resource intensive styles.
   /******************************************************************
   FORM STYLES
   ******************************************************************/
-  /* line 452, ../scss/_768up.scss */
+  /* line 456, ../scss/_768up.scss */
   form div {
     padding-top: 20px;
   }
-  /* line 456, ../scss/_768up.scss */
+  /* line 460, ../scss/_768up.scss */
   form label {
     width: 20%;
     padding-top: 10px;
     float: left;
     display: block;
   }
-  /* line 463, ../scss/_768up.scss */
+  /* line 467, ../scss/_768up.scss */
   form input[type="checkbox"] + label {
     float: none;
     width: 100%;
   }
-  /* line 471, ../scss/_768up.scss */
+  /* line 475, ../scss/_768up.scss */
   form input[type=text],
   form input[type=email],
   form input[type=url],
@@ -2644,7 +2649,7 @@ you can add resource intensive styles.
     float: left;
     width: 75%;
   }
-  /* line 477, ../scss/_768up.scss */
+  /* line 481, ../scss/_768up.scss */
   form textarea {
     margin: 20px 10%;
     width: 80%;
@@ -2653,11 +2658,12 @@ you can add resource intensive styles.
   /*********************
   FOOTER STYLES
   *********************/
-  /* line 492, ../scss/_768up.scss */
+  /* line 496, ../scss/_768up.scss */
   .footer {
     margin-bottom: 0px;
+    font-size: .8em;
   }
-  /* line 496, ../scss/_768up.scss */
+  /* line 502, ../scss/_768up.scss */
   .footer a:hover {
     color: #b99d95;
   }
@@ -2844,13 +2850,18 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
+  /* line 117, ../scss/_1030up.scss */
+  article + article {
+    margin-top: 100px;
+  }
+
   /* post meta */
-  /* line 118, ../scss/_1030up.scss */
+  /* line 122, ../scss/_1030up.scss */
   .date {
     width: 40%;
   }
 
-  /* line 123, ../scss/_1030up.scss */
+  /* line 127, ../scss/_1030up.scss */
   .footer {
     background: url("../images/nav-ribbon.png") repeat-x 0px center;
     background-size: 30px 57px;

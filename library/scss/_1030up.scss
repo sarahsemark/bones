@@ -114,6 +114,10 @@ PARALLAX PANEL STYLES
 POSTS & CONTENT STYLES
 *********************/
 
+article + article {
+	margin-top: 100px;
+}
+
 /* post meta */
 .date {
 	width: 40%;
