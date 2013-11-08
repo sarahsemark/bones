@@ -43,7 +43,6 @@ jQuery(document).ready(function($) {
 
 		$(window).on('load', function() {
 			setTimeout(function() {
-			
 				setTimeout(function() {
 					$('body').removeClass('loading');
 				}, 1500);
@@ -81,20 +80,20 @@ jQuery(document).ready(function($) {
 		}
 		
 		scrollCheck = true;
-
-		if (mywindow.scrollTop() >= 100) {
-			$('#header').addClass('scrolled');
-		} else {
-			$('#header').removeClass('scrolled');
-		}
 		
 		setTimeout(function() {
+			if (mywindow.scrollTop() >= 100) {
+				$('#header').addClass('scrolled');
+			} else {
+				$('#header').removeClass('scrolled');
+			}
+
 			scrollCheck = false;
 		}, 200);
 	}
 
 	mywindow.on('scroll', checkScrollPosition);
-	checkScrollPosition();
+	mywindow.on('load', checkScrollPosition);
     
     // Set up waypoints plugin
     // Direction appears not to work, so I've overwritten it. Needs cleaning up. 
