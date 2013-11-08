@@ -446,7 +446,7 @@ html, body, #container {
 }
 
 /* direction buttons */
-.direction-button {
+.direction-button, .single-post .article-header a {
     display: block;
     width: 62px;
     height: 62px;
@@ -454,21 +454,69 @@ html, body, #container {
     left: 50%;
     margin-left: -31px;
     top: 70px;
+    cursor: pointer;
+    background: 0px 0px no-repeat;
     
-    &:hover {
-		background-position: 0 -62px;
-		cursor: pointer;
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		width: 62px;
+	    height: 62px;
+		background: 0px -62px no-repeat;
+		background-size: cover;
+		opacity: 0;
+		-webkit-transition: opacity .5s;
+		-moz-transition: opacity .5s;
+		-o-transition: opacity .5s;
+		transition: opacity .5s;
+	}
+	
+	&:hover:after {
+		background-size: cover;
+		opacity: 1;
+	}
+}
+
+.single-post .article-header a {
+	&[rel="prev"] {
+		background-image: url('../images/button-left.png');
+		background-size: cover;
+		
+		&:hover:after {
+			background-image: url('../images/button-left.png');
+			background-size: cover;
+		}
+	}
+	&[rel="next"] {
+		background-image: url('../images/button-right.png');
+		background-size: cover;
+		
+		&:hover:after {
+			background-image: url('../images/button-right.png');
+			background-size: cover;
+		}
 	}
 }
 
 .down {
-	background: url('../images/button-down.png') 0px 0px no-repeat; 
+	background-image: url('../images/button-down.png');
 	background-size: cover;
+	
+	&:hover:after {
+		background-image: url('../images/button-down.png');
+		background-size: cover;
+	}
 }
 
 .up {
 	background: url('../images/button-up.png') 0px 0px no-repeat; 
 	background-size: cover;
+	
+	&:hover:after {
+		background: url('../images/button-up.png') 0px -62px no-repeat;
+		background-size: cover;
+	}
 }
 
 
@@ -585,7 +633,7 @@ html, body, #container {
 	background: url("../images/salon-bw-ios.jpg") no-repeat;
 	background-size: cover;
 	padding-top: 20px;
-	
+
 	h2 {
 		margin: 0;
 	}
@@ -593,9 +641,8 @@ html, body, #container {
 	#smoke-two {
 		display: none !important;
 	}
-	
+
 	.direction-button {
-		position: relative;
 		left: auto;
 		top: auto;
 		margin: 10px auto;
@@ -684,33 +731,24 @@ article + article {
 	a + .spacer {
 		display: none;
 	}
-}
-a[rel="prev"], a[rel="next"] {
-    display: inline-block;
-    position: absolute;
-    top: 80px;
-    left: -17px;
-    vertical-align: middle;
-    width: 62px;
-    height: 62px;
-    background: url('../images/button-left.png') 0px 0px no-repeat; 
-    background-size: cover;
-    font: 0/0 a;
-	overflow: hidden;
-	margin: 0 25px;
-    
-    &:hover {
-		background-position: 0 -62px;
-		cursor: pointer;
+	
+	a[rel="prev"], a[rel="next"] {
+	    display: inline-block;
+	    position: absolute;
+	    top: 80px;
+	    left: -17px;
+	    vertical-align: middle;
+	    background: 0px 0px no-repeat; 
+	    background-size: cover;
+	    font: 0/0 a;
+		margin: 0 25px;
 	}
-}
-a[rel="next"] {
-	background: url('../images/button-right.png') 0px 0px no-repeat; 
-	background-size: cover;
-	right: -17px;
-	left: auto;
-}
+	a[rel="next"] {
+		right: -17px;
+		left: auto;
+	}
 
+}
 
 
 /* entry content */

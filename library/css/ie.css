@@ -638,11 +638,12 @@ html, body, #container {
   padding: 10px 20px;
 }
 
-/* line 235, ../scss/_768up.scss */
+/* line 236, ../scss/_768up.scss */
 #news {
   padding-top: 0;
+  padding-bottom: 64px;
 }
-/* line 238, ../scss/_768up.scss */
+/* line 240, ../scss/_768up.scss */
 #news #smoke-two {
   position: absolute;
   max-width: 100%;
@@ -651,7 +652,7 @@ html, body, #container {
   opacity: .5;
   pointer-events: none;
 }
-/* line 247, ../scss/_768up.scss */
+/* line 249, ../scss/_768up.scss */
 #news .direction-button {
   position: absolute;
   left: 50%;
@@ -662,70 +663,70 @@ html, body, #container {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 261, ../scss/_768up.scss */
+/* line 263, ../scss/_768up.scss */
 #main {
   padding-top: 100px;
 }
 
-/* line 265, ../scss/_768up.scss */
+/* line 267, ../scss/_768up.scss */
 article + article {
   margin-top: 80px;
 }
 
 /* post meta */
-/* line 270, ../scss/_768up.scss */
+/* line 272, ../scss/_768up.scss */
 .date {
   width: 60%;
   margin-bottom: -20px;
 }
-/* line 274, ../scss/_768up.scss */
+/* line 276, ../scss/_768up.scss */
 .date .day {
   display: inline;
   color: #64573b;
 }
-/* line 279, ../scss/_768up.scss */
+/* line 281, ../scss/_768up.scss */
 .date .ordinal {
   display: inline;
   display: inline;
   font-size: 0.5em;
   vertical-align: 30%;
 }
-/* line 286, ../scss/_768up.scss */
+/* line 288, ../scss/_768up.scss */
 .date .year {
   display: inline;
   color: #64573b;
 }
 
 /* nav buttons */
-/* line 295, ../scss/_768up.scss */
+/* line 297, ../scss/_768up.scss */
 .article-header .spacer {
   display: inline-block;
   position: relative;
   top: 0;
 }
 
-/* line 303, ../scss/_768up.scss */
+/* line 305, ../scss/_768up.scss */
 a[rel="prev"], a[rel="next"] {
   display: inline-block;
   position: relative;
   top: 0;
 }
-/* line 308, ../scss/_768up.scss */
+/* line 310, ../scss/_768up.scss */
 a[rel="prev"]:hover, a[rel="next"]:hover {
   background-position: 0 -62px;
   cursor: pointer;
 }
 
-/* line 317, ../scss/_768up.scss */
+/* line 319, ../scss/_768up.scss */
 .single .entry-content {
   margin-top: 3em;
 }
 
-/* line 324, ../scss/_768up.scss */
+/* line 326, ../scss/_768up.scss */
 .entry-content p {
   text-align: justify;
 }
-/* line 328, ../scss/_768up.scss */
+/* line 330, ../scss/_768up.scss */
 .entry-content blockquote {
   font-size: 1.5em;
   line-height: 1.4em;
@@ -736,12 +737,12 @@ a[rel="prev"]:hover, a[rel="next"]:hover {
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 344, ../scss/_768up.scss */
+/* line 346, ../scss/_768up.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 361, ../scss/_768up.scss */
+/* line 363, ../scss/_768up.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -749,32 +750,32 @@ COMMENT STYLES
   /* comment content */
   /* comment reply link */
 }
-/* line 363, ../scss/_768up.scss */
+/* line 365, ../scss/_768up.scss */
 .commentlist li {
   width: 82.87292817100001%;
 }
-/* line 368, ../scss/_768up.scss */
+/* line 370, ../scss/_768up.scss */
 .commentlist .odd {
   float: right;
 }
-/* line 371, ../scss/_768up.scss */
+/* line 373, ../scss/_768up.scss */
 .commentlist .even {
   float: left;
 }
-/* line 376, ../scss/_768up.scss */
+/* line 378, ../scss/_768up.scss */
 .commentlist .vcard {
   text-align: left;
 }
-/* line 379, ../scss/_768up.scss */
+/* line 381, ../scss/_768up.scss */
 .commentlist .vcard cite.fn {
   margin-left: 55px;
 }
-/* line 383, ../scss/_768up.scss */
+/* line 385, ../scss/_768up.scss */
 .commentlist .vcard time {
   float: right;
   font-size: 1em;
 }
-/* line 389, ../scss/_768up.scss */
+/* line 391, ../scss/_768up.scss */
 .commentlist .vcard img.avatar {
   display: block;
   position: absolute;
@@ -794,11 +795,11 @@ COMMENT STYLES
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 409, ../scss/_768up.scss */
+/* line 411, ../scss/_768up.scss */
 .commentlist .comment_content {
   margin-left: 55px;
 }
-/* line 414, ../scss/_768up.scss */
+/* line 416, ../scss/_768up.scss */
 .commentlist .comment-reply-link {
   float: right;
 }
@@ -807,17 +808,17 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 429, ../scss/_768up.scss */
+/* line 431, ../scss/_768up.scss */
 .respond-form {
   padding-bottom: 2.2em;
 }
-/* line 432, ../scss/_768up.scss */
+/* line 434, ../scss/_768up.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 439, ../scss/_768up.scss */
+/* line 441, ../scss/_768up.scss */
 .respond-form form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -826,23 +827,23 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 455, ../scss/_768up.scss */
+/* line 457, ../scss/_768up.scss */
 form div {
   padding-top: 20px;
 }
-/* line 459, ../scss/_768up.scss */
+/* line 461, ../scss/_768up.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
   display: block;
 }
-/* line 466, ../scss/_768up.scss */
+/* line 468, ../scss/_768up.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 474, ../scss/_768up.scss */
+/* line 476, ../scss/_768up.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -851,7 +852,7 @@ form textarea {
   float: left;
   width: 75%;
 }
-/* line 480, ../scss/_768up.scss */
+/* line 482, ../scss/_768up.scss */
 form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -860,12 +861,12 @@ form textarea {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 495, ../scss/_768up.scss */
+/* line 497, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
   font-size: .8em;
 }
-/* line 501, ../scss/_768up.scss */
+/* line 503, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }
@@ -966,7 +967,7 @@ PARALLAX PANEL STYLES
 }
 
 /* between panels */
-/* line 105, ../scss/_1030up.scss */
+/* line 106, ../scss/_1030up.scss */
 .middle-slide {
   display: block;
   height: 150px;
@@ -979,23 +980,23 @@ PARALLAX PANEL STYLES
   position: relative;
   overflow: hidden;
 }
-/* line 117, ../scss/_1030up.scss */
+/* line 118, ../scss/_1030up.scss */
 .middle-slide div {
   padding: 100px;
 }
-/* line 121, ../scss/_1030up.scss */
+/* line 122, ../scss/_1030up.scss */
 .middle-slide img {
   opacity: 0.2;
   position: absolute;
 }
-/* line 126, ../scss/_1030up.scss */
+/* line 127, ../scss/_1030up.scss */
 .middle-slide .middle-text {
   opacity: .1;
   left: 15%;
   width: 771px;
   height: 450px;
 }
-/* line 133, ../scss/_1030up.scss */
+/* line 134, ../scss/_1030up.scss */
 .middle-slide .angel {
   right: 15%;
 }
@@ -1003,18 +1004,18 @@ PARALLAX PANEL STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 144, ../scss/_1030up.scss */
+/* line 145, ../scss/_1030up.scss */
 article + article {
   margin-top: 100px;
 }
 
 /* post meta */
-/* line 149, ../scss/_1030up.scss */
+/* line 150, ../scss/_1030up.scss */
 .date {
   width: 40%;
 }
 
-/* line 154, ../scss/_1030up.scss */
+/* line 155, ../scss/_1030up.scss */
 .footer {
   background: url("../images/nav-ribbon.png") repeat-x 0px center;
   background-size: 30px 57px;
