@@ -74,6 +74,11 @@ NAVIGATION STYLES
 PARALLAX PANEL STYLES
 *********************/
 
+/* main panels */
+.page-panel {
+    border-bottom: 0;
+}
+
 /* between panels */
 .middle-slide {
 	display: block;
