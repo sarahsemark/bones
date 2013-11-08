@@ -36,6 +36,7 @@ foreach ($pages as $page_data) :
 		<?php if ($slug == "news"): ?>
 			<a class="direction-button up" data-slide="1" title="Back to top"></a>
 		<?php else: ?>
+			<div class="skip-text"><h3>Skip this page?</h3></div>
 			<a class="direction-button down" data-slide="<?php echo ++$count; ?>" title="Next panel"></a>			
 		<?php endif; ?>
 		

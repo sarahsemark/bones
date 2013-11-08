@@ -186,6 +186,13 @@ html, body, #container {
     pointer-events: none;
 }
 
+
+/* skip text */
+.skip-text {
+	display: none;
+}
+
+
 /* down buttons */
 .direction-button {
     top: auto;

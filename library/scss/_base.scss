@@ -432,6 +432,19 @@ html, body, #container {
 }
 
 
+/* skip text */
+.skip-text {
+	width: 100%;
+	position: absolute;
+	top: 20px;
+	text-align: center;
+	
+	h3 {
+		font-size: .85em;
+		color: darken($beige, 40%);
+	}
+}
+
 /* direction buttons */
 .direction-button {
     display: block;
