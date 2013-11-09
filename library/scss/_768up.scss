@@ -302,15 +302,10 @@ article + article {
 }
 		
 
-a[rel="prev"], a[rel="next"] {
+.single-post .article-header a {
     display: inline-block;
     position: relative;
     top: 0;
-    
-    &:hover {
-		background-position: 0 -62px;
-		cursor: pointer;
-	}
 }
 
 

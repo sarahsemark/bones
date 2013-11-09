@@ -706,27 +706,22 @@ article + article {
 }
 
 /* line 305, ../scss/_768up.scss */
-a[rel="prev"], a[rel="next"] {
+.single-post .article-header a {
   display: inline-block;
   position: relative;
   top: 0;
 }
-/* line 310, ../scss/_768up.scss */
-a[rel="prev"]:hover, a[rel="next"]:hover {
-  background-position: 0 -62px;
-  cursor: pointer;
-}
 
-/* line 319, ../scss/_768up.scss */
+/* line 314, ../scss/_768up.scss */
 .single .entry-content {
   margin-top: 3em;
 }
 
-/* line 326, ../scss/_768up.scss */
+/* line 321, ../scss/_768up.scss */
 .entry-content p {
   text-align: justify;
 }
-/* line 330, ../scss/_768up.scss */
+/* line 325, ../scss/_768up.scss */
 .entry-content blockquote {
   font-size: 1.5em;
   line-height: 1.4em;
@@ -737,12 +732,12 @@ a[rel="prev"]:hover, a[rel="next"]:hover {
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 346, ../scss/_768up.scss */
+/* line 341, ../scss/_768up.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 363, ../scss/_768up.scss */
+/* line 358, ../scss/_768up.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -750,32 +745,32 @@ COMMENT STYLES
   /* comment content */
   /* comment reply link */
 }
-/* line 365, ../scss/_768up.scss */
+/* line 360, ../scss/_768up.scss */
 .commentlist li {
   width: 82.87292817100001%;
 }
-/* line 370, ../scss/_768up.scss */
+/* line 365, ../scss/_768up.scss */
 .commentlist .odd {
   float: right;
 }
-/* line 373, ../scss/_768up.scss */
+/* line 368, ../scss/_768up.scss */
 .commentlist .even {
   float: left;
 }
-/* line 378, ../scss/_768up.scss */
+/* line 373, ../scss/_768up.scss */
 .commentlist .vcard {
   text-align: left;
 }
-/* line 381, ../scss/_768up.scss */
+/* line 376, ../scss/_768up.scss */
 .commentlist .vcard cite.fn {
   margin-left: 55px;
 }
-/* line 385, ../scss/_768up.scss */
+/* line 380, ../scss/_768up.scss */
 .commentlist .vcard time {
   float: right;
   font-size: 1em;
 }
-/* line 391, ../scss/_768up.scss */
+/* line 386, ../scss/_768up.scss */
 .commentlist .vcard img.avatar {
   display: block;
   position: absolute;
@@ -795,11 +790,11 @@ COMMENT STYLES
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 411, ../scss/_768up.scss */
+/* line 406, ../scss/_768up.scss */
 .commentlist .comment_content {
   margin-left: 55px;
 }
-/* line 416, ../scss/_768up.scss */
+/* line 411, ../scss/_768up.scss */
 .commentlist .comment-reply-link {
   float: right;
 }
@@ -808,17 +803,17 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 431, ../scss/_768up.scss */
+/* line 426, ../scss/_768up.scss */
 .respond-form {
   padding-bottom: 2.2em;
 }
-/* line 434, ../scss/_768up.scss */
+/* line 429, ../scss/_768up.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 441, ../scss/_768up.scss */
+/* line 436, ../scss/_768up.scss */
 .respond-form form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -827,23 +822,23 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 457, ../scss/_768up.scss */
+/* line 452, ../scss/_768up.scss */
 form div {
   padding-top: 20px;
 }
-/* line 461, ../scss/_768up.scss */
+/* line 456, ../scss/_768up.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
   display: block;
 }
-/* line 468, ../scss/_768up.scss */
+/* line 463, ../scss/_768up.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 476, ../scss/_768up.scss */
+/* line 471, ../scss/_768up.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -852,7 +847,7 @@ form textarea {
   float: left;
   width: 75%;
 }
-/* line 482, ../scss/_768up.scss */
+/* line 477, ../scss/_768up.scss */
 form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -861,12 +856,12 @@ form textarea {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 497, ../scss/_768up.scss */
+/* line 492, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
   font-size: .8em;
 }
-/* line 503, ../scss/_768up.scss */
+/* line 498, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }
