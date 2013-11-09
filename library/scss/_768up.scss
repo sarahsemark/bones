@@ -235,7 +235,8 @@ html, body, #container {
 
 #news {
 	padding-top: 0;
-	padding-bottom: 64px;
+	padding-bottom: 0;
+	height: calc(100% + 30px);
 
 	#smoke-two {
     	position: absolute;
@@ -246,12 +247,6 @@ html, body, #container {
 		pointer-events: none;
 	}
 
-	.direction-button {
-		position: absolute;
-		left: 50%;
-		margin-left: -31px;
-		bottom: 20px;
-	}
 }
 
 

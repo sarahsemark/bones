@@ -633,6 +633,7 @@ html, body, #container {
 	background: url("../images/salon-bw-ios.jpg") no-repeat;
 	background-size: cover;
 	padding-top: 20px;
+	padding-bottom: 90px;
 
 	h2 {
 		margin: 0;
@@ -643,9 +644,8 @@ html, body, #container {
 	}
 
 	.direction-button {
-		left: auto;
 		top: auto;
-		margin: 10px auto;
+		bottom: 10px;
 	}
 }
 
