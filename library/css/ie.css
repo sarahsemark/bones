@@ -481,10 +481,15 @@ h2 {
   font-size: 6em;
 }
 
+/* line 69, ../scss/_768up.scss */
+.drop-span {
+  margin-left: -.1em;
+}
+
 /*********************
 HEADER STYLES
 *********************/
-/* line 74, ../scss/_768up.scss */
+/* line 77, ../scss/_768up.scss */
 #header {
   background: url("../images/nav-ribbon.png") repeat-x 0px 38px;
   background-size: 30px 57px;
@@ -492,11 +497,11 @@ HEADER STYLES
   transition: all 200ms linear;
   height: auto;
 }
-/* line 81, ../scss/_768up.scss */
+/* line 84, ../scss/_768up.scss */
 #header.scrolled {
   top: -20px;
 }
-/* line 85, ../scss/_768up.scss */
+/* line 88, ../scss/_768up.scss */
 #header #logo {
   display: block;
   width: 300px;
@@ -510,7 +515,7 @@ HEADER STYLES
 }
 
 /* move banner up on static pages */
-/* line 99, ../scss/_768up.scss */
+/* line 102, ../scss/_768up.scss */
 .blog #header, .single #header, .page-template-default #header, .error404 #header {
   top: -20px;
   position: static;
@@ -519,29 +524,29 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 108, ../scss/_768up.scss */
+/* line 111, ../scss/_768up.scss */
 .nav {
   background: none;
   margin-top: -126px;
   position: relative;
   width: auto;
 }
-/* line 114, ../scss/_768up.scss */
+/* line 117, ../scss/_768up.scss */
 .nav li {
   float: left;
   position: relative;
 }
-/* line 118, ../scss/_768up.scss */
+/* line 121, ../scss/_768up.scss */
 .nav li a {
   border-bottom: 0;
   padding: 5px 12px;
   margin: 6px 16px;
 }
-/* line 124, ../scss/_768up.scss */
+/* line 127, ../scss/_768up.scss */
 .nav li:nth-child(3), .nav li:nth-child(4) {
   float: right;
 }
-/* line 132, ../scss/_768up.scss */
+/* line 135, ../scss/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   display: none;
@@ -549,11 +554,11 @@ NAVIGATION STYLES
 
 /* end .nav */
 /* highlight current page */
-/* line 142, ../scss/_768up.scss */
+/* line 145, ../scss/_768up.scss */
 .nav li.active, .blog .nav #menu-item-246, .single .nav #menu-item-246 {
   background: url("../images/active-link.png") center center no-repeat;
 }
-/* line 145, ../scss/_768up.scss */
+/* line 148, ../scss/_768up.scss */
 .nav li.active a, .blog .nav #menu-item-246 a, .single .nav #menu-item-246 a {
   color: #4a6036;
 }
@@ -561,14 +566,14 @@ NAVIGATION STYLES
 /*********************
 PARALLAX PANEL STYLES
 *********************/
-/* line 155, ../scss/_768up.scss */
+/* line 158, ../scss/_768up.scss */
 html, body, #container {
   width: 100%;
   height: 100%;
 }
 
 /* main panels */
-/* line 161, ../scss/_768up.scss */
+/* line 164, ../scss/_768up.scss */
 .page-panel {
   background-attachment: fixed;
   width: 100%;
@@ -578,19 +583,19 @@ html, body, #container {
   padding: 0;
 }
 
-/* line 169, ../scss/_768up.scss */
+/* line 172, ../scss/_768up.scss */
 .inner-content {
   height: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-/* line 174, ../scss/_768up.scss */
+/* line 177, ../scss/_768up.scss */
 .inner-content .entry-content {
   padding-top: 160px;
 }
 
-/* line 179, ../scss/_768up.scss */
+/* line 182, ../scss/_768up.scss */
 #smoke {
   position: absolute;
   top: 0px;
@@ -601,50 +606,50 @@ html, body, #container {
 }
 
 /* skip text */
-/* line 190, ../scss/_768up.scss */
+/* line 193, ../scss/_768up.scss */
 .skip-text {
   display: none;
 }
 
 /* down buttons */
-/* line 196, ../scss/_768up.scss */
+/* line 199, ../scss/_768up.scss */
 .direction-button {
   top: auto;
   bottom: 20px;
 }
 
 /* individual page panels */
-/* line 205, ../scss/_768up.scss */
+/* line 208, ../scss/_768up.scss */
 #home #mobile-logo {
   display: none;
 }
-/* line 209, ../scss/_768up.scss */
+/* line 212, ../scss/_768up.scss */
 #home blockquote {
   font-size: 2em;
   margin-top: 25%;
 }
-/* line 214, ../scss/_768up.scss */
+/* line 217, ../scss/_768up.scss */
 #home .direction-button {
   display: block;
 }
 
-/* line 222, ../scss/_768up.scss */
+/* line 225, ../scss/_768up.scss */
 #books .sixcol.last {
   clear: none;
   padding-top: 0;
 }
-/* line 229, ../scss/_768up.scss */
+/* line 232, ../scss/_768up.scss */
 #books .pre-order div {
   padding: 10px 20px;
 }
 
-/* line 236, ../scss/_768up.scss */
+/* line 239, ../scss/_768up.scss */
 #news {
   padding-top: 0;
   padding-bottom: 0;
   height: calc(100% + 30px);
 }
-/* line 241, ../scss/_768up.scss */
+/* line 244, ../scss/_768up.scss */
 #news #smoke-two {
   position: absolute;
   max-width: 100%;
@@ -653,16 +658,16 @@ html, body, #container {
   opacity: .5;
   pointer-events: none;
 }
-/* line 250, ../scss/_768up.scss */
+/* line 253, ../scss/_768up.scss */
 #news .news-excerpt {
   width: 46.4779%;
   margin-bottom: 2.1409%;
 }
-/* line 254, ../scss/_768up.scss */
+/* line 257, ../scss/_768up.scss */
 #news .news-excerpt.first {
   margin-right: 2.1409%;
 }
-/* line 258, ../scss/_768up.scss */
+/* line 261, ../scss/_768up.scss */
 #news .news-excerpt.last {
   margin-left: 2.1409%;
 }
@@ -670,65 +675,65 @@ html, body, #container {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 271, ../scss/_768up.scss */
+/* line 274, ../scss/_768up.scss */
 #main {
   padding-top: 100px;
 }
 
-/* line 275, ../scss/_768up.scss */
+/* line 278, ../scss/_768up.scss */
 article + article {
   margin-top: 80px;
 }
 
 /* post meta */
-/* line 280, ../scss/_768up.scss */
+/* line 283, ../scss/_768up.scss */
 .date {
   width: 60%;
   margin-bottom: -20px;
 }
-/* line 284, ../scss/_768up.scss */
+/* line 287, ../scss/_768up.scss */
 .date .day {
   display: inline;
   color: #64573b;
 }
-/* line 289, ../scss/_768up.scss */
+/* line 292, ../scss/_768up.scss */
 .date .ordinal {
   display: inline;
   display: inline;
   font-size: 0.5em;
   vertical-align: 30%;
 }
-/* line 296, ../scss/_768up.scss */
+/* line 299, ../scss/_768up.scss */
 .date .year {
   display: inline;
   color: #64573b;
 }
 
 /* nav buttons */
-/* line 305, ../scss/_768up.scss */
+/* line 308, ../scss/_768up.scss */
 .article-header .spacer {
   display: inline-block;
   position: relative;
   top: 0;
 }
 
-/* line 313, ../scss/_768up.scss */
+/* line 316, ../scss/_768up.scss */
 .single-post .article-header a {
   display: inline-block;
   position: relative;
   top: 0;
 }
 
-/* line 322, ../scss/_768up.scss */
+/* line 325, ../scss/_768up.scss */
 .single .entry-content {
   margin-top: 3em;
 }
 
-/* line 329, ../scss/_768up.scss */
+/* line 332, ../scss/_768up.scss */
 .entry-content p {
   text-align: justify;
 }
-/* line 333, ../scss/_768up.scss */
+/* line 336, ../scss/_768up.scss */
 .entry-content blockquote {
   font-size: 1.5em;
   line-height: 1.4em;
@@ -739,12 +744,12 @@ article + article {
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 349, ../scss/_768up.scss */
+/* line 352, ../scss/_768up.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 366, ../scss/_768up.scss */
+/* line 369, ../scss/_768up.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -752,32 +757,32 @@ COMMENT STYLES
   /* comment content */
   /* comment reply link */
 }
-/* line 368, ../scss/_768up.scss */
+/* line 371, ../scss/_768up.scss */
 .commentlist li {
   width: 82.87292817100001%;
 }
-/* line 373, ../scss/_768up.scss */
+/* line 376, ../scss/_768up.scss */
 .commentlist .odd {
   float: right;
 }
-/* line 376, ../scss/_768up.scss */
+/* line 379, ../scss/_768up.scss */
 .commentlist .even {
   float: left;
 }
-/* line 381, ../scss/_768up.scss */
+/* line 384, ../scss/_768up.scss */
 .commentlist .vcard {
   text-align: left;
 }
-/* line 384, ../scss/_768up.scss */
+/* line 387, ../scss/_768up.scss */
 .commentlist .vcard cite.fn {
   margin-left: 55px;
 }
-/* line 388, ../scss/_768up.scss */
+/* line 391, ../scss/_768up.scss */
 .commentlist .vcard time {
   float: right;
   font-size: 1em;
 }
-/* line 394, ../scss/_768up.scss */
+/* line 397, ../scss/_768up.scss */
 .commentlist .vcard img.avatar {
   display: block;
   position: absolute;
@@ -797,11 +802,11 @@ COMMENT STYLES
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 414, ../scss/_768up.scss */
+/* line 417, ../scss/_768up.scss */
 .commentlist .comment_content {
   margin-left: 55px;
 }
-/* line 419, ../scss/_768up.scss */
+/* line 422, ../scss/_768up.scss */
 .commentlist .comment-reply-link {
   float: right;
 }
@@ -810,17 +815,17 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 434, ../scss/_768up.scss */
+/* line 437, ../scss/_768up.scss */
 .respond-form {
   padding-bottom: 2.2em;
 }
-/* line 437, ../scss/_768up.scss */
+/* line 440, ../scss/_768up.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 444, ../scss/_768up.scss */
+/* line 447, ../scss/_768up.scss */
 .respond-form form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -829,23 +834,23 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 460, ../scss/_768up.scss */
+/* line 463, ../scss/_768up.scss */
 form div {
   padding-top: 20px;
 }
-/* line 464, ../scss/_768up.scss */
+/* line 467, ../scss/_768up.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
   display: block;
 }
-/* line 471, ../scss/_768up.scss */
+/* line 474, ../scss/_768up.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 479, ../scss/_768up.scss */
+/* line 482, ../scss/_768up.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -854,7 +859,7 @@ form textarea {
   float: left;
   width: 75%;
 }
-/* line 485, ../scss/_768up.scss */
+/* line 488, ../scss/_768up.scss */
 form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -863,12 +868,12 @@ form textarea {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 500, ../scss/_768up.scss */
+/* line 503, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
   font-size: .8em;
 }
-/* line 506, ../scss/_768up.scss */
+/* line 509, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }
