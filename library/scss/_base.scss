@@ -223,7 +223,7 @@ h5 {
     text-shadow: 0 -1px 0 rgba(0,0,0,0.9), 0 1px 0 rgba(255,255,255,0.5);
 }
 .news-excerpt p {
-	margin-top: 40px;
+	margin-top: 30px;
 	
 	&:first-letter {
 		font-size: 4.5em;	
@@ -637,6 +637,10 @@ html, body, #container {
 
 	h2 {
 		margin: 0;
+		
+		span {
+			display: none;
+		}
 	}
 	
 	#smoke-two {
@@ -646,6 +650,10 @@ html, body, #container {
 	.direction-button {
 		top: auto;
 		bottom: 10px;
+	}
+	
+	.news-excerpt {
+		margin-bottom: 6.4227%;
 	}
 }
 

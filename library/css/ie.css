@@ -653,69 +653,82 @@ html, body, #container {
   opacity: .5;
   pointer-events: none;
 }
+/* line 250, ../scss/_768up.scss */
+#news .news-excerpt {
+  width: 46.4779%;
+  margin-bottom: 2.1409%;
+}
+/* line 254, ../scss/_768up.scss */
+#news .news-excerpt.first {
+  margin-right: 2.1409%;
+}
+/* line 258, ../scss/_768up.scss */
+#news .news-excerpt.last {
+  margin-left: 2.1409%;
+}
 
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 258, ../scss/_768up.scss */
+/* line 271, ../scss/_768up.scss */
 #main {
   padding-top: 100px;
 }
 
-/* line 262, ../scss/_768up.scss */
+/* line 275, ../scss/_768up.scss */
 article + article {
   margin-top: 80px;
 }
 
 /* post meta */
-/* line 267, ../scss/_768up.scss */
+/* line 280, ../scss/_768up.scss */
 .date {
   width: 60%;
   margin-bottom: -20px;
 }
-/* line 271, ../scss/_768up.scss */
+/* line 284, ../scss/_768up.scss */
 .date .day {
   display: inline;
   color: #64573b;
 }
-/* line 276, ../scss/_768up.scss */
+/* line 289, ../scss/_768up.scss */
 .date .ordinal {
   display: inline;
   display: inline;
   font-size: 0.5em;
   vertical-align: 30%;
 }
-/* line 283, ../scss/_768up.scss */
+/* line 296, ../scss/_768up.scss */
 .date .year {
   display: inline;
   color: #64573b;
 }
 
 /* nav buttons */
-/* line 292, ../scss/_768up.scss */
+/* line 305, ../scss/_768up.scss */
 .article-header .spacer {
   display: inline-block;
   position: relative;
   top: 0;
 }
 
-/* line 300, ../scss/_768up.scss */
+/* line 313, ../scss/_768up.scss */
 .single-post .article-header a {
   display: inline-block;
   position: relative;
   top: 0;
 }
 
-/* line 309, ../scss/_768up.scss */
+/* line 322, ../scss/_768up.scss */
 .single .entry-content {
   margin-top: 3em;
 }
 
-/* line 316, ../scss/_768up.scss */
+/* line 329, ../scss/_768up.scss */
 .entry-content p {
   text-align: justify;
 }
-/* line 320, ../scss/_768up.scss */
+/* line 333, ../scss/_768up.scss */
 .entry-content blockquote {
   font-size: 1.5em;
   line-height: 1.4em;
@@ -726,12 +739,12 @@ article + article {
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 336, ../scss/_768up.scss */
+/* line 349, ../scss/_768up.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 353, ../scss/_768up.scss */
+/* line 366, ../scss/_768up.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -739,32 +752,32 @@ COMMENT STYLES
   /* comment content */
   /* comment reply link */
 }
-/* line 355, ../scss/_768up.scss */
+/* line 368, ../scss/_768up.scss */
 .commentlist li {
   width: 82.87292817100001%;
 }
-/* line 360, ../scss/_768up.scss */
+/* line 373, ../scss/_768up.scss */
 .commentlist .odd {
   float: right;
 }
-/* line 363, ../scss/_768up.scss */
+/* line 376, ../scss/_768up.scss */
 .commentlist .even {
   float: left;
 }
-/* line 368, ../scss/_768up.scss */
+/* line 381, ../scss/_768up.scss */
 .commentlist .vcard {
   text-align: left;
 }
-/* line 371, ../scss/_768up.scss */
+/* line 384, ../scss/_768up.scss */
 .commentlist .vcard cite.fn {
   margin-left: 55px;
 }
-/* line 375, ../scss/_768up.scss */
+/* line 388, ../scss/_768up.scss */
 .commentlist .vcard time {
   float: right;
   font-size: 1em;
 }
-/* line 381, ../scss/_768up.scss */
+/* line 394, ../scss/_768up.scss */
 .commentlist .vcard img.avatar {
   display: block;
   position: absolute;
@@ -784,11 +797,11 @@ COMMENT STYLES
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 401, ../scss/_768up.scss */
+/* line 414, ../scss/_768up.scss */
 .commentlist .comment_content {
   margin-left: 55px;
 }
-/* line 406, ../scss/_768up.scss */
+/* line 419, ../scss/_768up.scss */
 .commentlist .comment-reply-link {
   float: right;
 }
@@ -797,17 +810,17 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 421, ../scss/_768up.scss */
+/* line 434, ../scss/_768up.scss */
 .respond-form {
   padding-bottom: 2.2em;
 }
-/* line 424, ../scss/_768up.scss */
+/* line 437, ../scss/_768up.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 431, ../scss/_768up.scss */
+/* line 444, ../scss/_768up.scss */
 .respond-form form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -816,23 +829,23 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 447, ../scss/_768up.scss */
+/* line 460, ../scss/_768up.scss */
 form div {
   padding-top: 20px;
 }
-/* line 451, ../scss/_768up.scss */
+/* line 464, ../scss/_768up.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
   display: block;
 }
-/* line 458, ../scss/_768up.scss */
+/* line 471, ../scss/_768up.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 466, ../scss/_768up.scss */
+/* line 479, ../scss/_768up.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -841,7 +854,7 @@ form textarea {
   float: left;
   width: 75%;
 }
-/* line 472, ../scss/_768up.scss */
+/* line 485, ../scss/_768up.scss */
 form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -850,12 +863,12 @@ form textarea {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 487, ../scss/_768up.scss */
+/* line 500, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
   font-size: .8em;
 }
-/* line 493, ../scss/_768up.scss */
+/* line 506, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }
@@ -990,21 +1003,29 @@ PARALLAX PANEL STYLES
   right: 15%;
 }
 
+/* individual page panels */
+/* line 141, ../scss/_1030up.scss */
+#news .news-excerpt {
+  width: 41.4364%;
+  margin-left: 4.2818%;
+  margin-right: 4.2818%;
+}
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 144, ../scss/_1030up.scss */
+/* line 153, ../scss/_1030up.scss */
 article + article {
   margin-top: 100px;
 }
 
 /* post meta */
-/* line 149, ../scss/_1030up.scss */
+/* line 158, ../scss/_1030up.scss */
 .date {
   width: 40%;
 }
 
-/* line 154, ../scss/_1030up.scss */
+/* line 163, ../scss/_1030up.scss */
 .footer {
   background: url("../images/nav-ribbon.png") repeat-x 0px center;
   background-size: 30px 57px;

@@ -246,6 +246,19 @@ html, body, #container {
 		opacity: .5;
 		pointer-events: none;
 	}
+	
+	.news-excerpt {
+		width: 46.4779%;
+		margin-bottom: 2.1409%;
+		
+		&.first {
+			margin-right: 2.1409%;
+		}
+	
+		&.last {
+			margin-left: 2.1409%;
+		}
+	}
 
 }
 
