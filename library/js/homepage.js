@@ -150,5 +150,6 @@ jQuery(document).ready(function($) {
     
     // Get rid of Jetpack's evil inline subscribe form CSS
     $('#subscribe-field').removeAttr("style");     
-   
+	$("label[for='subscribe-field']").text("Subscribe via email");
+
 }); /* end of as page load scripts */
