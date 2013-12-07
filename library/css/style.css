@@ -2739,40 +2739,46 @@ you can add resource intensive styles.
   /*********************
   PARALLAX PANEL STYLES
   *********************/
-  /* line 19, ../scss/_portrait.scss */
+  /* down buttons */
+  /* line 18, ../scss/_portrait.scss */
+  .direction-button {
+    bottom: 60px;
+  }
+
+  /* line 25, ../scss/_portrait.scss */
   #books #darkwalker {
     width: 60%;
     float: none;
     margin: 2% 20% -50px;
   }
-  /* line 25, ../scss/_portrait.scss */
+  /* line 31, ../scss/_portrait.scss */
   #books .pre-order {
     width: 100%;
     margin: 0;
     float: none;
   }
-  /* line 30, ../scss/_portrait.scss */
+  /* line 36, ../scss/_portrait.scss */
   #books .pre-order p {
     text-align: center;
   }
-  /* line 34, ../scss/_portrait.scss */
+  /* line 40, ../scss/_portrait.scss */
   #books .pre-order h2 {
     margin: 1em 0 0;
   }
 
-  /* line 43, ../scss/_portrait.scss */
+  /* line 49, ../scss/_portrait.scss */
   #about-the-author .rep {
     width: 100%;
     float: none;
     margin-top: 20px;
   }
-  /* line 49, ../scss/_portrait.scss */
+  /* line 55, ../scss/_portrait.scss */
   #about-the-author #subscribe-field {
     float: none;
     width: 100%;
     margin: 0;
   }
-  /* line 54, ../scss/_portrait.scss */
+  /* line 60, ../scss/_portrait.scss */
   #about-the-author input[name="jetpack_subscriptions_widget"] {
     float: none;
     width: 60%;
@@ -2782,7 +2788,7 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 70, ../scss/_portrait.scss */
+  /* line 76, ../scss/_portrait.scss */
   .eightcol.twopush {
     margin-left: 0;
     width: 100%;
