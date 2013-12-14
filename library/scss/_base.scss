@@ -1005,7 +1005,13 @@ COMMENT STYLES
 		ul.children {
 			margin: 0;
 
-			li {}
+			li {
+				background: rgba(0, 0, 0, .25);
+				border: none;
+				padding: 0;
+				@include box-shadow(0px,rgba(0, 0, 0, 0));
+				margin-top: 10px;
+			}
 
 			/* variations */
 			.comment {}
@@ -1030,8 +1036,8 @@ COMMENT STYLES
 	}
 
 	li:not(.depth-1) {
-		margin-right: -10px;
-		margin-left: -10px;
+		margin-right: 0;
+		margin-left: 0;
 		margin-top: 0;
 		padding-bottom: 0;
 	}

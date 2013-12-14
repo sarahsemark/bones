@@ -756,6 +756,7 @@ COMMENT STYLES
   /* end .commentlist .vcard */
   /* comment content */
   /* comment reply link */
+  /* nested comments */
 }
 /* line 371, ../scss/_768up.scss */
 .commentlist li {
@@ -810,22 +811,38 @@ COMMENT STYLES
 .commentlist .comment-reply-link {
   float: right;
 }
+/* line 427, ../scss/_768up.scss */
+.commentlist .children li {
+  width: 100%;
+}
+/* line 430, ../scss/_768up.scss */
+.commentlist .children li img.avatar {
+  left: 6px;
+  top: 6px;
+  height: 50px;
+  width: 50px;
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+}
 
 /* end .commentlist */
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 437, ../scss/_768up.scss */
+/* line 454, ../scss/_768up.scss */
 .respond-form {
   padding-bottom: 2.2em;
 }
-/* line 440, ../scss/_768up.scss */
+/* line 457, ../scss/_768up.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 447, ../scss/_768up.scss */
+/* line 464, ../scss/_768up.scss */
 .respond-form form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -834,23 +851,23 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 463, ../scss/_768up.scss */
+/* line 480, ../scss/_768up.scss */
 form div {
   padding-top: 20px;
 }
-/* line 467, ../scss/_768up.scss */
+/* line 484, ../scss/_768up.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
   display: block;
 }
-/* line 474, ../scss/_768up.scss */
+/* line 491, ../scss/_768up.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 482, ../scss/_768up.scss */
+/* line 499, ../scss/_768up.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -859,7 +876,7 @@ form textarea {
   float: left;
   width: 75%;
 }
-/* line 488, ../scss/_768up.scss */
+/* line 505, ../scss/_768up.scss */
 form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -868,12 +885,12 @@ form textarea {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 503, ../scss/_768up.scss */
+/* line 520, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
   font-size: .8em;
 }
-/* line 509, ../scss/_768up.scss */
+/* line 526, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }
