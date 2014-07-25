@@ -20,27 +20,19 @@ PARALLAX PANEL STYLES
 }
 
 
-#books {
-	
-	#darkwalker {
-		width: 60%;
-		float: none;
-		margin: 2% 20% -50px;
-	}
-	
-	.pre-order {
-		width: 100%;
-		margin: 0;
-		float: none;
-		
-		p {
-			text-align: center;
-		}
-		
-		h2 {
-			margin: 1em 0 0;
-		}
-	}
+
+.cover {
+	width: 60%;
+	float: none;
+	margin: 2% 20% -50px;
+}
+
+.pre-order {
+	width: 100%;
+	margin: 0;
+	float: none;	
+	p {text-align: center;}
+	h2 {margin: 1em 0 0;}
 }
 
 

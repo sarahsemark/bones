@@ -560,24 +560,30 @@ html, body, #container {
 	}
 }
 
-#darkwalker {
-	width: 38%;
-	@include box-shadow;
-	float: left;
-	margin: 2% -4% 0 0;
+.cover, .entry-content .cover {
+	@include box-shadow;	
+	margin: 8% -4% 0 0;
     transform: rotate(-2deg);
 	-webkit-transform: rotate(-2deg);
 	-moz-transform: rotate(-2deg);
 	-o-transform: rotate(-2deg);
 	-ms-transform: rotate(-2deg);
+
+	&.small {
+		width: 38%;
+		float: left;
+		margin-top: 2%;
+		& + .pre-order, & + p + .pre-order {
+			float: left;
+		}
+	}
 }
 
 .pre-order {
 	width: 66%;
-	margin: 10% 0 0 0;
+	margin: 10% auto 0;
 	font-size: .95em;
 	padding: 10px;
-	float: left;
 	background: url('../images/leather.png');
 	background-size: 398px 484px;
 	text-align: center;
