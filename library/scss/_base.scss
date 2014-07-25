@@ -558,44 +558,39 @@ html, body, #container {
 		clear: left;
 		padding-top: 40px;
 	}
+}
+
+#darkwalker {
+	width: 38%;
+	@include box-shadow;
+	float: left;
+	margin: 2% -4% 0 0;
+    transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+}
+
+.pre-order {
+	width: 66%;
+	margin: 10% 0 0 0;
+	font-size: .95em;
+	padding: 10px;
+	float: left;
+	background: url('../images/leather.png');
+	background-size: 398px 484px;
+	text-align: center;
+	border: 1px solid darken($beige, 50%);
+	@include box-shadow;
 	
-	#darkwalker {
-		width: 38%;
-		@include box-shadow;
-		float: left;
-		margin: 2% -4% 0 0;
-	    transform: rotate(-2deg);
-		-webkit-transform: rotate(-2deg);
-		-moz-transform: rotate(-2deg);
-		-o-transform: rotate(-2deg);
-		-ms-transform: rotate(-2deg);
+	p {text-align: center;}
+	h2 {margin: 1em 0 0;}
+
+	div {
+		border: 1px solid darken($beige, 45%);
+		padding: 15px 10px 0;
 	}
-	
-	.pre-order {
-		width: 66%;
-		margin: 10% 0 0 0;
-		font-size: .95em;
-		padding: 10px;
-		float: left;
-		background: url('../images/leather.png');
-		background-size: 398px 484px;
-		text-align: center;
-		border: 1px solid darken($beige, 50%);
-		@include box-shadow;
-		
-		p {
-			text-align: center;
-		}
-		
-		h2 {
-			margin: 1em 0 0;
-		}
-		div {
-			border: 1px solid darken($beige, 45%);
-			padding: 15px 10px 0;
-		}
-	}
-	
 }
 
 #about-the-author {

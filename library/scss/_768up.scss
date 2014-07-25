@@ -226,14 +226,12 @@ html, body, #container {
 		clear: none;
 		padding-top: 0;
 	}
-	
-	.pre-order {
-	
-		div {
-			padding: 10px 20px;
-		}
-	}
 }
+
+.pre-order div {padding: 10px 20px;}
+.entry-content .pre-order p {text-align: center;}
+
+
 
 
 #news {
