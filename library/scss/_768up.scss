@@ -231,7 +231,10 @@ html, body, #container {
 .pre-order div {padding: 10px 20px;}
 .entry-content .pre-order p {text-align: center;}
 
-
+.cover, .entry-content .cover {
+	margin: 8% -4% 0 0;
+	width: 100%;
+}
 
 
 #news {

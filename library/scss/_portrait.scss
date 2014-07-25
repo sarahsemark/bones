@@ -21,11 +21,8 @@ PARALLAX PANEL STYLES
 
 
 
-.cover {
-	width: 60%;
-	float: none;
-	margin: 2% 20% -50px;
-}
+
+.cover.small, .entry-content .cover.small {margin-bottom: -50px;}
 
 .pre-order {
 	width: 100%;
