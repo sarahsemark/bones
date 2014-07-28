@@ -574,8 +574,21 @@ html, body, #container {
 		width: 38%;
 		float: left;
 		margin: 2% -4% 0px 0px;
-		& + .pre-order, & + p + .pre-order {
-			float: left;
+		& + .pre-order, & + p + .pre-order {float: left;}
+	}
+
+	&.preview {
+		width: 35%;
+		float: left;
+		margin: 9% 0 4% 10%;
+
+		&:nth-of-type(even) {
+			margin: 7% 0 -3% -1%;
+			transform: rotate(4deg);
+			-webkit-transform: rotate(4deg);
+			-moz-transform: rotate(4deg);
+			-o-transform: rotate(4deg);
+			-ms-transform: rotate(4deg);
 		}
 	}
 }
