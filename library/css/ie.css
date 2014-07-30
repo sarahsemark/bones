@@ -654,23 +654,24 @@ html, body, #container {
   margin: 8% -4% 0 0;
   width: 100%;
 }
-/* line 238, ../scss/_768up.scss */
-.cover.preview, .entry-content .cover.preview {
+
+/* line 240, ../scss/_768up.scss */
+.preview .cover {
   width: 15%;
   margin-top: -3%;
 }
-/* line 241, ../scss/_768up.scss */
-.cover.preview:nth-of-type(even), .entry-content .cover.preview:nth-of-type(even) {
+/* line 244, ../scss/_768up.scss */
+.preview:nth-of-type(odd) .cover {
   margin-top: -5%;
 }
 
-/* line 246, ../scss/_768up.scss */
+/* line 248, ../scss/_768up.scss */
 #news {
   padding-top: 0;
   padding-bottom: 0;
   height: calc(100% + 30px);
 }
-/* line 251, ../scss/_768up.scss */
+/* line 253, ../scss/_768up.scss */
 #news #smoke-two {
   position: absolute;
   max-width: 100%;
@@ -679,16 +680,16 @@ html, body, #container {
   opacity: .5;
   pointer-events: none;
 }
-/* line 260, ../scss/_768up.scss */
+/* line 262, ../scss/_768up.scss */
 #news .news-excerpt {
   width: 46.4779%;
   margin-bottom: 2.1409%;
 }
-/* line 264, ../scss/_768up.scss */
+/* line 266, ../scss/_768up.scss */
 #news .news-excerpt.first {
   margin-right: 2.1409%;
 }
-/* line 268, ../scss/_768up.scss */
+/* line 270, ../scss/_768up.scss */
 #news .news-excerpt.last {
   margin-left: 2.1409%;
 }
@@ -696,65 +697,65 @@ html, body, #container {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 281, ../scss/_768up.scss */
+/* line 283, ../scss/_768up.scss */
 #main {
   padding-top: 100px;
 }
 
-/* line 285, ../scss/_768up.scss */
+/* line 287, ../scss/_768up.scss */
 article + article {
   margin-top: 80px;
 }
 
 /* post meta */
-/* line 290, ../scss/_768up.scss */
+/* line 292, ../scss/_768up.scss */
 .date {
   width: 60%;
   margin-bottom: -20px;
 }
-/* line 294, ../scss/_768up.scss */
+/* line 296, ../scss/_768up.scss */
 .date .day {
   display: inline;
   color: #64573b;
 }
-/* line 299, ../scss/_768up.scss */
+/* line 301, ../scss/_768up.scss */
 .date .ordinal {
   display: inline;
   display: inline;
   font-size: 0.5em;
   vertical-align: 30%;
 }
-/* line 306, ../scss/_768up.scss */
+/* line 308, ../scss/_768up.scss */
 .date .year {
   display: inline;
   color: #64573b;
 }
 
 /* nav buttons */
-/* line 315, ../scss/_768up.scss */
+/* line 317, ../scss/_768up.scss */
 .article-header .spacer {
   display: inline-block;
   position: relative;
   top: 0;
 }
 
-/* line 323, ../scss/_768up.scss */
+/* line 325, ../scss/_768up.scss */
 .single-post .article-header a {
   display: inline-block;
   position: relative;
   top: 0;
 }
 
-/* line 332, ../scss/_768up.scss */
+/* line 334, ../scss/_768up.scss */
 .single .entry-content {
   margin-top: 3em;
 }
 
-/* line 339, ../scss/_768up.scss */
+/* line 341, ../scss/_768up.scss */
 .entry-content p {
   text-align: justify;
 }
-/* line 343, ../scss/_768up.scss */
+/* line 345, ../scss/_768up.scss */
 .entry-content blockquote {
   font-size: 1.5em;
   line-height: 1.4em;
@@ -765,12 +766,12 @@ article + article {
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 359, ../scss/_768up.scss */
+/* line 361, ../scss/_768up.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 376, ../scss/_768up.scss */
+/* line 378, ../scss/_768up.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -779,32 +780,32 @@ COMMENT STYLES
   /* comment reply link */
   /* nested comments */
 }
-/* line 378, ../scss/_768up.scss */
+/* line 380, ../scss/_768up.scss */
 .commentlist li {
   width: 82.87292817100001%;
 }
-/* line 383, ../scss/_768up.scss */
+/* line 385, ../scss/_768up.scss */
 .commentlist .odd {
   float: right;
 }
-/* line 386, ../scss/_768up.scss */
+/* line 388, ../scss/_768up.scss */
 .commentlist .even {
   float: left;
 }
-/* line 391, ../scss/_768up.scss */
+/* line 393, ../scss/_768up.scss */
 .commentlist .vcard {
   text-align: left;
 }
-/* line 394, ../scss/_768up.scss */
+/* line 396, ../scss/_768up.scss */
 .commentlist .vcard cite.fn {
   margin-left: 55px;
 }
-/* line 398, ../scss/_768up.scss */
+/* line 400, ../scss/_768up.scss */
 .commentlist .vcard time {
   float: right;
   font-size: 1em;
 }
-/* line 404, ../scss/_768up.scss */
+/* line 406, ../scss/_768up.scss */
 .commentlist .vcard img.avatar {
   display: block;
   position: absolute;
@@ -824,19 +825,19 @@ COMMENT STYLES
   -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 424, ../scss/_768up.scss */
+/* line 426, ../scss/_768up.scss */
 .commentlist .comment_content {
   margin-left: 55px;
 }
-/* line 429, ../scss/_768up.scss */
+/* line 431, ../scss/_768up.scss */
 .commentlist .comment-reply-link {
   float: right;
 }
-/* line 434, ../scss/_768up.scss */
+/* line 436, ../scss/_768up.scss */
 .commentlist .children li {
   width: 100%;
 }
-/* line 437, ../scss/_768up.scss */
+/* line 439, ../scss/_768up.scss */
 .commentlist .children li img.avatar {
   left: 6px;
   top: 6px;
@@ -853,17 +854,17 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 461, ../scss/_768up.scss */
+/* line 463, ../scss/_768up.scss */
 .respond-form {
   padding-bottom: 2.2em;
 }
-/* line 464, ../scss/_768up.scss */
+/* line 466, ../scss/_768up.scss */
 .respond-form div {
   width: 60%;
   margin: 10px 20%;
   clear: both;
 }
-/* line 471, ../scss/_768up.scss */
+/* line 473, ../scss/_768up.scss */
 .respond-form form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -872,23 +873,23 @@ COMMENT FORM STYLES
 /******************************************************************
 FORM STYLES
 ******************************************************************/
-/* line 487, ../scss/_768up.scss */
+/* line 489, ../scss/_768up.scss */
 form div {
   padding-top: 20px;
 }
-/* line 491, ../scss/_768up.scss */
+/* line 493, ../scss/_768up.scss */
 form label {
   width: 20%;
   padding-top: 10px;
   float: left;
   display: block;
 }
-/* line 498, ../scss/_768up.scss */
+/* line 500, ../scss/_768up.scss */
 form input[type="checkbox"] + label {
   float: none;
   width: 100%;
 }
-/* line 503, ../scss/_768up.scss */
+/* line 505, ../scss/_768up.scss */
 form input[type=text],
 form input[type=email],
 form input[type=url],
@@ -897,7 +898,7 @@ form textarea {
   float: left;
   width: 75%;
 }
-/* line 512, ../scss/_768up.scss */
+/* line 514, ../scss/_768up.scss */
 form textarea {
   margin: 20px 10%;
   width: 80%;
@@ -906,12 +907,12 @@ form textarea {
 /*********************
 FOOTER STYLES
 *********************/
-/* line 527, ../scss/_768up.scss */
+/* line 529, ../scss/_768up.scss */
 .footer {
   margin-bottom: 0px;
   font-size: .8em;
 }
-/* line 533, ../scss/_768up.scss */
+/* line 535, ../scss/_768up.scss */
 .footer a:hover {
   color: #b99d95;
 }
