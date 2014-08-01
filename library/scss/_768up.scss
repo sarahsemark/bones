@@ -228,7 +228,12 @@ html, body, #container {
 	}
 }
 
-.pre-order div {padding: 10px 20px;}
+.pre-order {
+	width: 66%;
+	margin: 10% auto 0;
+	div {padding: 10px 20px;}
+}
+
 .entry-content .pre-order p {text-align: center;}
 
 .cover, .entry-content .cover {

@@ -589,8 +589,8 @@ html, body, #container {
 }
 
 .pre-order {
-	width: 66%;
-	margin: 10% auto 0;
+	width: 100%;
+	margin: -1% auto 0;
 	font-size: .95em;
 	padding: 10px;
 	background: url('../images/leather.png');
@@ -599,7 +599,7 @@ html, body, #container {
 	border: 1px solid darken($beige, 50%);
 	@include box-shadow;
 	display: inline-block;
-	
+
 	p {text-align: center;}
 	h2 {margin: 1em 0 0;}
 

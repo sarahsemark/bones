@@ -1394,8 +1394,8 @@ html, body, #container {
 
 /* line 591, ../scss/_base.scss */
 .pre-order {
-  width: 66%;
-  margin: 10% auto 0;
+  width: 100%;
+  margin: -1% auto 0;
   font-size: .95em;
   padding: 10px;
   background: url("../images/leather.png");
@@ -2516,50 +2516,55 @@ you can add resource intensive styles.
   }
 
   /* line 231, ../scss/_768up.scss */
+  .pre-order {
+    width: 66%;
+    margin: 10% auto 0;
+  }
+  /* line 234, ../scss/_768up.scss */
   .pre-order div {
     padding: 10px 20px;
   }
 
-  /* line 232, ../scss/_768up.scss */
+  /* line 237, ../scss/_768up.scss */
   .entry-content .pre-order p {
     text-align: center;
   }
 
-  /* line 234, ../scss/_768up.scss */
+  /* line 239, ../scss/_768up.scss */
   .cover, .entry-content .cover {
     margin: 8% -4% 0 0;
     width: 100%;
   }
-  /* line 238, ../scss/_768up.scss */
+  /* line 243, ../scss/_768up.scss */
   .cover.small, .entry-content .cover.small {
     width: 38%;
     float: left;
     margin: 2% -4% 0px 0px;
   }
-  /* line 242, ../scss/_768up.scss */
+  /* line 247, ../scss/_768up.scss */
   .cover.small + .pre-order, .cover.small + p + .pre-order, .entry-content .cover.small + .pre-order, .entry-content .cover.small + p + .pre-order {
     float: left;
   }
 
-  /* line 247, ../scss/_768up.scss */
+  /* line 252, ../scss/_768up.scss */
   .preview .cover {
     width: 15%;
     margin-top: -3%;
     margin-left: 20%;
   }
-  /* line 252, ../scss/_768up.scss */
+  /* line 257, ../scss/_768up.scss */
   .preview:nth-of-type(odd) .cover {
     margin-top: -5%;
     margin-left: 5%;
   }
 
-  /* line 259, ../scss/_768up.scss */
+  /* line 264, ../scss/_768up.scss */
   #news {
     padding-top: 0;
     padding-bottom: 0;
     height: calc(100% + 30px);
   }
-  /* line 264, ../scss/_768up.scss */
+  /* line 269, ../scss/_768up.scss */
   #news #smoke-two {
     position: absolute;
     max-width: 100%;
@@ -2568,16 +2573,16 @@ you can add resource intensive styles.
     opacity: .5;
     pointer-events: none;
   }
-  /* line 273, ../scss/_768up.scss */
+  /* line 278, ../scss/_768up.scss */
   #news .news-excerpt {
     width: 46.4779%;
     margin-bottom: 2.1409%;
   }
-  /* line 277, ../scss/_768up.scss */
+  /* line 282, ../scss/_768up.scss */
   #news .news-excerpt.first {
     margin-right: 2.1409%;
   }
-  /* line 281, ../scss/_768up.scss */
+  /* line 286, ../scss/_768up.scss */
   #news .news-excerpt.last {
     margin-left: 2.1409%;
   }
@@ -2585,65 +2590,65 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 294, ../scss/_768up.scss */
+  /* line 299, ../scss/_768up.scss */
   #main {
     padding-top: 100px;
   }
 
-  /* line 298, ../scss/_768up.scss */
+  /* line 303, ../scss/_768up.scss */
   article + article {
     margin-top: 80px;
   }
 
   /* post meta */
-  /* line 303, ../scss/_768up.scss */
+  /* line 308, ../scss/_768up.scss */
   .date {
     width: 60%;
     margin-bottom: -20px;
   }
-  /* line 307, ../scss/_768up.scss */
+  /* line 312, ../scss/_768up.scss */
   .date .day {
     display: inline;
     color: #64573b;
   }
-  /* line 312, ../scss/_768up.scss */
+  /* line 317, ../scss/_768up.scss */
   .date .ordinal {
     display: inline;
     display: inline;
     font-size: 0.5em;
     vertical-align: 30%;
   }
-  /* line 319, ../scss/_768up.scss */
+  /* line 324, ../scss/_768up.scss */
   .date .year {
     display: inline;
     color: #64573b;
   }
 
   /* nav buttons */
-  /* line 328, ../scss/_768up.scss */
+  /* line 333, ../scss/_768up.scss */
   .article-header .spacer {
     display: inline-block;
     position: relative;
     top: 0;
   }
 
-  /* line 336, ../scss/_768up.scss */
+  /* line 341, ../scss/_768up.scss */
   .single-post .article-header a {
     display: inline-block;
     position: relative;
     top: 0;
   }
 
-  /* line 345, ../scss/_768up.scss */
+  /* line 350, ../scss/_768up.scss */
   .single .entry-content {
     margin-top: 3em;
   }
 
-  /* line 352, ../scss/_768up.scss */
+  /* line 357, ../scss/_768up.scss */
   .entry-content p {
     text-align: justify;
   }
-  /* line 356, ../scss/_768up.scss */
+  /* line 361, ../scss/_768up.scss */
   .entry-content blockquote {
     font-size: 1.5em;
     line-height: 1.4em;
@@ -2654,12 +2659,12 @@ you can add resource intensive styles.
   COMMENT STYLES
   ******************************************************************/
   /* h3 comment title */
-  /* line 372, ../scss/_768up.scss */
+  /* line 377, ../scss/_768up.scss */
   #comments {
     /* number of comments span */
   }
 
-  /* line 389, ../scss/_768up.scss */
+  /* line 394, ../scss/_768up.scss */
   .commentlist {
     /* general comment classes */
     /* vcard */
@@ -2668,32 +2673,32 @@ you can add resource intensive styles.
     /* comment reply link */
     /* nested comments */
   }
-  /* line 391, ../scss/_768up.scss */
+  /* line 396, ../scss/_768up.scss */
   .commentlist li {
     width: 82.87292817100001%;
   }
-  /* line 396, ../scss/_768up.scss */
+  /* line 401, ../scss/_768up.scss */
   .commentlist .odd {
     float: right;
   }
-  /* line 399, ../scss/_768up.scss */
+  /* line 404, ../scss/_768up.scss */
   .commentlist .even {
     float: left;
   }
-  /* line 404, ../scss/_768up.scss */
+  /* line 409, ../scss/_768up.scss */
   .commentlist .vcard {
     text-align: left;
   }
-  /* line 407, ../scss/_768up.scss */
+  /* line 412, ../scss/_768up.scss */
   .commentlist .vcard cite.fn {
     margin-left: 55px;
   }
-  /* line 411, ../scss/_768up.scss */
+  /* line 416, ../scss/_768up.scss */
   .commentlist .vcard time {
     float: right;
     font-size: 1em;
   }
-  /* line 417, ../scss/_768up.scss */
+  /* line 422, ../scss/_768up.scss */
   .commentlist .vcard img.avatar {
     display: block;
     position: absolute;
@@ -2713,19 +2718,19 @@ you can add resource intensive styles.
     -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
   }
-  /* line 437, ../scss/_768up.scss */
+  /* line 442, ../scss/_768up.scss */
   .commentlist .comment_content {
     margin-left: 55px;
   }
-  /* line 442, ../scss/_768up.scss */
+  /* line 447, ../scss/_768up.scss */
   .commentlist .comment-reply-link {
     float: right;
   }
-  /* line 447, ../scss/_768up.scss */
+  /* line 452, ../scss/_768up.scss */
   .commentlist .children li {
     width: 100%;
   }
-  /* line 450, ../scss/_768up.scss */
+  /* line 455, ../scss/_768up.scss */
   .commentlist .children li img.avatar {
     left: 6px;
     top: 6px;
@@ -2742,17 +2747,17 @@ you can add resource intensive styles.
   /******************************************************************
   COMMENT FORM STYLES
   ******************************************************************/
-  /* line 474, ../scss/_768up.scss */
+  /* line 479, ../scss/_768up.scss */
   .respond-form {
     padding-bottom: 2.2em;
   }
-  /* line 477, ../scss/_768up.scss */
+  /* line 482, ../scss/_768up.scss */
   .respond-form div {
     width: 60%;
     margin: 10px 20%;
     clear: both;
   }
-  /* line 484, ../scss/_768up.scss */
+  /* line 489, ../scss/_768up.scss */
   .respond-form form textarea {
     margin: 20px 10%;
     width: 80%;
@@ -2761,23 +2766,23 @@ you can add resource intensive styles.
   /******************************************************************
   FORM STYLES
   ******************************************************************/
-  /* line 500, ../scss/_768up.scss */
+  /* line 505, ../scss/_768up.scss */
   form div {
     padding-top: 20px;
   }
-  /* line 504, ../scss/_768up.scss */
+  /* line 509, ../scss/_768up.scss */
   form label {
     width: 20%;
     padding-top: 10px;
     float: left;
     display: block;
   }
-  /* line 511, ../scss/_768up.scss */
+  /* line 516, ../scss/_768up.scss */
   form input[type="checkbox"] + label {
     float: none;
     width: 100%;
   }
-  /* line 516, ../scss/_768up.scss */
+  /* line 521, ../scss/_768up.scss */
   form input[type=text],
   form input[type=email],
   form input[type=url],
@@ -2786,7 +2791,7 @@ you can add resource intensive styles.
     float: left;
     width: 75%;
   }
-  /* line 525, ../scss/_768up.scss */
+  /* line 530, ../scss/_768up.scss */
   form textarea {
     margin: 20px 10%;
     width: 80%;
@@ -2795,12 +2800,12 @@ you can add resource intensive styles.
   /*********************
   FOOTER STYLES
   *********************/
-  /* line 540, ../scss/_768up.scss */
+  /* line 545, ../scss/_768up.scss */
   .footer {
     margin-bottom: 0px;
     font-size: .8em;
   }
-  /* line 546, ../scss/_768up.scss */
+  /* line 551, ../scss/_768up.scss */
   .footer a:hover {
     color: #b99d95;
   }
@@ -2830,34 +2835,19 @@ you can add resource intensive styles.
     margin-bottom: -50px;
   }
 
-  /* line 27, ../scss/_portrait.scss */
-  .pre-order {
-    width: 100%;
-    margin: 0;
-    float: none;
-  }
-  /* line 31, ../scss/_portrait.scss */
-  .pre-order p {
-    text-align: center;
-  }
   /* line 32, ../scss/_portrait.scss */
-  .pre-order h2 {
-    margin: 1em 0 0;
-  }
-
-  /* line 38, ../scss/_portrait.scss */
   #about-the-author .rep {
     width: 100%;
     float: none;
     margin-top: 20px;
   }
-  /* line 44, ../scss/_portrait.scss */
+  /* line 38, ../scss/_portrait.scss */
   #about-the-author #subscribe-field {
     float: none;
     width: 100%;
     margin: 0;
   }
-  /* line 49, ../scss/_portrait.scss */
+  /* line 43, ../scss/_portrait.scss */
   #about-the-author input[name="jetpack_subscriptions_widget"] {
     float: none;
     width: 60%;
@@ -2867,7 +2857,7 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 65, ../scss/_portrait.scss */
+  /* line 59, ../scss/_portrait.scss */
   .eightcol.twopush {
     margin-left: 0;
     width: 100%;
